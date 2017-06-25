@@ -1,0 +1,73 @@
+.user-msg dl{
+	width: 754px;
+	height: 380px;
+	border: 1px solid #d9dce1;
+	margin-top: 20px;
+}
+.user-msg dl dt{
+	padding-top: 20px;
+	font-size: 20px;
+	font-weight: bold;
+	border-bottom: 1px solid #d9dce1;
+	line-height: 36px;
+	width: 720px;
+	margin: auto;
+}
+.user-msg dl dt span{
+	color: #D9DDE0;
+	font-weight: normal;
+	margin-left: 10px;
+}
+.user-msg dl dd{
+	padding: 10px 0;
+	width: 720px;
+	margin: auto;
+	height: 77px;
+}
+.user-msg dl dd img{
+	margin-left: 10px;
+	margin-right: 20px;
+}
+.user-msg dl dd p{
+	vertical-align: middle;
+	margin-top: 20px;
+}
+.user-msg dl dd span{
+	float: right;
+	color: #45cc7f;
+	margin-top: -20px;
+}
+.user-msg dl dd a{
+	margin: 10px 10px 10px 0;
+	width: 240px;
+	height: 90px;
+	text-align: center;
+	line-height: 90px;
+}
+.user-msg dl dd a.zfb{
+	background: url(../img/user/pic-19.png) no-repeat center center;
+}
+.user-msg dl dd a.zfb.active{
+	background: url(../img/user/pic-22.png) no-repeat center center;
+}
+.user-msg dl dd a.wx{
+	background: url(../img/user/pic-18.png) no-repeat center center;
+}
+.user-msg dl dd a.wx.active{
+	background: url(../img/user/pic-20.png) no-repeat center center;
+}
+.user-msg dl dd.tips{
+	color: red;
+	margin-top: 20px;
+	font-size: 12px;
+}
+a.ljzf{
+	background: url(../img/user/pic-21.png) no-repeat center center;
+	width: 113px;
+	height: 52px;
+	font-size: 20px;
+	color: white;
+	margin-top: 20px;
+	text-align: center;
+	line-height: 52px;
+}

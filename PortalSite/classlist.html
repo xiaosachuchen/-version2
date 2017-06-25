@@ -1,0 +1,330 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/classlist.css" />
+
+		
+        <script src="scripts/jquery-1.11.0.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/html5shiv.js"></script>
+        <script src="scripts/jquery.tmpl.min.js"></script>
+        <script src="scripts/jquery.tmplplus.min.js"></script>
+        <script src="appjs/classlistLogic.js"></script>
+	</head>
+	<body>
+		
+		<div id="headerHtml2"></div>
+		
+		<section class="seach">
+			<dl class="main">
+				<dd>
+					<input type="text" class="keyword" placeholder="小学，初中，高中课程" /><a class="search_btn">搜索课程</a>
+				</dd>
+			</dl>
+		</section>
+		<section class="subnav main">
+			   <ul>
+			   		<li><a>小学部</a></li>
+			   		<li><a style="width: 169px;">初中部</a></li>
+			   		<li><a style="width: 170px;">高中部</a></li>
+			   </ul>
+			   <ol class="nav-xxb">
+			   		<li class="grade">年级：
+			   			<a class="hover">一年级</a>
+			   			<a>二年级</a>
+			   			<a>三年级</a>
+			   			<a>四年级</a>
+			   			<a>五年级</a>
+			   			<a>六年级</a>
+			   		</li>
+			   		<li class="subject">科目：
+			   			<a class="hover">语文</a>
+			   			<a>数学</a>
+			   			<a>英语</a>
+			   			<a>美术</a>
+			   			<a>音乐</a>
+                        <a>品德</a>
+                        <a>信息技术</a>
+			   		</li>
+			   		<li class="jcbb">版本：
+			   			<a>北师大版</a>
+			   			<a class="hover">语文版</a>
+			   			<a>岳麓版</a>
+			   			<a>外研版</a>
+			   			<a>语文S版</a>
+			   			<a>人教版(一年级起)</a>
+			   			<a class="more">更多</a>
+			   			<p>
+			   				<a>北师大版</a>
+				   			<a>语文版</a>
+				   			<a>岳麓版</a>
+				   			<a>外研版</a>
+				   			<a>语文S版</a>
+			   			</p>
+			   		</li>
+			   </ol>
+			   <ol class="nav-czb">
+			   		<li class="grade">年级：
+			   			<a>七年级</a>
+			   			<a class="hover">八年级</a>
+			   			<a>九年级</a>
+			   		</li>
+			   		<li class="subject">科目：
+			   			<a>语文</a>
+			   			<a>数学</a>
+			   			<a>英语</a>
+			   			<a class="hover">历史</a>
+			   			<a>地理</a>
+                        <a>生物</a>
+                        <a>思想政治</a>
+                        <a>美术</a>
+                        <a>物理</a>
+			   		</li>
+			   		<li class="jcbb">版本：
+			   			<a>北师大版</a>
+			   			<a>语文版</a>
+			   			<a>岳麓版</a>
+			   			<a>外研版</a>
+			   			<a>语文S版</a>
+			   			<a class="hover">人教版(一年级起)</a>
+			   			<a class="more">更多</a>
+			   			<p>
+			   				<a>北师大版</a>
+				   			<a>语文版</a>
+				   			<a>岳麓版</a>
+				   			<a>外研版</a>
+				   			<a>语文S版</a>
+			   			</p>
+			   		</li>
+			   </ol>
+			   <ol class="nav-gzb">
+			   		<li class="grade">年级：
+			   			<a class="hover">高一年级</a>
+			   			<a>高二年级</a>
+			   			<a>高三年级</a>
+			   		</li>
+			   		<li class="subject">科目：
+			   			<a>语文</a>
+			   			<a>数学</a>
+			   			<a>英语</a>
+			   			<a class="hover">物理</a>
+			   			<a>化学</a>
+                        <a class="hover">生物</a>
+                        <a>地理</a>
+			   		</li>
+			   		<li class="jcbb">版本：
+			   			<a>北师大版</a>
+			   			<a>语文版</a>
+			   			<a class="hover">岳麓版</a>
+			   			<a>外研版</a>
+			   			<a>语文S版</a>
+			   			<a>人教版(一年级起)</a>
+			   			<a class="more">更多</a>
+			   			<p>
+			   				<a>北师大版</a>
+				   			<a>语文版</a>
+				   			<a>岳麓版</a>
+				   			<a>外研版</a>
+				   			<a>语文S版</a>
+			   			</p>
+			   		</li>
+			   </ol>
+			   
+		</section>
+		<div class="clwrap">
+			<div class="main">
+				<p class="title">
+					<a>最新</a>
+					<a class="active">最热</a>
+					<script>
+						
+					</script>
+				</p>
+				<div class="clwrap-topa">
+					<div class="clwrap-topal fl" id="orderby_video">
+                    <script type="text/x-jquery-tmpl" id="orderby_video_list">
+                        {{each(i,video) data}}
+                        {{if i==0}}
+                        <dl class="active" cid={{= video.seqid}}>
+                        {{else}}
+                        <dl cid={{= video.seqid}}>
+                        {{/if}}
+                                <dt>{{= video.title}}</dt>
+                                <dd class="play"><a><img src="img/classlist/pic-2.png" /></a></dd>
+                                <dd>{{= video.teacher}}<span>¥：{{= video.s_prise}}</span></dd>
+                            </dl>
+                        {{/each}}
+                        
+                    </script>
+						<!--<dl>
+							<dt>易混淆动词解析</dt>
+							<dd class="play"><a><img src="img/classlist/pic-2.png" /></a></dd>
+							<dd>钟平老师<span>¥：25.00</span></dd>
+						</dl>
+						<dl class="active">
+							<dt>质量与密度</dt>
+							<dd class="play"><a><img src="img/classlist/pic-2.png" /></a></dd>
+							<dd>钟平老师<span>¥：25.00</span></dd>
+						</dl>
+						<dl>
+							<dt>文言文翻译</dt>
+							<dd class="play"><a><img src="img/classlist/pic-2.png" /></a></dd>
+							<dd>钟平老师<span>¥：25.00</span></dd>
+						</dl>
+						<dl>
+							<dt>文言文翻译</dt>
+							<dd class="play"><a><img src="img/classlist/pic-2.png" /></a></dd>
+							<dd style="border: none;">钟平老师<span>¥：25.00</span></dd>
+						</dl>-->
+					</div>
+					<div class="clwrap-topar fr" >
+						<ol>
+							<li style="width: 748px;margin-left: 20px;"  id="video_main_list"></li>
+                                <script type="text/x-jquery-tmpl" id="video_main_data_list">
+                                    {{each(i,video) data}}
+                                    {{if i%3 == 1 }}
+                                    <dl class="mglr" cid={{= video.seqid}}>
+                                    {{else}}
+                                    <dl cid={{= video.seqid}}>
+                                     {{/if}}
+                                        <dt>{{= video.title}}</dt>
+                                        <dd class="detls">
+                                            <img src="img/classlist/pic-4.png" />
+                                            <b></b>
+                                            <span style="display:none">
+                                                {{= video.abstracts}}
+                                            </span>
+                                        </dd>
+                                        <dd>
+                                            {{= video.teachername}} ¥ {{= video.s_prise}} <a><img src="img/classlist/pic-6.png" /></a>
+                                        </dd>
+                                    </dl>
+                                    {{/each}}
+                                </script>
+
+								<!--<dl class="mglr">
+									<dt>文言文详解</dt>
+									<dd class="detls">
+										<img src="img/classlist/pic-5.png" />
+										<b></b>
+										<span>文题解释、译注解析、艺术鉴
+赏、知识小结、文化常识、扩
+展阅读和课后解答.....</span>
+									</dd>
+									<dd>
+										钟平老师 ¥：28.00 <a><img src="img/classlist/pic-6.png" /></a>
+									</dd>
+								</dl>
+								<dl>
+									<dt>文言文详解</dt>
+									<dd class="detls">
+										<img src="img/classlist/pic-5.png" />
+										<b></b>
+										<span>文题解释、译注解析、艺术鉴
+赏、知识小结、文化常识、扩
+展阅读和课后解答.....</span>
+									</dd>
+									<dd>
+										钟平老师 ¥：28.00 <a><img src="img/classlist/pic-6.png" /></a>
+									</dd>
+								</dl>-->
+							<!--</li>-->
+							<!--<li style="width: 748px;margin-left: 20px;">
+								<dl>
+									<dt>文言文详解</dt>
+									<dd class="detls">
+										<img src="img/classlist/pic-5.png" />
+										<b></b>
+										<span>文题解释、译注解析、艺术鉴
+赏、知识小结、文化常识、扩
+展阅读和课后解答.....</span>
+									</dd>
+									<dd>
+										钟平老师 ¥：28.00 <a><img src="img/classlist/pic-6.png" /></a>
+									</dd>
+								</dl>
+								<dl class="mglr">
+									<dt>文言文详解</dt>
+									<dd class="detls">
+										<img src="img/classlist/pic-5.png" />
+										<b></b>
+										<span>文题解释、译注解析、艺术鉴
+赏、知识小结、文化常识、扩
+展阅读和课后解答.....</span>
+									</dd>
+									<dd>
+										钟平老师 ¥：28.00 <a><img src="img/classlist/pic-6.png" /></a>
+									</dd>
+								</dl>
+								<dl>
+									<dt>文言文详解</dt>
+									<dd class="detls">
+										<img src="img/classlist/pic-5.png" />
+										<b></b>
+										<span>文题解释、译注解析、艺术鉴
+赏、知识小结、文化常识、扩
+展阅读和课后解答.....</span>
+									</dd>
+									<dd>
+										钟平老师 ¥：28.00 <a><img src="img/classlist/pic-6.png" /></a>
+									</dd>
+								</dl>
+							</li>-->
+						</ol>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="clear"></div>
+                <div class="pages" id="pages" pageindex="1" totalnum="240">
+                    <a class="firstpage">首页</a>
+                    <a class="pre">上一页</a>
+                    <a class="num dpages active" tt="0">1</a>
+                    <a class="num dpages" tt="1">2</a>
+                    <a class="num dpages" tt="2">3</a>
+                    <a class="num dpages" tt="3">4</a>
+                    <a class="num dpages" tt="4">5</a>
+                    <a class="num dpages" tt="5">6</a>
+                    <a class="num dpages" tt="6">7</a>
+                    <a class="num dpages" tt="7">8</a>
+                    <a class="next">下一页</a>
+                    <a class="endpage" pid="2">末页</a>
+                </div>
+			</div>
+		</div>
+		
+		
+		<div id="footerHtml"></div>
+		<script>
+            $(function () {
+                //$(".clwrap-topar ol li dl").hover(function () {
+                //    if ($(this).hasClass("active")) {
+                //        $(this).removeClass("active")
+                //    } else {
+                //        $(this).addClass("active")
+                //    }
+                //})
+                //$(".clwrap-topar ol li dl").click(function () {
+                //    window.location.href = "classdetail.html"
+                //})
+        
+                //$(".clwrap-topal dl").click(function () {
+                //    window.location.href = "classdetail.html"
+                //})
+                $(".jcbb a.more").click(function () {
+                    if ($(this).text() == "更多") {
+                        $(this).siblings("p").show()
+                        $(this).text("收起")
+                    } else {
+                        $(this).siblings("p").hide()
+                        $(this).text("更多")
+                    }
+
+                })
+            })
+		</script>
+	</body>
+</html>

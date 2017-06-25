@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>用户中心</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/user-class.css" />
+        <script src="scripts/jquery-1.11.0.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/html5shiv.js"></script>
+        <script src="scripts/jquery.tmpl.min.js"></script>
+        <script src="scripts/jquery.tmplplus.min.js"></script>
+        <script src="appjs/orderlogic.js"></script>
+	</head>
+	<body>
+		<div id="headerHtml"></div>
+		<div class="clear"></div>
+		<div class="user-center" id="user-centerHtml">
+		</div>
+		<div class="user-subnav main">
+			<dl class="fl nav">
+				<dt>
+					账号管理
+				</dt>
+				<dd>
+					<a href="user.html">个人信息</a>
+				</dd>
+				<dt>
+					课程
+				</dt>
+				<dd>
+					<a class="course active" href="user-class.html">我的课程</a>
+				</dd>
+				<dd>
+					<a class="course" href="user-favor.html">我的收藏</a>
+				</dd>
+				<!--<dd>
+					<a class="course" >最近学习</a>
+				</dd>-->
+				<dt>
+					支付中心
+				</dt>
+				<dd>
+					<a href="user-shopcar.html">购物车</a>
+				</dd>
+				
+				<dd>
+					<a href="user-payfirst.html">我的订单</a>
+				</dd>
+			</dl>
+			<div class="user-msg" otype="mycourse">
+				<p class="title">
+					我的课程
+				</p>
+            </div>
+            <div class="user-msg" id="my_course" ></div>
+                <script type="text/x-jquery-tmpl" id="my_course_list">
+                   {{each(i,course) data}}
+                    <ol>
+                        <li class="date">
+                            <b>{{= course.createtime}}</b><br/>
+                        </li>
+                        <li>
+                            <img src="img/user/pic-9.png" class="fl" />
+                            <dl>
+                                <dt>{{= course.title}}</dt>
+                                <dd>{{= course.teacher}}</dd>
+                                <!--<dd class="yx">已学5课时，剩余8课时</dd>-->
+                            </dl>
+                            <a style="display:none">立即购买</a>
+                        </li>
+                    </ol>
+                   {{/each}}
+                </script> 
+
+		</div>
+		
+		<div class="clear"></div>
+		<div id="footerHtml"></div>
+		
+	</body>
+</html>

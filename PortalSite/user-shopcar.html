@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>用户中心</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/shopcar.css" />
+        <script src="scripts/jquery-1.11.0.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/html5shiv.js"></script>
+        <script src="scripts/jquery.tmpl.min.js"></script>
+        <script src="scripts/jquery.tmplplus.min.js"></script>
+        <script src="appjs/orderlogic.js"></script>
+	</head>
+	<body>
+		<div id="headerHtml"></div>
+		<div class="clear"></div>
+		<div class="user-center" id="user-centerHtml">
+			<!--<div class="user-center-top">
+				<div class="main">
+					<dl>
+						<dt class="fl">
+							<span>
+								<img src="img/user/pic-4.png" />
+							</span>
+						</dt>
+						<dd class="username">
+							聪聪龙内部测试账号
+						</dd>
+						<dd class="ljlearn">
+							累计学习<a>2</a>小时
+						</dd>
+						<dd>
+							这家伙很懒什么都没留下
+						</dd>
+					</dl>
+				</div>
+			</div>-->
+		</div>
+		<div class="user-subnav main">
+			<dl class="fl nav">
+				<dt>
+					账号管理
+				</dt>
+				<dd>
+					<a href="user.html">个人信息</a>
+				</dd>
+				<dt>
+					课程
+				</dt>
+				<dd>
+					<a href="user-class.html">我的课程</a>
+				</dd>
+				<dd>
+					<a href="user-favor.html">我的收藏</a>
+				</dd>
+				<!--<dd>
+					<a>最近学习</a>
+				</dd>-->
+				<dt>
+					支付中心
+				</dt>
+				<dd>
+					<a class="active" href="user-shopcar.html">购物车</a>
+				</dd>
+				
+				<dd>
+					<a href="user-payfirst.html">我的订单</a>
+				</dd>
+			</dl>
+			<div class="user-msg" otype="shopcart">
+				<p class="title">
+					购物车
+				</p>
+				<ol>
+					<li class="cartitle">
+						<span class="qx"><i class="on"></i>全选</span>
+						<span class="kc">课程</span>
+						<span class="je">金额</span>
+						<span class="cz">操作</span>
+					</li>
+                </ol>
+                <ol id="shop_cart"></ol>
+                <script type="text/x-jquery-tmpl" id="shop_cart_list">
+                    {{each(i,order) data}}
+                    <li class="list">
+                        <span class="qx"><i class="on" oid={{= order.orderno}} oprice={{= order.s_price}}></i></span>
+                        <span class="kc">
+                            <img src="img/user/pic-12.png" class="fl" />
+                            <b>{{= order.ordername}}<br />{{= order.customername}}</b>
+                        </span>
+                        <span class="je">¥：{{= order.s_price}}</span>
+                        <span class="cz"><a>x</a></span>
+                    </li>
+                    {{/each}}
+                </script>
+                    <script>
+                        $(function () {
+                            $(".cartitle .qx i").click(function () {
+                                if ($(this).hasClass("on")) {
+                                    $(this).removeClass("on")
+                                    $(".list i").removeClass("on")
+                                } else {
+                                    $(".list i").addClass("on")
+                                    $(this).addClass("on")
+                                }
+                            })
+                            $(".list i").click(function () {
+                                if ($(this).hasClass("on")) {
+                                    $(this).removeClass("on")
+                                } else {
+                                    $(this).addClass("on")
+                                }
+                            })
+                            $("span.cz a").click(function () {
+                                $(this).parents("span").parents("li.list").remove()
+                            })
+                        })
+                    </script>
+                    <div class="js">总计:<i id="totalmoney">¥：</i><a href="#" id="pay_to">结算</a></div>
+</div>
+		</div>
+		
+		<div class="clear"></div>
+		<div id="footerHtml"></div>
+		
+	</body>
+</html>

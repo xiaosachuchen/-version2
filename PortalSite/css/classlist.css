@@ -1,0 +1,242 @@
+.seach{
+	margin-top: 10px;
+}
+.seach dt{
+	text-align: center;
+}
+.seach dd input{
+	width: 850px;
+	height: 44px;
+	border: 1px solid #75b038;
+	line-height: 44px;
+	font-size: 14px;
+	color: #b4b5b3;
+	background: url(../img/icon-1.png) no-repeat 10px  10px;
+	text-indent: 4em;
+}
+.seach dd a{
+	width: 142px;
+	height: 49px;
+	line-height: 44px;
+	text-align: center;
+	color: white;
+	background: #75b038;
+	font-size: 18px;
+}
+.subnav{
+	margin-top: 20px;
+	background: url(../img/pic-2.png) no-repeat center center;
+	width: 1001px;
+	height: 147px;
+}
+.subnav ol,.subnav ul{
+	display: inline-block;
+}
+.subnav ul{
+	float: left;
+}
+.subnav ul li a{
+	height: 46px;
+	line-height: 46px;
+	font-size: 16px;
+	color: #333333;
+	margin-left: 2px;
+	width: 80px;
+	width: 166px;
+	margin-top: 2px;
+	text-align: center;
+}
+.subnav ul li a.hover{
+	color: white;
+	background:#8bc43f url(../img/pic-3.png) no-repeat right center;
+}
+.subnav ol{
+	margin-left: 20px;
+	margin-top: 5px;
+	display: none;
+}
+.subnav ol.show{
+	display: inline-block;
+}
+.subnav ol li{
+	margin-top: 16px;
+	font-size: 16px;
+}
+.subnav ol li a{
+	margin: 0 10px;
+	padding:5px;
+}
+.subnav ol li a.hover{
+	color: white;
+	background: #8bc43f;
+}
+.subnav ol li a.more{
+	color:#8bc43f;
+}
+.subnav ol li a.more:hover{
+	background: none;
+	color: #8bc43f;
+}
+.subnav ol li.jcbb{
+	position: relative;
+}
+.subnav ol li.jcbb p{
+	position: absolute;
+	width: 825px;
+	background: #fefefe;
+	right: -148px;
+	top: 28px;
+	border: 1px solid #80B55B;
+	border-top: 0;
+	overflow-y: auto;
+	display: none;
+	max-height: 120px;
+	padding-bottom: 10px;
+}
+.clwrap{
+	background: #f4f5f7;
+	margin-top: 10px;
+}
+.clwrap p.title{
+	height: 56px;
+	line-height: 56px;
+}
+.clwrap p.title a{
+	font-size: 14px;
+	margin-right: 20px;
+}
+.clwrap p.title a.active{
+	color: #8BC43F;
+}
+.clwrap .clwrap-topa .clwrap-topal{
+	width: 226px;
+	height: 480px;
+	background: white;
+	border: 1px solid #f0f2f4;
+}
+.clwrap .clwrap-topa .clwrap-topal dl dt{
+	font-size: 14px;
+	width: 186px;
+	margin:16px auto ;
+}
+.clwrap .clwrap-topa .clwrap-topal dl dd{
+	font-size: 12px;
+	width: 186px;
+	margin: auto;
+	border-bottom: 1px solid #dddddd;
+	padding-bottom: 20px;
+}
+.clwrap .clwrap-topa .clwrap-topal dl dd span{
+	float: right;
+	color: #80B55B;
+}
+.clwrap .clwrap-topa .clwrap-topal dl dd.play{
+	display: none;
+	border: none;
+	padding: 0;
+}
+.clwrap .clwrap-topa .clwrap-topal dl.active{
+	height: 205px;
+	background: url(../img/classlist/pic-3.png) no-repeat top center;
+}
+.clwrap .clwrap-topa .clwrap-topal dl.active dt{
+	font-size: 24px;
+	font-weight: bold;
+	color: white;
+	padding-top: 30px;
+	margin-top: 0;
+}
+.clwrap .clwrap-topa .clwrap-topal dl.active dd{
+	border: none;
+}
+.clwrap .clwrap-topa .clwrap-topal dl.active dd.play{
+	display: block;
+	height: 104px;
+	text-align: center;
+	line-height: 104px;
+	padding: 0;
+}
+.clwrap-topar ol li{
+	text-align: center;
+}
+.clwrap-topar ol li dl{
+	float: left;
+	width: 226px;
+	height: 229px;
+	display: inline-block;
+	background: white;
+	border: 1px solid #DDDDDD;
+	text-align: left;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+.clwrap-topar ol li dl.mglr{
+	margin-left: 32px;
+	margin-right: 32px;
+}
+.clwrap-topar ol li dl dt{
+	height: 38px;
+	line-height: 38px;
+	width: 194px;
+	margin: auto;
+}
+.clwrap-topar ol li dl dd{
+	width: 194px;
+	margin: auto;
+	line-height: 30px;
+	font-size: 12px;
+}
+.clwrap-topar ol li dl dd a{
+	float: right;
+	margin-right: 10px;
+	margin-top: 3px;
+}
+.clwrap-topar ol li dl dd.detls{
+	width: 100%;
+	position: relative;
+}
+.clwrap-topar ol li dl dd.detls span{
+	/* display: none; */
+}
+.clwrap-topar ol li dl.active dd.detls b{
+	display: inline-block;
+	background: url(../img/classlist/babg.png);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 226px;
+	height: 148px;
+}
+.clwrap-topar ol li dl.active dd.detls span{
+	position: absolute;
+	width: 160px;
+	height: 60px;
+	display: inline-block;
+	line-height: 24px;
+	color: white;
+	top: 42px;
+	left: 28px;
+	font-size: 12px;
+	z-index: 2;
+}
+.clwrap-topar ol li dl.active dd.detls img.show{
+	display: inline-block;
+}
+
+.pages{
+	padding: 50px 0;
+	text-align: center;
+}
+.pages a{
+	margin: 0 4px;
+	text-align: center;
+	line-height: 23px;
+}
+.pages a.num{
+	width: 23px;
+	height: 23px;
+}
+.pages a.num.active{
+	color: white;
+	background: url(../img/classlist/pic-7.png);
+}

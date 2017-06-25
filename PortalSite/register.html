@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/register.css" />
+        <script src="scripts/jquery-1.11.0.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/html5shiv.js"></script>
+        <script src="scripts/jquery.tmpl.min.js"></script>
+        <script src="scripts/jquery.tmplplus.min.js"></script>
+        <script src="appjs/userlogic.js"></script>
+		<script>
+      
+			$(function(){
+				$("dd").hover(function(){
+					$(this).children("input").toggleClass("active");
+					$(this).siblings("dd").children("input").removeClass("active")
+				})
+				
+			})
+		</script>
+	</head>
+	<body>
+		<div id="headerHtml"></div>
+		<div class="clear"></div>
+		
+		<section>
+			<div class="main2">
+
+				<div class="register">
+                        <p class="title">
+                            <a class="active"><span>1</span>注册</a>
+                            <a class="active"><span>2</span>填写账号信息</a>
+                            <a><span>3</span>注册成功</a>
+                        </p>
+                        <dl class="registerwrap">
+                            <dd>
+                                <label>手机号：</label>
+                                <input type="text" placeholder="请输入手机号" id="phone"/>
+                            </dd>
+                            <dd class="msgcode">
+                                <label>短信码：</label>
+                                <input type="text" placeholder="请输入短信验证码" style="width: 165px;" id="yzmcode"/>
+                                <!--<a id="getcode" >获取短信验证码</a>-->
+                                <input type="button" value="获取验证码" id="send_code" class="send_code" onclick="settime(this)"/>
+                            </dd>
+                            <dd>
+                                <label>密码：</label>
+                                <input type="password" placeholder="至少六位密码" id="passwd"/>
+                            </dd>
+                            <dd>
+                                <label>确认密码：</label>
+                                <input type="password" placeholder="请输入确认密码" id="repasswd"/>
+                            </dd>
+                            <dd class="zcxy">
+                                <label></label>
+                                <i class="active"></i>
+                                我接受并同意<a>用户服务条款</a>
+                            </dd>
+                            <dd class="submit">
+                                <label></label>
+                                <a href="#" id="register">立即注册</a>
+                            </dd>
+                            <dd class="tips">
+                                <!--<span class="fr">如果收不到短信，请使用<a>邮箱注册</a></span>-->
+                            </dd>
+                        </dl>
+                     </div>
+			</div>
+		</section>
+		<div id="footerHtml"></div>
+		
+		
+		
+		
+	</body>
+</html>

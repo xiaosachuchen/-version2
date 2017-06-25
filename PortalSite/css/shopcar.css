@@ -1,0 +1,81 @@
+.user-msg ol{
+	border: 1px solid #D9DDE0;
+	margin-top: 20px;
+}
+.user-msg ol li{
+	width: 700px;
+	margin: auto;
+}
+.user-msg ol li.cartitle{
+	height: 58px;
+	line-height: 58px;
+	border-bottom: 1px solid #D9DDE0;
+}
+.user-msg ol li span{
+	display: inline-block;
+	text-align: center;
+}
+.user-msg ol li span.qx{
+	width: 80px;
+}
+.user-msg ol li span.kc{
+	width: 416px;
+	text-align: left;
+}
+.user-msg ol li span.je{
+	width: 80px;
+}
+.user-msg ol li span.cz{
+	width: 80px;
+}
+.user-msg ol li span.qx i{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin-right: 12px;
+	background: url(../img/user/pic-11.png) no-repeat center center;
+}
+.user-msg ol li span.qx i.on{
+	background: url(../img/user/pic-10.png) no-repeat center center;
+}
+.user-msg ol li.list{
+	padding: 20px 0;
+	margin-top: 20px;
+}
+.user-msg ol li.list span.kc img{
+	vertical-align: middle;
+	margin-right: 20px;
+	margin-top: -18px;
+}
+.user-msg ol li.list span.kc b{
+	font-size: 14px;
+	font-weight: normal;
+	vertical-align: middle;
+	margin-top: 20px;
+	display: inline;
+}
+.user-msg ol li.list span.je{
+	color: #75B038;
+}
+.user-msg ol li.list span.cz a{
+	color: #75B038;
+}
+.user-msg .js{
+	float: right;
+	margin-top: 30px;
+	font-size: 14px;
+}
+.user-msg .js i{
+	font-style: normal;
+	color: #75B038;
+}
+.user-msg .js a{
+	width: 113px;
+	height: 52px;
+	text-align: center;
+	line-height: 52px;
+	color: white;
+	font-size: 20px;
+	margin-left: 20px;
+	background: url(../img/user/pic-13.png) no-repeat center center;
+}

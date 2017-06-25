@@ -1,0 +1,285 @@
+.main{
+	width: 996px;
+	margin: auto;
+}
+.main2{
+	width: 1192px;
+	margin: auto;
+	font-family: "微软雅黑";
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clear{
+	clear: both;
+}
+a{
+	color: #333333;
+	font-size: 14px;
+	cursor: pointer;
+	display: inline-block;
+	text-decoration: none;
+}
+ul li,ol li{
+	list-style: none;
+}
+header{
+	height: 90px;
+	line-height: 90px;
+}
+header a{
+	margin: 0 10px;
+	font-size: 16px;
+}
+
+
+header{
+	height: 105px;
+	line-height: 105px;
+	text-align: center;
+}
+header .main2{
+	position: relative;
+}
+header a.fl{
+	margin-top: 10px;
+}
+header span.seach{
+	display: inline-block;
+	position: relative;
+	width: 645px;
+}
+header span.seach input{
+	width: 624px;
+	height: 41px;
+	line-height: 41px;
+	border: 2px solid #75b038;
+	font-size: 14px;
+	color: #B4B5B3;
+	text-indent: 40px;
+	background: url(../img/icon-1.png) no-repeat 10px 10px;
+}
+header span.seach a{
+	width: 138px;
+	height: 44px;
+	border: 2px solid #75b038;
+	color: white;
+	background: #75b038;
+	font-size:18px;
+	line-height: 44px;
+	vertical-align: middle;
+	position: absolute;
+	right: 0;
+	top:30px;
+}
+
+header a.fr img{
+	vertical-align: middle;
+	margin-right: 5px;
+}
+header ul{
+	position: absolute;
+	right: 0;
+	background: url(../img/classlist/pic-17.png) no-repeat top center;
+	width: 127px;
+	height: 92px;
+	line-height: 45px;
+	text-align: center;
+	font-size: 14px;
+	overflow: hidden;
+	top: 70px;
+	display: none;
+}
+header ul li{
+	width: 90%;
+	margin: auto;
+	border-bottom: 1px solid #DDDDDD;
+}
+footer{
+	height: 208px;
+	text-align: center;
+	background: white;
+}
+footer dl{
+	width: 100%;
+	padding-top: 20px;
+}
+footer dl dt{
+	color: #636d59;
+	font-size: 18px;
+	font-weight: bold;
+}
+footer dl dd{
+	margin: 20px auto;
+}
+footer dl dd:nth-child(2) a,footer dl dd:nth-child(2){
+	color:#667754;
+	font-size: 14px;
+}
+footer dl dd:nth-child(3) a,footer dl dd:nth-child(3){
+	color:#88957b;
+	font-size: 12px;
+}
+footer dl dd:nth-child(4) a,footer dl dd:nth-child(4){
+	margin-top: 40px;
+	color: #acb89f;
+	font-size: 12px;
+}
+footer dl dd:nth-child(4){
+	border-top: 1px solid #e3e7e0;
+}
+.tc{
+	display: none;
+	overflow: hidden;
+}
+.tc-window{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	background: url(../img/tcbg.png);
+}
+.tc-wrap{
+	width: 800px;
+	height: 600px;
+	position: fixed;
+	z-index: 9;
+	top: 50%;
+	left: 50%;
+	margin-top: -300px;
+	margin-left: -400px;
+	background: white;
+}
+.tc-wrap dl{
+	width: 90%;
+	margin: auto;	
+}
+.tc-wrap dl dt{
+	font-size: 24px;
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px solid #DDDDDD;
+}
+.tc-wrap dl dd{
+	margin: 20px 0;
+}
+.tc-wrap dl dd span{
+	color: #00B558;
+	margin: 0 10px;
+}
+.tc-wrap dl dd b{
+	font-weight: normal;
+	color: #00B558;
+	margin: 0 10px;
+}
+.tc-wrap dl dd ol{
+	width: 90%;
+	margin:20px auto;
+	height: 406px;
+	overflow-y: auto;
+}
+.tc-wrap dl dd ol li img{
+	vertical-align: middle;
+}
+.tc-wrap dl dd ol li{
+	margin-bottom: 20px;
+}
+.tc-wrap dl dd a{
+	float: right;
+	display: inline-block;
+	padding: 10px 20px;
+	font-size: 14px;
+	color: white;
+	background: #80B55B;
+	margin-right: 10px;
+	border-radius: 5px;
+}
+.user-center{
+	background: url(../img/user/pic-2.png) no-repeat center center;
+	background-size: 100%;
+	height: 220px;
+}
+.user-center-top{
+	background: url(../img/user/pic-1.png) no-repeat center center;
+	background-size: 100%;
+	height: 220px;
+}
+.user-center-top dl dt{
+	margin-left: 20px;
+	margin-top: 50px;
+	margin-right: 40px;
+}
+.user-center-top dl dt span{
+	display: inline-block;
+	background: url(../img/user/pic-3.png) no-repeat center center;
+	width: 95px;
+	height: 95px;
+	text-align: center;
+	line-height: 95px;
+}
+.user-center-top dl dt span img{
+	vertical-align: middle;
+	margin-top: -3px;
+}
+.user-center-top dl dd{
+	color: white;
+	line-height: 30px;
+	font-size: 14px;
+}
+.user-center-top dl dd.username{
+	font-size: 24px;
+	padding-top: 52px;
+}
+.user-center-top dl dd.ljlearn{
+	background: url(../img/user/pic-5.png) no-repeat 154px center;
+	text-indent: 18px;
+}
+.user-center-top dl dd.ljlearn a{
+	color: #7ea54c;
+	text-indent: 0;
+}
+.user-subnav{
+	margin-top:20px;
+}
+.user-subnav dl.nav{
+	width: 216px;
+	padding: 12px 0;
+	background: #f8f8fa;
+}
+.user-subnav dl.nav dt{
+	width: 194px;
+	margin: auto;
+	font-size: 18px;
+	line-height: 40px;
+	border-bottom: 1px solid #d9dce1;
+	padding-top: 10px;
+}
+.user-subnav dl.nav dd{
+	font-size: 14px;
+	line-height: 30px;
+	margin: 5px auto;
+}
+.user-subnav dl.nav dd a{
+	height: 30px;
+	width: 100%;
+	text-indent: 2em;
+}
+.user-subnav dl.nav dd a.active{
+	color: white;
+	background: #7EA54C;
+	color: white;
+}
+.user-msg{
+	width: 756px;
+	float: right;
+}
+.user-msg p.title{
+	line-height: 40px;
+	font-size: 20px;
+	border-bottom: 1px solid #D9DCE1;
+}

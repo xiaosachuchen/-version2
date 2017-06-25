@@ -1,0 +1,283 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.RIPSP.BaseController</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.RIPSP.BaseController.AccountController">
+            <summary>
+            管理员基础账号Controller
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseController.AccountController.Login(Microsoft.RIPSP.Model.LoginModel)">
+            <summary>
+            管理员登录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseController.AccountController.GetVerificationImg(System.Int32,System.Int32)">
+            <summary>
+            获取验证码图像
+            </summary>
+            <param name="w"></param>
+            <param name="h"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseController.AccountController.GetLoginManager">
+            <summary>
+            获取登录管理员信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseController.AccountController.ManagerLogout">
+            <summary>
+            管理员注销登录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseController.AccountController.GetMenuTree">
+            <summary>
+            获取管理员菜单树
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseController.AccountController.PostManagerPsswd(Microsoft.RIPSP.Model.ChangePasswordModel)">
+            <summary>
+            管理员修改登录密码
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseController.AccountController.GetManagerInfo">
+            <summary>
+            获取管理员信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseController.AccountController.PostManagerInfo(Microsoft.RIPSP.Model.base_managers)">
+            <summary>
+            管理员修改信息
+            </summary>
+            <param name="manager"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Microsoft.RIPSP.BaseController.BaseController">
+            <summary>
+            基础控制器，需要被所有控制器继承
+            </summary>
+        </member>
+        <member name="P:Microsoft.RIPSP.BaseController.BaseController.LoginUserData">
+            <summary>
+            登录用户信息
+            </summary>
+        </member>
+        <member name="P:Microsoft.RIPSP.BaseController.BaseController.UserIP">
+            <summary>
+            获取用户IP地址
+            </summary>
+        </member>
+        <member name="P:Microsoft.RIPSP.BaseController.BaseController.CheckRoleMenu">
+            <summary>
+            检测用户是否具有菜单权限
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseController.BaseController.WriteSysLog(System.Int32,System.String)">
+            <summary>
+            记录操作日志
+            </summary>
+            <param name="logtype">类型[-1:删除数据;0:添加数据;1:修改数据;2:登录]</param>
+            <param name="logcontent">日志内容</param>
+        </member>
+        <member name="T:Microsoft.RIPSP.BaseController.BasicAuthenticationAttribute">
+            <summary>
+            基本验证Attribtue，用以Action的权限处理
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseController.BasicAuthenticationAttribute.OnActionExecuting(System.Web.Http.Controllers.HttpActionContext)">
+            <summary>  
+            检查用户是否有该Action执行的操作权限  
+            </summary>  
+            <param name="actionContext"></param>  
+        </member>
+        <member name="T:Microsoft.RIPSP.BaseController.GlobalFileController">
+            <summary>
+            全局文件 上传/下载Controller
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseController.GlobalFileController.FileUpload">
+            <summary>
+            上传文件
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Microsoft.RIPSP.BaseController.OptionsController">
+            <summary>
+            基本选项Controller
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseController.OptionsController.GetDicsOptionsByDicType(System.String,System.Boolean)">
+            <summary>
+            获取字典值的选项
+            </summary>
+            <param name="dicType">字典类型，传空返回字典类型列表</param>
+            <param name="WithNone">添加--请选择--项</param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseController.OptionsController.GetClassTreeOptionsByParent(System.Int32,System.Boolean)">
+            <summary>
+            获取分类树选项
+            </summary>
+            <param name="parentID">分类父ID</param>
+             <param name="WithNone">添加--请选择--项</param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseController.OptionsController.GetRolesOptionsByRoleGroup(System.Int32,System.Boolean)">
+            <summary>
+            获取角色选项
+            </summary>
+            <param name="roleGroup">角色组类型，传0返回所有角色</param>
+            <param name="WithNone">添加--请选择--项</param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseController.OptionsController.GetManagersOptionsByRole(System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            获取管理员选项 角色
+            </summary>
+            <param name="roleId">角色id，传0返回所有管理员</param>
+            <param name="orgId">机构id，传0为平台管理员，传-1为所有管理员</param>
+            <param name="WithNone">添加--请选择--项</param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseController.OptionsController.GetManagersOptionsByRoleGroup(System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            获取管理员选项 角色组
+            </summary>
+            <param name="roleGroup">角色组id</param>
+            <param name="orgId">机构id，传0为平台管理员，传-1为所有管理员</param>
+            <param name="WithNone">添加--请选择--项</param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseController.OptionsController.GetMenuTreeOptionsByRole(System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            获取菜单树选项
+            </summary>
+            <param name="userId">管理员编号</param>
+            <param name="roleId">角色编号</param>
+            <param name="WithNone">添加--请选择--项</param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseController.OptionsController.GetItemTreeOptionsByParent(System.Int32,System.Boolean)">
+            <summary>
+            获取栏目树选项
+            </summary>
+            <param name="parentId">栏目编号，传0返回所有</param>
+            <param name="WithNone">添加--请选择--项</param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseController.OptionsController.GetOrgOptions(System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            获取机构列表选项,分页
+            </summary>
+            <param name="page">当前页码，传0不分页</param>
+            <param name="rows">每页条数</param>
+            <param name="WithNone"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseController.OptionsController.GetCustomerOptions(System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            获取客户列表选项
+            </summary>
+            <param name="page">当前页码，传0不分页</param>
+            <param name="rows">每页条数</param>
+            <param name="WithNone">添加--请选择--项</param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseController.OptionsController.GetUserOptionsByCustomer(System.Int32,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            获取用户选项列表 客户
+            </summary>
+            <param name="customerId">客户编号，传0为平台用户，传-1为所有用户</param>
+            <param name="page">当前页码，传0不分页</param>
+            <param name="rows">每页条数</param>
+            <param name="WithNone">添加--请选择--项</param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseController.OptionsController.GetServiceOptions(System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            获取服务选项
+            </summary>
+            <param name="customerId">客户编号</param>
+            <param name="status">服务状态</param>
+            <param name="page"></param>
+            <param name="rows"></param>
+            <param name="WithNone"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseController.OptionsController.GetResourceDBOptionsByManager(System.Int32,System.Int32,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            获取资源库选项
+            </summary>
+            <param name="coltype">值字段：传0 取id，传1 取库英文名</param>
+            <param name="userid">管理员编号,传0所有</param>
+            <param name="isAll">是否所有，如果所有，userid 下的选中</param>
+            <param name="isTopic">是否专题库</param>
+            <param name="WithNone">添加--请选择--项</param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseController.OptionsController.GetMetaOptionsByDataLibrarys(System.Int32,System.String,System.Boolean)">
+            <summary>
+            获取库字段
+            </summary>
+            <param name="dbid">资源库id</param>
+            <param name="dbname">资源库标识</param>
+            <param name="WithNone"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseController.OptionsController.GetLibraryNexusResourceOptions(System.String,System.Int32,System.String,System.Boolean)">
+            <summary>
+            获取资源库关联字段选项值
+            </summary>
+            <param name="colname">选项字段名</param>
+            <param name="dbid">资源库id</param>
+            <param name="dbname">资源库标识</param>
+            <param name="WithNone"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseController.OptionsController.GetShopTableDataList(System.String,System.Int32,System.Int32,System.String)">
+            <summary>
+            获取商品库商品列表
+            </summary>
+            <param name="dbname">库英文名称</param>
+            <param name="offset"></param>
+            <param name="limit"></param>
+            <param name="querystr">查询表达式</param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseController.OptionsController.PutShopPrices(System.String,Microsoft.RIPSP.Model.chosen_shopinfo)">
+            <summary>
+            更新商品价格
+            </summary>
+            <param name="dbname">商品库名称</param>
+            <param name="info">商品信息【seqid,m_stock，m_price，m_discount】</param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseController.OptionsController.UpdateDataSorts(Microsoft.RIPSP.Model.SortModel)">
+            <summary>
+            更新排序
+            </summary>
+            <param name="id"></param>
+            <param name="sort"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseController.OptionsController.ExistsName(Microsoft.RIPSP.Model.ExistsNameModel)">
+            <summary>
+            检测字段值重复
+            </summary>
+            <param name="ExistsNameModel.tablename.tablename">表名称</param>
+            <param name="ExistsNameModel.idfield.idfield">编号字段名</param>
+            <param name="ExistsNameModel.idvalue.idvalue">编号字段值</param>
+            <param name="ExistsNameModel.datafield.datafield">数据字段名</param>
+            <param name="ExistsNameModel.datavalue.datavalue">数据字段值</param>
+            <returns>[true:重复；false：未重复]</returns>
+        </member>
+    </members>
+</doc>

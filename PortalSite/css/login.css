@@ -1,0 +1,97 @@
+section{
+	height: 618px;
+	width: 100%;
+	background: url(../img/login/pic-1.png) no-repeat center center;
+	background-size: cover;
+}
+section img.fl{
+	vertical-align: middle;
+	margin-top: 80px;
+}
+section dl{
+	width: 447px;
+	height: 463px;
+	margin-top: 100px;
+	text-align: center;
+	background: url(../img/login/pic-3.png) no-repeat center center;
+}
+section dl dt{
+	margin-top: 26px;
+	color: white;
+	font-size: 22px;
+	text-indent: 1em;
+	background: url(../img/login/icon-1.png) no-repeat 138px center;
+}
+section dl dd{
+	margin-top: 24px;
+	text-align: left;
+	width: 354px;
+	margin: auto;
+}
+section dl dd.login-username{
+	margin-top: 52px;
+	position: relative;
+}
+section dl dd.login-save{
+	position: relative;
+}
+section dl dd input{
+	text-indent: 48px;
+	border: none;
+	width: 354px;
+	height: 63px;
+	line-height: 63px;
+	font-size: 14px;
+	background: url(../img/login/pic-4.png) no-repeat left center;
+	color: #999999;
+}
+section dl dd input.active{
+	background: url(../img/login/pic-5.png) no-repeat left center;
+}
+section dl dd.login-username i{
+	width: 18px;
+	height: 22px;
+	display: inline-block;
+	position: absolute;
+	top: 23px;
+	left: 20px;
+	background: url(../img/login/icon-2.png) no-repeat center center;
+}
+section dl dd.login-save i{
+	width: 18px;
+	height: 22px;
+	display: inline-block;
+	position: absolute;
+	top: 23px;
+	left: 20px;
+	background: url(../img/login/icon-3.png) no-repeat center center;
+}
+section dl dd.login-login{
+	text-indent: 10px;
+	margin: 20px auto;
+	font-size: 14px;
+	color: #999999;
+}
+section dl dd.login-login i{
+	margin-right: 20px;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	vertical-align: middle;
+	background: url(../img/login/icon-4.png) no-repeat center center;
+}
+section dl dd.login-loginbtn a{
+	width: 343px;
+	height: 42px;
+	text-align: center;
+	line-height: 42px;
+	color: white;
+	background: #75B038;
+	font-size: 20px;
+	border-radius: 3px;
+} 
+section dl dd.login-reg a{
+	color: #666666;
+	font-size: 14px;
+	margin: 30px 10px 0 0;
+}

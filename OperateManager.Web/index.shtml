@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/nifty.min.css" rel="stylesheet">
+    <link href="/css/themify-icons/themify-icons.min.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet" />
+    <link href="/plugins/pace/pace.min.css" rel="stylesheet" />
+    <link href="/plugins/magic-check/css/magic-check.min.css" rel="stylesheet">
+    <link href="/plugins/webalert/css/jquery-webalert.css" rel="stylesheet" />
+    <script src="/scripts/jquery-2.2.4.min.js"></script>
+    <script src="/plugins/pace/pace.min.js"></script>
+    <script src="/scripts/bootstrap.min.js"></script>
+    <script src="/scripts/nifty.min.js"></script>
+    <script src="/plugins/webalert/js/jquery-webalert.js"></script>
+  
+    <script src="/js/login.js"></script>
+    <style>
+     #logincontent{
+        padding:0;position:absolute;
+		left:50%;
+		top:50%;
+		margin-top:-200px;
+		margin-left:10px;
+     }
+    </style>
+</head>
+
+<body>
+    <div id="container" class="cls-container">
+        <div id="bg-overlay" class="bg-img" style="background-image: url(/img/bg.jpg)"></div>
+        <!-- LOGIN FORM -->
+        <div id="logincontent" class="cls-content">
+            <div class="cls-content-sm panel">
+                <div class="panel-body">
+                    <div class="mar-ver pad-btm">
+                        <h3 class="h4 mar-no">管理登录</h3>
+                        <p class="text-muted">Sign In to your account</p>
+                    </div>
+                    <form onsubmit="return false;">
+                        <div class="form-group">
+                            <input name="loginname" type="text" class="form-control" placeholder="账号" autofocus>
+                        </div>
+                        <div class="form-group">
+                            <input name="loginpasswd" type="password" class="form-control" placeholder="密码" >
+                        </div>
+                        <div class="form-group verificationcode">
+                            <input name="code" type="text" class="form-control" placeholder="验证码"  >
+                            <img />
+                        </div>
+                        <!--<div class="checkbox pad-btm text-left">
+                            <input id="demo-form-checkbox" class="magic-checkbox" type="checkbox">
+                            <label for="demo-form-checkbox">Remember me</label>
+                        </div>-->                       
+                        <button class="btn btn-primary btn-lg btn-block" type="submit">登录</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

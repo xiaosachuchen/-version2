@@ -1,0 +1,179 @@
+.banner{
+	background: url(../img/classlist/pic-14.png) no-repeat top center;
+	background-size: cover;
+	height: 211px;
+	color: white;
+}
+.banner dl dt a{
+	color: white;
+	font-size: 14px;
+	line-height: 50px;
+}
+.banner dl dd h2{
+	font-size: 30px;
+	margin: 20px 0 40px;
+}
+.banner dl dd a{
+	background: url(../img/classlist/pic-8.png) no-repeat center center;
+	width: 143px;
+	height: 49px;
+	color: white;
+	font-size: 18px;
+	text-align: center;
+	line-height: 49px;
+	position: relative;
+}
+.banner dl dd a.dbgm b{
+	font-weight:normal;
+	position: absolute;
+	top: -30px;
+	right: 0;
+	display: inline-block;
+	width: 36px;
+	height: 26px;
+	background: url(../img/classlist/pic-9.png) no-repeat top center;
+	color: white;
+	text-align: center;
+	padding-top: 3px;
+	line-height: normal;
+	font-size: 12px;
+}
+.banner dl dd ol{
+	display: inline-block;
+	margin-left: 30px;
+	border-right: 1px solid white;
+	padding-right: 20px;
+	vertical-align: middle;
+}
+.banner dl dd ol li{
+	font-size: 14px;
+	line-height: 20px;
+}
+.details{
+	margin-top: 40px;
+}
+.details-left{
+	width: 768px;
+	float: left;
+}
+.details-left p.jj{
+	line-height: 30px;
+	font-size: 14px;
+}
+.details-left dt{
+	font-size: 16px;
+	padding: 30px 0;
+	border-bottom: 1px solid #DDDDDD;
+}
+.details-left dt span{
+	margin-left: 446px;
+	position: relative;
+	font-size: 12px;
+}
+.details-left dt span b{
+	font-weight:normal;
+	position: absolute;
+	top: -30px;
+	left: 0;
+	display: inline-block;
+	width: 36px;
+	height: 26px;
+	background: url(../img/classlist/pic-9.png) no-repeat top center;
+	color: white;
+	text-align: center;
+	padding-top: 3px;
+}
+.details-left dt span i{
+	color: #80B55B;
+	font-style: normal;
+}
+.details-left dt a.buy{
+	float: right;
+	background: url(../img/classlist/pic-10.png) no-repeat center center;
+	width: 82px;
+	height: 38px;
+	text-align: center;
+	color: white;
+	font-size: 14px;
+	line-height: 38px;
+}
+.details-left dd a.submit{
+	float: right;
+	background: url(../img/classlist/pic-10.png) no-repeat center center;
+	width: 82px;
+	height: 38px;
+	text-align: center;
+	color: white;
+	font-size: 14px;
+	line-height: 38px;
+	margin-top: 20px;
+	display: none;
+}
+.details-left dd ul{
+	border-bottom:1px solid #DDDDDD;
+	padding-bottom: 40px;
+}
+.details-left dd ul li{
+	margin-top: 30px;
+	padding-left: 30px;
+}
+.details-left dd ul li.title{
+	background: url(../img/classlist/pic-13.png) no-repeat left top;
+	text-indent: 20px;
+	padding-left: 0;
+	padding-bottom: 5px;
+	cursor: pointer;
+}
+.details-left dd ul li.title.active{
+	background: url(../img/classlist/pic-11.png) no-repeat left top;
+}
+.details-left dd ul li.play-detail{
+	display: none;
+}
+.details-left dd ul li img{
+	margin-right: 10px;
+}
+.details-left dd ul li span{
+	color: red;
+	margin-right: 40px;
+}
+.details-left dd ul li i{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background: url(../img/user/pic-11.png) no-repeat center center;
+	vertical-align: middle;
+	margin-top: 3px;
+}
+.details-left dd ul li p{
+	color: #b6b6b6;
+}
+.details-left dd ul li i.active{
+	background: url(../img/user/pic-10.png) no-repeat center center;
+}
+.details-right{
+	width: 132px;
+	float: right;
+}
+.details-right dl{
+	padding-bottom: 40px;
+	border-bottom: 1px solid #DDDDDD;
+	width: 132px;
+}
+.details-right dl dt{
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+.details-right dl dd{
+	line-height: 30px;
+	font-size: 12px;
+}
+.details-right dl dd.jsjs{
+	width: 171px;
+	height: 190px;
+	padding-top: 30px;
+	padding: 30px 10px 36px;
+	background: url(../img/classlist/pic-15.png) no-repeat top center;
+}

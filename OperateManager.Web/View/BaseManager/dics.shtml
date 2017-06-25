@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字典管理</title>
+    <!--#include file="/headfiles.html"-->
+    <script src="../../plugins/fileinput/fileinput.min.js"></script>
+    <script src="../../plugins/fileinput/locales/zh.js"></script>
+    <link href="../../plugins/fileinput/fileinput.min.css" rel="stylesheet" />
+    <script src="/js/BaseManager/dics.js"></script>
+</head>
+<body>
+    <div id="container" class="effect aside-float aside-bright mainnav-lg">
+        <!--#include file="/header.html"-->
+        <div class="boxed">
+            <div id="content-container">
+                <div id="searchpanel" class="panel">
+                    <div class="panel-body">
+                        <div class="col-md-1">
+                            <label class="control-label" style="padding:6px;">字典类型：</label>
+                        </div>
+                        <div class="col-md-2">
+                            <select name="dictypes" class="form-control" placeholder="类型"></select>
+                        </div>
+                        <button class="btn btn-info" data-mark="AddType">
+                            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> 新增字典类型
+                        </button>
+                        <button class="btn btn-info" data-mark="DeleteType">
+                            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> 删除字典类型
+                        </button>
+                    </div>
+                </div>
+                <div id="page-title">
+                    <h1 class="page-header text-overflow">字典管理</h1>
+                </div>
+                <div id="page-content">
+
+
+                    <div class="panel">
+                        <div class="panel-body">
+                            <div id="toolbar" class="form-inline" style="width:800px;">
+                                <div class="col-md-5">
+                                    <button class="btn btn-info" data-mark="AddDice">
+                                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> 新增字典
+                                    </button>
+                                    <button class="btn btn-info" data-mark="EditDice">
+                                        <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> 修改字典
+                                    </button>
+                                    <button class="btn btn-info" data-mark="Delete">
+                                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> 删除字典
+                                    </button>
+                                </div>
+                            </div>
+                            <table id="TableData"></table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--#include file="/navmenu.html"-->
+        </div>
+        <!--#include file="/footer.html"-->
+    </div>
+    <!--字典类型modal-->
+    <div id="disctype_modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form id="edit_dictype" class="panel-body form-horizontal form-padding">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><i class="pci-cross pci-circle"></i></button>
+                        <h4 class="modal-title">添加字典类型</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="panel-body">
+                            <div class="form-group">
+                                <label class="col-md-2 control-label">字典类型</label>
+                                <div class="col-md-10">
+                                    <input name="dictype" type="text" class="form-control" placeholder="字典类型" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-2 control-label">字典类型名</label>
+                                <div class="col-md-10">
+                                    <input name="dictypename" type="text" class="form-control" placeholder="字典类型名" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关 闭</button>
+                        <button id="edit_dictype_sbtn" type="button" class="btn btn-primary" data-loading-text="数据提交中，请等待..." data-Validing-text="验 证" data-result-text="保 存" autocomplete="off">保 存</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--字典modal-->
+    <div id="edit_modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form id="edit_fm" class="panel-body form-horizontal form-padding">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><i class="pci-cross pci-circle"></i></button>
+                        <h4 class="modal-title" id="myModalName">字典管理</h4>
+                        <input type="hidden" id="myModalType" />
+                        <input type="hidden" id="myModalDiceId" />
+                        <input type="hidden" id="dictype" />
+                    </div>
+                    <div class="modal-body">
+                        <div class="panel-body">
+                            <div class="form-group">
+                                <label class="col-md-2 control-label">字典名</label>
+                                <div class="col-md-10">
+                                    <input name="dicname" type="text" class="form-control" placeholder="字典名" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-2 control-label">字典值</label>
+                                <div class="col-md-10">
+                                    <input name="dicvalue" type="text" class="form-control" placeholder="字典值" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-2 control-label">图标</label>
+                                <div class="col-md-10">
+                                    <input type="hidden" name="logourl" />
+                                    <input id="logourl_file" type="file" class="form-control" formtarget="logourl">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-2 control-label">标签</label>
+                                <div class="col-md-10">
+                                    <input name="tag" type="text" class="form-control" placeholder="标签" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-2 control-label">备注</label>
+                                <div class="col-md-10">
+                                    <textarea name="remarks" class="form-control" style="min-height:100px;"></textarea>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关 闭</button>
+                        <button id="edit_form_sbtn" type="button" class="btn btn-primary" data-loading-text="数据提交中，请等待..." data-Validing-text="验 证" data-result-text="保 存" autocomplete="off">保 存</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

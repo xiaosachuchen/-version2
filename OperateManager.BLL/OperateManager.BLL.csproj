@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CE8690B1-C4C3-4BFA-BF7C-4ACD0865324C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OperateManager.BLL</RootNamespace>
+    <AssemblyName>OperateManager.BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.RIPSP.BaseBLL">
+      <HintPath>..\QuoteDLL\Microsoft.RIPSP.BaseBLL.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.RIPSP.BaseDAL">
+      <HintPath>..\QuoteDLL\Microsoft.RIPSP.BaseDAL.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.RIPSP.BaseModel">
+      <HintPath>..\QuoteDLL\Microsoft.RIPSP.BaseModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseManager\classesBLL.cs" />
+    <Compile Include="BaseManager\customersBLL.cs" />
+    <Compile Include="BaseManager\dicsBLL.cs" />
+    <Compile Include="BaseManager\itemcontentsBLL.cs" />
+    <Compile Include="BaseManager\itemsBLL.cs" />
+    <Compile Include="BaseManager\itemtemplateBLL.cs" />
+    <Compile Include="BaseManager\managersBLL.cs" />
+    <Compile Include="BaseManager\menusBLL.cs" />
+    <Compile Include="BaseManager\organizationBLL.cs" />
+    <Compile Include="BaseManager\retrievalmentBll.cs" />
+    <Compile Include="BaseManager\rolesBLL.cs" />
+    <Compile Include="BaseManager\shopinfBLL.cs" />
+    <Compile Include="BaseManager\syslogsBLL.cs" />
+    <Compile Include="BaseManager\userlogsBLL.cs" />
+    <Compile Include="BaseManager\usersBLL.cs" />
+    <Compile Include="BaseManager\user_ipBLL.cs" />
+    <Compile Include="ChosenManager\favoritesBLL.cs" />
+    <Compile Include="ChosenManager\orderinfoBLL.cs" />
+    <Compile Include="ChosenManager\ordershopBLL.cs" />
+    <Compile Include="ChosenManager\servicecontBLL.cs" />
+    <Compile Include="ChosenManager\serviceinfoBLL.cs" />
+    <Compile Include="ChosenManager\servicepermitBLL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OperateManager.DAL\OperateManager.DAL.csproj">
+      <Project>{73D6C505-738A-48AE-BD64-AACD327968D7}</Project>
+      <Name>OperateManager.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OperateManager.Models\OperateManager.Models.csproj">
+      <Project>{FBDB11BD-AD46-495A-AD9B-A36C20B756EC}</Project>
+      <Name>OperateManager.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

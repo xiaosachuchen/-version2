@@ -1,0 +1,303 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.RIPSP.BaseBLL</name>
+    </assembly>
+    <members>
+        <member name="M:Microsoft.RIPSP.BaseBLL.AccountBLL.ManagerLogin(Microsoft.RIPSP.Model.LoginModel,System.String@)">
+            <summary>
+            管理员登录
+            </summary>
+            <param name="login"></param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseBLL.AccountBLL.GetRoleListByManager(System.Int32,System.String@)">
+            <summary>
+            获取管理员角色列表
+            </summary>
+            <param name="userid"></param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseBLL.AccountBLL.GetManagerMenuTree(System.Int32,System.String@)">
+            <summary>
+            获取管理员菜单列表
+            </summary>
+            <param name="userid"></param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Microsoft.RIPSP.BaseBLL.FreelyListCache">
+            <summary>
+            全局常用数据缓存
+            </summary>
+        </member>
+        <member name="P:Microsoft.RIPSP.BaseBLL.FreelyListCache.Cache_DicsList">
+            <summary>
+            字典缓存列表
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseBLL.FreelyListCache.CacheRemove(System.String,System.Int32)">
+            <summary>
+            清除指定缓存
+            </summary>
+            <param name="cachename">缓存名称[字典：Cache_DicsList  分类：Cache_ClassList  管理员菜单：UserMenus]</param>
+            <param name="userid">清除管理员菜单缓存时，传userid，其它缓存无需传</param>
+        </member>
+        <member name="P:Microsoft.RIPSP.BaseBLL.FreelyListCache.Cache_ClassList">
+            <summary>
+            分类缓存列表
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseBLL.FreelyListCache.GetUserMenus(System.Int32,System.String@)">
+            <summary>
+            管理员菜单缓存
+            </summary>
+            <param name="userid"></param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Microsoft.RIPSP.BaseBLL.GlobalCommonBLL">
+            <summary>
+            全局基本业务类
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseBLL.GlobalCommonBLL.WriteSysLog(Microsoft.RIPSP.Model.base_syslogs)">
+            <summary>
+            系统日志写入
+            </summary>
+            <param name="loginfo"></param>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseBLL.GlobalCommonBLL.GetDicOptions(System.String,System.String@)">
+            <summary>
+            获取字典选项，包含系统字典
+            </summary>
+            <param name="dicType">字典类型（区分大小写）</param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseBLL.GlobalCommonBLL.GetDicName(System.String,System.String)">
+            <summary>
+            获取字典值对应的名称
+            </summary>
+            <param name="dicType"></param>
+            <param name="dicValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseBLL.GlobalCommonBLL.GetDicNames(System.String,System.String)">
+            <summary>
+            获取字典值对应的名称 多值
+            </summary>
+            <param name="dicType"></param>
+            <param name="dicValues"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseBLL.GlobalCommonBLL.GetClassOptions(System.Int32,System.String@)">
+            <summary>
+            获取分类选项
+            </summary>
+            <param name="parentId"></param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseBLL.GlobalCommonBLL.GetClassName(System.Int32)">
+            <summary>
+            获取分类名称
+            </summary>
+            <param name="classid">分类编号</param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseBLL.GlobalCommonBLL.GetClassNames(System.String)">
+            <summary>
+            获取分类名称 多值
+            </summary>
+            <param name="classids"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseBLL.GlobalCommonBLL.GetSelNamesStr(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{Microsoft.RIPSP.Model.Options}})">
+            <summary>
+            获取值中文
+            </summary>
+            <param name="columnname"></param>
+            <param name="values"></param>
+            <param name="dicList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseBLL.GlobalCommonBLL.GetResourcesOptions(System.Int32,System.String,System.String,System.String@,System.String)">
+            <summary>
+            获取资源库数据下拉选项
+            </summary>
+            <param name="databaseId"></param>
+            <param name="databasename"></param>
+            <param name="textfield"></param>
+            <param name="idfield"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseBLL.GlobalCommonBLL.GetResourceDataName(System.String,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            获取资源库数据下拉选项 值名称
+            </summary>
+            <param name="value"></param>
+            <param name="databaseId"></param>
+            <param name="databasename"></param>
+            <param name="textfield"></param>
+            <param name="idfield"></param>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseBLL.GlobalCommonBLL.GetResourceDataNames(System.String,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            获取资源库数据下拉选项 值名称 多值
+            </summary>
+            <param name="value"></param>
+            <param name="databaseId"></param>
+            <param name="databasename"></param>
+            <param name="textfield"></param>
+            <param name="idfield"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseBLL.GlobalCommonBLL.GetManagersOptionsByRole(System.Int32,System.Int32,System.String@)">
+            <summary>
+            获取管理员选项 角色
+            </summary>
+            <param name="roleId"></param>
+            <param name="orgId"></param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseBLL.GlobalCommonBLL.GetManagersOptionsByRoleGroup(System.Int32,System.Int32,System.String@)">
+            <summary>
+            获取管理员选项 角色组
+            </summary>
+            <param name="roleGroup"></param>
+            <param name="orgId"></param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseBLL.GlobalCommonBLL.GetMenuTreeOptionsByRole(System.Int32,System.Int32,System.String@)">
+            <summary>
+            获取菜单树选项 角色
+            </summary>
+            <param name="userid"></param>
+            <param name="roleId"></param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseBLL.GlobalCommonBLL.GetItemTreeOptionsByParent(System.Int32,System.String@)">
+            <summary>
+            获取栏目树选项 
+            </summary>
+            <param name="parentId"></param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseBLL.GlobalCommonBLL.GetRolesOptionsByRoleGroup(System.Int32,System.String@)">
+            <summary>
+            获取角色选项  角色组
+            </summary>
+            <param name="roleGroup"></param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseBLL.GlobalCommonBLL.GetOrgOptions(System.Int32,System.Int32,System.Int32@,System.String@)">
+            <summary>
+            获取机构选项
+            </summary>
+            <param name="page"></param>
+            <param name="rows"></param>
+            <param name="total"></param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseBLL.GlobalCommonBLL.GetCustomerOptions(System.Int32,System.Int32,System.Int32@,System.String@)">
+            <summary>
+            获取客户选项
+            </summary>
+            <param name="page"></param>
+            <param name="rows"></param>
+            <param name="total"></param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseBLL.GlobalCommonBLL.GetUserOptionsByCustomer(System.Int32,System.Int32,System.Int32,System.Int32@,System.String@)">
+            <summary>
+            获取用户选项 客户
+            </summary>
+            <param name="customerId"></param>
+            <param name="page"></param>
+            <param name="rows"></param>
+            <param name="total"></param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseBLL.GlobalCommonBLL.GetResourceDBOptionsByManager(System.Int32,System.Int32,System.Boolean,System.Boolean,System.String@)">
+            <summary>
+            获取资源库
+            </summary>
+            <param name="coltype"></param>
+            <param name="userid"></param>
+            <param name="isAll"></param>
+            <param name="isTopic"></param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseBLL.GlobalCommonBLL.GetMetaOptionsByDataLibrarys(System.Int32,System.String,System.String@)">
+            <summary>
+            简单获取资源库字段选项
+            </summary>
+            <param name="dbid"></param>
+            <param name="dbname"></param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseBLL.GlobalCommonBLL.GetShopTableDataList(System.String,System.Collections.Generic.List{Microsoft.RIPSP.Model.QueryModel},System.Int32,System.Int32,System.Int32,System.Int32@,System.String@)">
+            <summary>
+            获取商品列表
+            </summary>
+            <param name="dbname"></param>
+            <param name="queryarr"></param>
+            <param name="orgid"></param>
+            <param name="offset"></param>
+            <param name="limit"></param>
+            <param name="total"></param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseBLL.GlobalCommonBLL.PutShopPrices(System.String,Microsoft.RIPSP.Model.chosen_shopinfo,System.String@)">
+            <summary>
+            更新商品价格
+            </summary>
+            <param name="dbname"></param>
+            <param name="info"></param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseBLL.GlobalCommonBLL.UpdateDataSorts(Microsoft.RIPSP.Model.SortModel,System.String@)">
+            <summary>
+            更新排序
+            </summary>
+            <param name="sort"></param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseBLL.GlobalCommonBLL.FormatFormParam">
+            <summary>
+            格式化Post的表单参数为键值对
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseBLL.GlobalCommonBLL.ExistsName(Microsoft.RIPSP.Model.ExistsNameModel,System.String@)">
+            <summary>
+            检测字段值重复
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseBLL.UpdateItemContentBLL.GetItemMetaOptions(System.Type,System.String@)">
+            <summary>
+            获取模型的属性选项
+            </summary>
+            <param name="modeltype">模型类型</param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

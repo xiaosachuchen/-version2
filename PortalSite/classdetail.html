@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>用户中心</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/classdetail.css" />
+        <script src="scripts/jquery-1.11.0.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/html5shiv.js"></script>
+        <script src="scripts/jquery.tmpl.min.js"></script>
+        <script src="scripts/jquery.tmplplus.min.js"></script>
+        <script src="appjs/classdetail.js"></script>
+	</head>
+	<body>
+		<div id="headerHtml"></div>
+		<div class="clear"></div>
+		<div class="banner" id="course_basic_hold">
+            <script type="text/x-jquery-tmpl" id="course_basic">
+			<dl class="main" >
+				<dt>
+					<a>课程</a>\
+					<a>{{= data.grade}}</a>\
+					<a>{{= data.subject}}</a>\
+					<a>{{= data.press}}</a>\
+					<a>{{= data.title}}</a>
+				</dt>
+				<dd>
+					<h2>{{= data.title}}</h2>
+				</dd>
+				<dd>
+					<a class="jrsc" style="position: relative;">加入收藏
+						<!--<span style="position: absolute;left: 25px; top: -40px; color: #80B55B;font-size: 16px;display: none;">加入收藏成功</span>-->
+					</a>
+					<a class="dbgm">打包购买<b>优惠</b></a>
+					<ol>
+						<li>学习人数</li>
+						<li>10000</li>
+					</ol>
+					<ol>
+						<li>课程总时长</li>
+						<li>{{= data.time}}</li>
+					</ol>
+					<ol style="border: none;">
+						<li>难度级别</li>
+						<li>1级</li>
+					</ol>
+				</dd>
+			</dl>
+            </script>
+		</div>
+		
+		<div class="details main">
+			<div class="details-left" >
+				<p class="jj" id="course_abstract">
+                    <script type="text/x-jquery-tmpl" id="course_abstract_info">
+                        {{= data.abstracts}}
+                    </script>
+                        <!--简介： 英语中有些动词的过去式(通常也是过去分词)与另一些动词的现在式相同,因此学生常常会把它们搞错。现
+                        将这些常见的容易使学生搞混的词汇编在一起,用练习形式供学生对比。-->
+</p>
+				<dl>
+					<dt>
+						课程
+						<!--<span><b>优惠</b>打包购买(<i>2个视频¥:180.00</i>)</span>-->
+						<a class="buy">购买</a>
+						<script>
+							$(function(){
+								$("a.buy").click(function(){
+									$(".details-left ul li.title").addClass("active")
+									$(".details-left ul li.play-detail").show()
+									$("a.submit").show()
+								})
+								$(".details-left ul li.play-detail i").click(function () {
+								    //alert("sss");
+									if($(this).hasClass("active")){
+										$(this).removeClass("active")
+									}else{
+										$(this).addClass("active")
+									}
+								})
+							
+							})
+						</script>
+					</dt>
+                    <dd id="video_container"></dd>
+                        <script type="text/x-jquery-tmpl" id="video_container_list">
+                            {{each(i,video) data}}
+                            <ul>
+                                <li class="title">{{= video.title}}</li>
+                                <li class="play-detail" vid={{= video.seqid}}>
+                                    <img src="img/classlist/pic-12.png" class="fl" vid={{= video.seqid}} />
+                                    <p>
+                                        1.词形易混淆动词专练
+                                        <br />
+                                        2.十组容易混淆动词的区别
+                                    </p>
+                                    <i class="fr active" vid={{= video.seqid}} sprise={{= video.s_price}} vtitle={{= video.title}}></i>
+                                    <span class="fr">价格:¥：{{= video.s_price}}</span>
+                                </li>
+                                <li class="clear"></li>
+                            </ul>
+                            {{/each}}
+                        </script>
+						<!--<ul>
+							<li class="title">课程(一):易混淆动词词组</li>
+							<li class="play-detail">
+								<img src="img/classlist/pic-12.png" class="fl" />
+								<p>
+									1.词形易混淆动词专练
+									<br />
+									2.十组容易混淆动词的区别
+								</p>
+								<i class="fr active"></i>
+								<span class="fr">价格:¥：99.00</span>
+							</li>
+							<li class="clear"></li>
+						</ul>
+						<ul>
+							<li class="title">课程(二):易混淆动词词组</li>
+							<li class="play-detail">
+								<img src="img/classlist/pic-12.png" class="fl" />
+								<p>
+									1.词形易混淆动词专练
+									<br />
+									2.十组容易混淆动词的区别
+								</p>
+								<i class="fr active"></i>
+								<span class="fr">价格:¥：99.00</span>
+							</li>
+							<li class="clear"></li>
+						</ul>-->
+						<!--<script>
+							$(function(){
+							   
+							})
+						</script>-->
+					
+					<dd>
+						<a class="submit">提交</a>
+					</dd>
+				</dl>
+			</div>
+			<div class="details-right">
+                <dl id="teacher_detail"></dl>
+                    <script type="text/x-jquery-tmpl" id="teacher_detail_info">
+                        <dt>讲师介绍</dt>
+                        <dd class="jsjs">
+                            {{= data.abstracts}}
+                        </dd>
+                </script>
+				<dl id="relate_course">
+					<dt >推荐课程</dt>
+                    <script type="text/x-jquery-tmpl" id="relate_course_list">
+                        {{each(i,course) data}}
+                        <dd><a href="classdetail.html?cid={{= course.seqid}}">{{= course.title}}</a></dd>
+                        <!--<dd><a href="classdetail.html">勾股定理的应用</a></dd>
+                        <dd><a href="classdetail.html">质量和密度</a></dd>-->
+                        {{/each}}
+                    </script>
+</dl>
+				
+			</div>
+		</div>
+		
+			
+		<div class="clear"></div>
+		<div id="footerHtml"></div>
+		<div id="tcHtml2">
+		
+		</div>
+		
+	</body>
+</html>

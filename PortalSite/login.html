@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/login.css" />
+        <script src="scripts/jquery-1.11.0.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/html5shiv.js"></script>
+        <script src="scripts/jquery.tmpl.min.js"></script>
+        <script src="scripts/jquery.tmplplus.min.js"></script>
+        <script src="appjs/userlogic.js"></script>
+		<script>
+			$(function(){
+				$("dd").hover(function(){
+					$(this).children("input").toggleClass("active");
+					$(this).siblings("dd").children("input").removeClass("active")
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<div id="headerHtml"></div>
+		<div class="clear"></div>
+		
+		<section>
+			<div class="main2">
+				<img src="img/login/pic-2.png" class="fl" />
+				<dl class="fr">
+					<dt>登录聪聪龙</dt>
+					<dd class="login-username">
+						<i></i>
+						<input class="active" type="text" placeholder="请输入用户名/邮箱"  />
+					</dd>
+					<dd class="login-save">
+						<i></i>
+						<input type="password" placeholder="请输入密码"  />
+					</dd>
+					<dd class="login-login">
+						<i></i>保存本次登录信息
+					</dd>
+					<dd class="login-loginbtn"><a>登录</a></dd>
+					<dd class="login-reg">
+						<span class="fr"><a>忘记密码</a><a href="register.html">免费注册</a></span>
+					</dd>
+				</dl>
+			</div>
+		</section>
+		
+		
+		<div id="footerHtml"></div>
+		
+		
+		
+		
+	</body>
+</html>

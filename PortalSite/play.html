@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>用户中心</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/play.css" />
+		<script type="text/javascript" src="js/html5shiv.js" ></script>
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+		<script type="text/javascript" src="js/main.js" ></script>
+        <script src="scripts/jquery-1.11.0.js"></script>
+        <script src="scripts/jquery.tmpl.min.js"></script>
+        <script src="scripts/jquery.tmplplus.min.js"></script>
+        <script src="appjs/videodetail.js"></script>
+		<script>
+			$(function(){
+				$("a.bf").click(function(){
+					$("dl.main").hide()
+					
+					var DEFAULT_VERSION = "8.0";
+					var ua = navigator.userAgent.toLowerCase();
+					var isIE = ua.indexOf("msie")>-1;
+					var safariVersion;
+					if(isIE){
+					    safariVersion =  ua.match(/msie ([\d.]+)/)[1];
+					    if(safariVersion <= DEFAULT_VERSION ){
+					        $("embed").show()
+					        //alert(1)
+					    }else{
+					         $("video").show()
+					         //alert(0)
+					    }
+					}else{
+					     $("video").show()
+					}
+				})
+				$("ul li p a").click(function(){
+					$(this).siblings("span").show()
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<div id="headerHtml2">
+			<!--<header>
+				<div class="main2">
+				 <a class="fl" href="indexV2.html"><img src="img/logo.png" /></a>
+				 <a class="fr" id="username"><img src="img/classlist/pic-16.png" />账号1</a>
+				 <a class="fr" href="user-shopcar.html"><img src="img/classlist/pic-161.png" />购物车</a>
+				<ul><li><a href="user-class.html">我的收藏</a></li><li><a href="user-payfirst.html">我的订单</a></li></ul>
+				</div>
+				</header>-->
+		</div>
+		<div class="clear"></div>
+        <div class="banner main" id="video_detail"></div>
+            <script type="text/x-jquery-tmpl" id="video_detail_html">
+                <video width="995" height="535" style="display: none;" controls >
+                    <source src={{= data.source}} type="video/mp4"></source>
+                    <source src={{= data.source}} type="video/ogg"></source>
+                    <source src={{= data.source}} type="video/webm"></source>
+                    <!--<object width="" height="" type="application/x-shockwave-flash" data="myvideo.swf">
+            <param name="movie" value="myvideo.swf" />
+            <param name="flashvars" value="autostart=true&amp;file=myvideo.swf" />
+        </object>-->
+                </video>
+                <embed src="img/video/5/1.mp4" allowFullScreen="true" quality="high" width="995" height="535" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash" autostart="false" style="display: none;">
+                </embed>
+                <dl class="main">
+                    <dt>
+                        {{= data.title}}
+                    </dt>
+                    <dd>
+                        讲师:{{= data.teacher}}
+                    </dd>
+                    <dd>
+                        时长：{{= data.time}}
+                    </dd>
+                    <dd class="tips">
+                        温馨提示：该视频需要购买才可以观看<a href="classdetail.html?cid={{= data.courseid}}">立即购买</a>
+                        <a class="fr bf"><img src="img/classlist/pic-19.png" /></a>
+                        <a class="fr sc"><img src="img/classlist/pic-18.png" /></a>
+                    </dd>
+                </dl>
+            </script>    
+
+		
+		<div class="details main" >
+           
+            <div class="details-left" id="video_abstract"></div>
+                    <script type="text/x-jquery-tmpl" id="video_abstract_html">
+                        <p class="jj">
+                           简介：{{= data.abstracts}}
+                            <!--简介： 英语中有些动词的过去式(通常也是过去分词)与另一些动词的现在式相同,因此学生常常会把它们搞错。现
+                            将这些常见的容易使学生搞混的词汇编在一起,用练习形式供学生对比。-->
+                        </p>
+                        <dl>
+                            <dt>
+                                <strong><a href="classdetail.html">课程</a></strong>
+                                <strong class="active"><a href="play.html">习题</a></strong>
+                                <!--<span><i class="active"></i><b>优惠</b>打包购买(<em>2个视频¥:180.00</em>)</span>
+            <a class="buy">购买</a>-->
+                            </dt>
+                            <dd>
+                                <ul>
+                                    <li>
+                                        习题一：
+                                        <p>
+                                            常见的易混淆动词有哪些？正确答案：<a>点击查看</a><span style="display: none;">take cost pay spend</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        习题二：
+                                        <p>
+                                            如何区分易混淆动词？正确答案：<a>点击查看</a><span style="display: none;">take cost pay spend</span>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </dd>
+                            <dd>
+                                <textarea></textarea>
+                                <p class="fr">
+                                    <a class="submit">提交</a>
+                                </p>
+                            </dd>
+                            <dd class="clear"></dd>
+                            <dd class="anlist">
+                                <ul>
+                                    <li>
+                                        <img src="img/classlist/pic-21.png" />
+                                        <span>take cost pay spend</span>
+                                        <img src="img/classlist/pic-22.png" class="fr" />
+                                    </li>
+                                    <li>
+                                        <img src="img/classlist/pic-21.png" />
+                                        <span>take cost pay spend</span>
+                                        <img src="img/classlist/pic-23.png" class="fr" />
+                                    </li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </script>
+                
+                <div class="details-right">
+                    <dl>
+                        <dt>讲师介绍</dt>
+                        <dd class="jsjs" id="video_teacher">
+                            <script type="text/x-jquery-tmpl" id="video_teacher_html">
+                                {{= data.abstracts}}
+                                <!--北京大学语言处理博士，资
+                                深英语类考试培训专家多年
+                                潜心研究如何迅速提-->
+                            </script>
+</dd>
+                    </dl>
+                    <dl>
+                        <dt>推荐课程</dt>
+                        <dd><a href="classdetail.html">文言文解析</a></dd>
+                        <dd><a href="classdetail.html">勾股定理的应用</a></dd>
+                        <dd><a href="classdetail.html">质量和密度</a></dd>
+                    </dl>
+
+                </div>
+</div>
+		
+			
+		<div class="clear"></div>
+		<div id="footerHtml"></div>
+		
+	</body>
+</html>

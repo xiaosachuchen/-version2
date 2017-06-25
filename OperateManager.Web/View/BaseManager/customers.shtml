@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	   <meta charset="utf-8">
+	   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	   <title>客户管理</title>
+	   <!--#include file="/headfiles.html"-->
+       
+       <script src="../../plugins/fileinput/fileinput.min.js"></script>
+       <script src="../../plugins/fileinput/locales/zh.js"></script>
+       <link href="../../plugins/fileinput/fileinput.min.css" rel="stylesheet" />
+ 
+	   <script src="/js/BaseManager/customers.js"></script>
+        <style>
+            .overflow-model{
+                    overflow-x:auto;
+                    overflow-y:auto;
+                    max-height:450px;
+                }
+        </style>
+</head>
+
+<body>
+	   <div id="container" class="effect aside-float aside-bright mainnav-lg">
+		     <!--#include file="/header.html"-->
+		     <div class="boxed">
+			      <div id="content-container">
+				        <div id="page-title">
+					          <h1 class="page-header text-overflow" id="myModalName">客户管理</h1>
+                            <input type="hidden" id="myModalType" />
+                            <input type="hidden" id="myModalCustomerId" />
+				        </div>
+				        <div id="page-content">
+					     
+					          <div class="panel">
+						            <div class="panel-body">
+							              <div id="toolbar">
+								                <button class="btn btn-info" data-mark="Add">
+									                  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> 新增
+								                </button>
+								                <button class="btn btn-info" data-mark="Edit">
+									                  <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> 修改
+								                </button>
+								                <button class="btn btn-info" data-mark="Delete">
+									                  <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> 删除
+								                </button>
+								               
+							              </div>
+							              <table id="TableData"></table>
+						            </div>
+					          </div>
+				        </div>
+			      </div>
+			      <!--#include file="/navmenu.html"-->
+		     </div>
+		     <!--#include file="/footer.html"-->
+	   </div>
+
+	   <div id="edit_modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" data-backdrop="static">
+		     <div class="modal-dialog">
+			      <div class="modal-content">
+				        <form id="edit_fm" class="panel-body form-horizontal form-padding">
+					          <div class="modal-header">
+						            <button type="button" class="close" data-dismiss="modal"><i class="pci-cross pci-circle"></i></button>
+						            <h4 class="modal-title" id="myModalLabel">客户管理</h4>
+					          </div>
+					          <div class="modal-body">
+						            <div class="panel-body">
+							              <div class="form-group">
+								                <label class="col-md-2 control-label">客户名称</label>
+								                <div class="col-md-10">
+									                  <input name="customername" type="text" class="form-control" placeholder="客户名称"/>
+								                </div>
+							              </div>
+							              <div class="form-group">
+								                <label class="col-md-2 control-label">联系人</label>
+								                <div class="col-md-10">
+									                  <input name="contacts" type="text" class="form-control" placeholder="联系人"/>
+								                </div>
+							              </div>
+							              <div class="form-group">
+								                <label class="col-md-2 control-label">邮箱</label>
+								                <div class="col-md-10">
+									                  <input name="email" type="email" class="form-control" placeholder="邮箱"/>
+								                </div>
+							              </div>
+							              <div class="form-group">
+								                <label class="col-md-2 control-label">电话</label>
+								                <div class="col-md-10">
+									                  <input name="phone" type="tel" class="form-control" placeholder="电话"/>
+								                </div>
+							              </div>
+							              <div class="form-group">
+								                <label class="col-md-2 control-label">传真</label>
+								                <div class="col-md-10">
+									                  <input name="fax" type="text" class="form-control" placeholder="传真"/>
+								                </div>
+							              </div>
+							              <div class="form-group">
+								                <label class="col-md-2 control-label">国别</label>
+								                <div class="col-md-10">
+                                                    <select name="country" class="form-control"></select>
+									                
+								                </div>
+							              </div>
+							              <div class="form-group">
+								                <label class="col-md-2 control-label">所在地区</label>
+								                <div class="col-md-10">
+                                                    <select name="areacode" class="form-control"></select>
+									                
+								                </div>
+							              </div>
+							              <div class="form-group">
+								                <label class="col-md-2 control-label">邮编</label>
+								                <div class="col-md-10">
+									                  <input name="postcode" type="text" class="form-control" placeholder="邮编"/>
+								                </div>
+							              </div>
+							              <div class="form-group">
+								                <label class="col-md-2 control-label">行业</label>
+								                <div class="col-md-10">
+                                                    <select name="industry" class="form-control"></select>
+									                 
+								                </div>
+							              </div>
+							              <div class="form-group">
+								                <label class="col-md-2 control-label">网站</label>
+								                <div class="col-md-10">
+									                  <input name="website" type="url" class="form-control" placeholder="网站"/>
+								                </div>
+							              </div>
+                                        <div class="form-group">
+                                            <label class="col-md-2 control-label">logo路径</label>
+                                            <div class="col-md-10">
+                                                <input type="hidden"  name="logourl"/>
+                                                <input id="logourl_file" type="file" class="form-control" formtarget="logourl">
+                                            </div>
+                                        </div>
+							              <div class="form-group">
+								                <label class="col-md-2 control-label">简介</label>
+								                <div class="col-md-10">
+                                                    <textarea  name="introductions" class="form-control">
+                                                    </textarea>
+                                                    <input type="hidden" name="introduction" />
+                                                 </div>
+							              </div>
+							       
+						            </div>
+					          </div>
+					          <div class="modal-footer">
+						            <button type="button" class="btn btn-default" data-dismiss="modal">关 闭</button>
+						            <button id="edit_form_sbtn" type="button" class="btn btn-primary" data-loading-text="数据提交中，请等待..." autocomplete="off">保 存</button>
+					          </div>
+				        </form> 
+			      </div>
+		     </div>
+	   </div>
+</body>
+</html>

@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/register.css" />
+        <script src="scripts/jquery-1.11.0.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/html5shiv.js"></script>
+        <script src="scripts/jquery.tmpl.min.js"></script>
+        <script src="scripts/jquery.tmplplus.min.js"></script>
+        <script src="appjs/userlogic.js"></script>
+		<script>
+			$(function(){
+				$("dd").hover(function(){
+					$(this).children("input").toggleClass("active");
+					$(this).siblings("dd").children("input").removeClass("active")
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<div id="headerHtml"></div>
+		<div class="clear"></div>
+		
+		<section>
+			<div class="main2">
+				<div class="register" style="background: url(img/login/pic-31.png) no-repeat center center; height: 685px;"> 
+					<p class="title">
+						<a class="active"><span>1</span>注册</a>
+						<a class="active"><span>2</span>填写账号信息</a>
+						<a><span>3</span>注册成功</a>
+					</p>
+					<dl class="registerwrap">
+						<dd>
+							<label>用户名：</label>
+							<input type="text" placeholder="聪聪龙" id="username"/>
+						</dd>
+						<dd>
+							<label>真实姓名：</label>
+							<input type="text" placeholder="聪聪龙" id="realname" />
+						</dd>
+						<dd class="sex">
+							<label>性别：</label>
+							<i class="active"></i>男<i style="margin-left: 10px;"></i>女
+						</dd>
+                        <dd>
+                            <label>所属学校：</label>
+                            <input type="text" placeholder="请输入学校" id="school" />
+                        </dd>
+						<dd>
+							<label>所属学段/年级：</label>
+							<input type="text" placeholder="请点击选择学段/年级(小学/二年级)" id="period" />
+						</dd>
+						<dd>
+								<div>
+									<a class="xj active">小学</a>
+									<a class="xj">初中</a>
+									<a class="xj">高中</a>
+									<ol>
+										<li>
+											<a>一年级</a>
+											<a>二年级</a>
+											<a>三年级</a>
+											<a>四年级</a>
+											<a>五年级</a>
+											<a>六年级</a>
+										</li>
+										<li style="display: none;">
+											<a>初一</a>
+											<a>初二</a>
+											<a>初三</a>
+										</li>
+										<li style="display: none;">
+											<a>高一</a>
+											<a>高二</a>
+											<a>高三</a>
+										</li>
+									</ol>
+								</div>
+								<script>
+									$(function(){
+										$(".registerwrap dd div a").click(function(){
+											$(this).addClass("active")
+											$(this).siblings("a").removeClass("active")
+										})
+										$(".registerwrap dd div a.xj").click(function(){
+											var index = $(this).index()
+											$(".registerwrap dd div ol li").hide()
+											$(".registerwrap dd div ol li").eq(index).show();
+										})
+									})
+								</script>
+						</dd>
+						<dd class="msgcode">
+							<label>所属班级：</label>
+							<input type="text" placeholder="请输入班级" id="classname" style="width: 165px;" />
+						</dd>
+						<dd class="submit">
+							<label></label>
+							<a href="register3.html" id="submit_info">提交</a>
+						</dd>
+					</dl>
+				</div>
+			</div>
+		</section>
+		
+		
+		<div id="footerHtml"></div>
+		
+		
+		
+		
+	</body>
+</html>

@@ -1,0 +1,26 @@
+.user-msg ol li{
+	height: 70px;
+	line-height: 70px;
+	border-bottom: 1px solid #D9DCE1;
+	margin-bottom: 5px;
+}
+.user-msg ol li span{
+	display: inline-block;
+	width: 104px;
+	background: #7EA54C;
+	text-align: center;
+	color: white;
+	font-size: 14px;
+	margin-right:30px;
+}
+.user-msg ol li input{
+	border: none;
+	font-size: 20px;
+	background: none;
+}
+.user-msg ol li a{
+	color: #7EA54C;
+	font-size: 14px;
+	float: right;
+	margin-right: 98px;
+}

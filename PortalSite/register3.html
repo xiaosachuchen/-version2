@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/register.css" />
+		<script type="text/javascript" src="js/html5shiv.js" ></script>
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+		<script type="text/javascript" src="js/main.js" ></script>
+		<script>
+			$(function(){
+				$("dd").hover(function(){
+					$(this).children("input").toggleClass("active");
+					$(this).siblings("dd").children("input").removeClass("active")
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<div id="headerHtml"></div>
+		<div class="clear"></div>
+		
+		<section>
+			<div class="main2">
+				<div class="register">
+					<p class="title">
+						<a class="active"><span>1</span>注册</a>
+						<a class="active"><span>2</span>填写账号信息</a>
+						<a class="active"><span>3</span>注册成功</a>
+					</p>
+					<dl class="registerwrap">
+						<dt>
+							<img src="img/login/pic-17.png" />
+							<img src="img/login/pic-19.png" class="fr" />
+						</dt>
+						<dt>
+							<a href="user.html">前往首页 ></a>
+						</dt>
+					</dl>
+				</div>
+			</div>
+		</section>
+		
+		
+		<div id="footerHtml"></div>
+		
+		
+		
+		
+	</body>
+</html>

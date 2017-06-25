@@ -1,0 +1,98 @@
+.user-msg ol{
+	border: 1px solid #D9DDE0;
+	margin-top: 20px;
+}
+.user-msg ol li{
+	width: 700px;
+	margin: auto;
+}
+.user-msg ol li.cartitle{
+	height: 58px;
+	line-height: 58px;
+	border-bottom: 1px solid #D9DDE0;
+}
+.user-msg ol li span{
+	display: inline-block;
+	text-align: center;
+}
+.user-msg ol li span.kc{
+	width: 186px;
+	text-align: left;
+}
+.user-msg ol li span.ddbh{
+	width: 164px;
+	color: #7EA54C;
+}
+.user-msg ol li span.rq{
+	width: 72px;
+	color: #7EA54C;
+}
+.user-msg ol li span.je{
+	width: 95px;
+}
+.user-msg ol li span.zt{
+	width: 78px;
+	position: relative;
+	color: #7EA54C;
+}
+.user-msg ol li span.cz{
+	width: 60px;
+}
+.user-msg ol li span.qx i{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin-right: 12px;
+	background: url(../img/user/pic-11.png) no-repeat center center;
+}
+.user-msg ol li span.qx i.on{
+	background: url(../img/user/pic-10.png) no-repeat center center;
+}
+.user-msg ol li.list{
+	padding: 20px 0;
+	margin-top: 20px;
+}
+.user-msg ol li.list span.kc img{
+	vertical-align: middle;
+	margin-right: 20px;
+	margin-top: -7px;
+}
+.user-msg ol li.list span.kc b{
+	font-size: 14px;
+	font-weight: normal;
+	vertical-align: middle;
+	margin-top: 20px;
+	display: inline;
+}
+.user-msg ol li.list span.je{
+	color: #75B038;
+}
+.user-msg ol li.list span.cz a{
+	background: url(../img/user/pic-16.png) no-repeat center center;
+	width: 46px;
+	height: 33px;
+	line-height: 33px;
+	text-align: center;
+	font-size: 14px;
+	color: white;
+}
+.user-msg ol li span.zt ul{
+	position: absolute;
+	background: url(../img/user/pic-14.png) no-repeat center center;
+	width: 68px;
+	height: 63px;
+	left: 0;
+	top: 44px;
+}
+.user-msg ol li span.zt ul li{
+	width: 68px;
+	margin: 0;
+	padding: 0;
+	text-indent: 0;
+	line-height: 32px;
+	color: #868485;
+	cursor: pointer;
+}
+.user-msg ol li.cartitle span{
+	color: #333333;
+}

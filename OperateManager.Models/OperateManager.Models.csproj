@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FBDB11BD-AD46-495A-AD9B-A36C20B756EC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OperateManager.Models</RootNamespace>
+    <AssemblyName>OperateManager.Models</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.RIPSP.BaseModel">
+      <HintPath>..\QuoteDLL\Microsoft.RIPSP.BaseModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ModelAttribute\IgnoreAttribute.cs" />
+    <Compile Include="ModelAttribute\KeyAttribute.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resourcedb\base_user_extend.cs" />
+    <Compile Include="Resourcedb\self_course.cs" />
+    <Compile Include="Resourcedb\HotkeyLog.cs" />
+    <Compile Include="Resourcedb\listmodel.cs" />
+    <Compile Include="Resourcedb\OrgUsers.cs" />
+    <Compile Include="Resourcedb\self_author.cs" />
+    <Compile Include="Resourcedb\self_book.cs" />
+    <Compile Include="Resourcedb\self_chapter.cs" />
+    <Compile Include="Resourcedb\self_degreethesis.cs" />
+    <Compile Include="Resourcedb\self_expert.cs" />
+    <Compile Include="Resourcedb\self_journal.cs" />
+    <Compile Include="Resourcedb\self_journalarticle.cs" />
+    <Compile Include="Resourcedb\self_journalissue.cs" />
+    <Compile Include="Resourcedb\self_object.cs" />
+    <Compile Include="Resourcedb\self_policies.cs" />
+    <Compile Include="Resourcedb\self_policyinterpretation.cs" />
+    <Compile Include="Resourcedb\self_press.cs" />
+    <Compile Include="Resourcedb\self_report.cs" />
+    <Compile Include="Resourcedb\self_reviewarticle.cs" />
+    <Compile Include="Resourcedb\self_teacher.cs" />
+    <Compile Include="Resourcedb\self_video.cs" />
+    <Compile Include="Resourcedb\transTion.cs" />
+    <Compile Include="Resourcedb\UserCountList.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

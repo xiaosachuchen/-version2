@@ -1,0 +1,322 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.RIPSP.BaseDAL</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.RIPSP.BaseDAL.AccountDAL">
+            <summary>
+            账号数据操作类
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseDAL.AccountDAL.ManagerLogin(Microsoft.RIPSP.Model.LoginModel,System.String@)">
+            <summary>
+            管理员登录
+            </summary>
+            <param name="login"></param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseDAL.AccountDAL.GetRoleListByManager(System.Int32,System.String@)">
+            <summary>
+            获取管理员角色列表
+            </summary>
+            <param name="userid"></param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseDAL.AccountDAL.GetMenuListByUserID(System.Int32,System.String@)">
+            <summary>
+            获取管理员菜单列表
+            </summary>
+            <param name="userid"></param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseDAL.AccountDAL.GetDBManagerMenuByUser(System.Int32,System.String@)">
+            <summary>
+            获取管理员配置的资源库菜单
+            </summary>
+            <param name="userid"></param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseDAL.AccountDAL.GetManagerInfo(System.Int32,System.String@)">
+            <summary>
+            获取管理员信息
+            </summary>
+            <param name="userid"></param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseDAL.AccountDAL.PostManagerInfo(Microsoft.RIPSP.Model.base_managers,System.String@)">
+            <summary>
+            修改信息
+            </summary>
+            <param name="manager"></param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseDAL.AccountDAL.PostManagerPsswd(System.Int32,Microsoft.RIPSP.Model.ChangePasswordModel,System.String@)">
+            <summary>
+            修改密码
+            </summary>
+            <param name="userid"></param>
+            <param name="passwd"></param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Microsoft.RIPSP.BaseDAL.GlobalCommonDAL">
+            <summary>
+            全局基本业务数据库操作类
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseDAL.GlobalCommonDAL.WriteSysLog(Microsoft.RIPSP.Model.base_syslogs)">
+            <summary>
+            系统日志写入
+            </summary>
+            <param name="loginfo"></param>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseDAL.GlobalCommonDAL.GetDicList(System.String,System.String@)">
+            <summary>
+            获取字典列表
+            </summary>
+            <param name="dicType">null取字典类型，length>0 取字典值，length=0所有 </param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseDAL.GlobalCommonDAL.GetClassList(System.Int32,System.String@)">
+            <summary>
+            获取分类列表
+            </summary>
+            <param name="parentId"></param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseDAL.GlobalCommonDAL.GetManagersOptions(System.Int32,System.Int32,System.Int32,System.String@)">
+            <summary>
+            获取管理员选项
+            </summary>
+            <param name="roleGroup">角色组编号</param>
+            <param name="roleId">角色编号</param>
+            <param name="orgId">机构编号</param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseDAL.GlobalCommonDAL.GetMenuList(System.String@)">
+            <summary>
+            获取菜单列表
+            </summary>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseDAL.GlobalCommonDAL.GetRolesOptions(System.Int32,System.String@)">
+            <summary>
+            获取角色选项
+            </summary>
+            <param name="roleGroup"></param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseDAL.GlobalCommonDAL.GetOrgOptions(System.Int32,System.Int32,System.Int32@,System.String@)">
+            <summary>
+            获取机构选项
+            </summary>
+            <param name="page"></param>
+            <param name="rows"></param>
+            <param name="total"></param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseDAL.GlobalCommonDAL.GetCustomerOptions(System.Int32,System.Int32,System.Int32@,System.String@)">
+            <summary>
+            获取客户选项
+            </summary>
+            <param name="page"></param>
+            <param name="rows"></param>
+            <param name="total"></param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseDAL.GlobalCommonDAL.GetUserOptions(System.Int32,System.Int32,System.Int32,System.Int32@,System.String@)">
+            <summary>
+            获取用户选项
+            </summary>
+            <param name="customerid"></param>
+            <param name="page"></param>
+            <param name="rows"></param>
+            <param name="total"></param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseDAL.GlobalCommonDAL.GetItemList(System.String@)">
+            <summary>
+            获取栏目列表
+            </summary>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseDAL.GlobalCommonDAL.GetResourceDB(System.Boolean,System.String@)">
+            <summary>
+            获取资源库列表
+            </summary>
+            <param name="isTopic"></param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseDAL.GlobalCommonDAL.GetResourcesOptions(System.Int32,System.String,System.String,System.String,System.String@)">
+            <summary>
+            获取资源库中选项值
+            </summary>
+            <param name="databaseId"></param>
+            <param name="databasename"></param>
+            <param name="textfield"></param>
+            <param name="idfield"></param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseDAL.GlobalCommonDAL.GetUserDB(System.Int32,System.String@)">
+            <summary>
+            获取给管理员指定的资源库ID
+            </summary>
+            <param name="userid"></param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseDAL.GlobalCommonDAL.GetRoleMenu(System.Int32[],System.String@)">
+            <summary>
+            获取给角色配的菜单ID
+            </summary>
+            <param name="roleIdarr"></param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseDAL.GlobalCommonDAL.GetManagerRole(System.Int32,System.String@)">
+            <summary>
+            获取给用户配的角色ID
+            </summary>
+            <param name="userid"></param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseDAL.GlobalCommonDAL.GetMetaOptionsByDataLibrarys(System.Int32,System.String,System.String@)">
+            <summary>
+            获取资源库字段选项
+            </summary>
+            <param name="dbid"></param>
+            <param name="dbname"></param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseDAL.GlobalCommonDAL.GetShopTableDataList(System.String,System.Collections.Generic.List{Microsoft.RIPSP.Model.QueryModel},System.Int32,System.Int32,System.Int32,System.Int32@,System.String@)">
+            <summary>
+            获取商品库数据
+            </summary>
+            <param name="dbname"></param>
+            <param name="queryarr"></param>
+            <param name="orgid"></param>
+            <param name="offset"></param>
+            <param name="limit"></param>
+            <param name="total"></param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseDAL.GlobalCommonDAL.PutShopPrices(System.String,Microsoft.RIPSP.Model.chosen_shopinfo,System.String@)">
+            <summary>
+            更新商品价格
+            </summary>
+            <param name="dbname">商品库名称</param>
+            <param name="info">商品你信息【seqid,m_stock，m_price，m_discount】</param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseDAL.GlobalCommonDAL.UpdateDataSorts(Microsoft.RIPSP.Model.SortModel,System.String@)">
+            <summary>
+            更新数据排序
+            </summary>
+            <param name="sort"></param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseDAL.GlobalCommonDAL.ExistsName(Microsoft.RIPSP.Model.ExistsNameModel,System.String@)">
+            <summary>
+            检测字段值重复
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Microsoft.RIPSP.BaseDAL.UpdateItemContentDAL">
+            <summary>
+            栏目内容更新
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseDAL.UpdateItemContentDAL.GetItemExpList(System.Int32[],System.String@)">
+            <summary>
+            获取栏目列表
+            </summary>
+            <param name="itemidarr"></param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseDAL.UpdateItemContentDAL.GetItemContentBySQL(Microsoft.RIPSP.Model.base_items,System.String@)">
+            <summary>
+            根据栏目sql语句获取待插入数据
+            </summary>
+            <param name="iteminfo"></param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseDAL.UpdateItemContentDAL.DataToItemContents(System.Boolean,System.String,System.Collections.Generic.Dictionary{System.Int32,System.Int32[]},System.Collections.Generic.Dictionary{System.String,System.String},System.Int32,System.Int32,System.String@)">
+            <summary>
+            库数据导入栏目中
+            </summary>
+            <param name="isdel">是否删除栏目现有自动插入的数据</param>
+            <param name="itemmark">栏目标识</param>
+            <param name="dataarr">数据id列表对象</param>
+            <param name="colmatchs">字段对应关系</param>
+            <param name="status">数据状态</param>
+            <param name="creator">操作人</param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseDAL.UpdateItemContentDAL.UpdateItemContentList(System.Boolean,System.String,System.Collections.Generic.List{Microsoft.RIPSP.Model.base_itemcontents},System.Int32,System.Int32,System.String@)">
+            <summary>
+            更新指定栏目数据内容
+            </summary>
+            <param name="isdel">是否删除已有的自动插入数据</param>
+            <param name="itemmark">栏目标识</param>
+            <param name="contentlist">栏目内容列表</param>
+            <param name="contentnum">插入数量</param>
+            <param name="creator">创建人</param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseDAL.UpdateItemContentDAL.GetIndexServerList(System.String@)">
+            <summary>
+            获取索引
+            </summary>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseDAL.UpdateItemContentDAL.UpdateResourceCount(System.String@)">
+            <summary>
+            更新资源统计总量，写入栏目内容表
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseDAL.UpdateItemContentDAL.GetSubjectWordList(System.Int32,System.String@)">
+            <summary>
+            获取主题词
+            </summary>
+            <param name="limit">获取的数量</param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.BaseDAL.UpdateItemContentDAL.UpdateItemSubjectWordList(System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{Microsoft.RIPSP.Model.base_itemcontents}},System.String@)">
+            <summary>
+            更新文献研究趋势图栏目数据内容
+            </summary>
+            <param name="list"></param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,841 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PublicHelperClass</name>
+    </assembly>
+    <members>
+        <member name="T:PublicHelperClass.ChinesePinYinConversion">
+            <summary>   
+            汉字拼音转换类   
+            </summary>   
+        </member>
+        <member name="F:PublicHelperClass.ChinesePinYinConversion.otherChinese">
+            <summary>   
+            二级汉字数组   
+            </summary>   
+        </member>
+        <member name="F:PublicHelperClass.ChinesePinYinConversion.otherPinYin">
+            <summary>   
+            二级汉字对应拼音数组   
+            </summary>   
+        </member>
+        <member name="M:PublicHelperClass.ChinesePinYinConversion.GetFirst(System.Char)">
+            <summary>   
+            取拼音第一个字段   
+            </summary>           
+            <param name="ch"></param>           
+            <returns></returns>           
+        </member>
+        <member name="M:PublicHelperClass.ChinesePinYinConversion.GetFirst(System.String)">
+            <summary>   
+            取拼音第一个字段   
+            </summary>   
+            <param name="str"></param>   
+            <returns></returns>   
+        </member>
+        <member name="M:PublicHelperClass.ChinesePinYinConversion.Get(System.Char)">
+            <summary>   
+            获取单字拼音   
+            </summary>   
+            <param name="ch"></param>   
+            <returns></returns>   
+        </member>
+        <member name="M:PublicHelperClass.ChinesePinYinConversion.Get(System.String)">
+            <summary>   
+            把汉字转换成拼音(全拼)   
+            </summary>   
+            <param name="str">汉字字符串</param>   
+            <returns>转换后的拼音(全拼)字符串</returns>   
+        </member>
+        <member name="T:PublicHelperClass.ExcelDataClass">
+            <summary>
+            Excel数据转换类
+            </summary>
+        </member>
+        <member name="M:PublicHelperClass.ExcelDataClass.LoadExcel(System.String,System.String@)">
+            <summary>
+            导出Excel数据到DataSet对象中
+            </summary>
+            <param name="FullPath">Excel物理全路径</param>
+            <param name="errmsg">错误信息</param>
+            <returns>返回DataSet对象</returns>
+        </member>
+        <member name="M:PublicHelperClass.ExcelDataClass.WriteExcel(System.String,System.Data.DataTable,System.String@)">
+            <summary>
+            将DataTable数据导出到Excel中
+            </summary>
+            <param name="FullPath">Excel物理全路径</param>
+            <param name="dt">要导出的数据DataTable</param>
+            <param name="errmsg">错误信息</param>
+            <returns>返回bool标示执行是否成功</returns>
+        </member>
+        <member name="M:PublicHelperClass.ExcelDataClass.GetCellText(System.Web.UI.WebControls.TableCell)">
+            <summary>
+            获取GridView单元格的值
+            </summary>
+            <param name="cell">单元格对象</param>
+            <returns>字符串值</returns>
+        </member>
+        <member name="M:PublicHelperClass.ExcelDataClass.GridViewDataTable(System.Web.UI.WebControls.GridView,System.String@)">
+            <summary>
+            GridView生成DataTable
+            </summary>
+            <param name="gv">GridView对象</param>
+            <param name="errmsg">错误信息</param>
+            <returns>返回DataTable对象</returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:PublicHelperClass.ExcelDataClass.ToDataTable``1(System.Collections.Generic.List{``0})" -->
+        <member name="M:PublicHelperClass.ExcelDataClass.ToDataTable``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            数组转DataTable
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="collection"></param>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:PublicHelperClass.ExcelDataClass.ConvertTo``1(System.Data.DataTable)" -->
+        <member name="T:PublicHelperClass.FTPClass">
+            <summary>
+            FTP类库
+            </summary>
+        </member>
+        <member name="M:PublicHelperClass.FTPClass.UploadFile(System.String,System.String,System.String@)">
+            <summary>
+            上传文件
+            </summary>
+            <param name="FileName">待上传文件（物理路径）</param>
+            <param name="SaveName">保存的文件名及路径（为空则根目录下原文件名）</param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PublicHelperClass.FTPClass.DownloadFile(System.String,System.String,System.String@)">
+            <summary>
+            下载文件
+            </summary>
+            <param name="FileName">要下载的文件名</param>
+            <param name="SaveName">要保存的文件名</param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PublicHelperClass.FTPClass.DeleteFile(System.String,System.String@)">
+            <summary>
+            删除文件
+            </summary>
+            <param name="FileName">文件名</param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PublicHelperClass.FTPClass.MakeDirectory(System.String,System.String@)">
+            <summary>
+            创建文件夹
+            </summary>
+            <param name="DirectoryPath"></param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PublicHelperClass.FTPClass.RemoveDirectory(System.String,System.String@)">
+            <summary>
+            删除文件夹
+            </summary>
+            <param name="DirectoryPath"></param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PublicHelperClass.FTPClass.RecursionRemoveDirectory(System.String,System.String@)">
+            <summary>
+            递归删除目录及文件
+            </summary>
+            <param name="DirectoryPath"></param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PublicHelperClass.FTPClass.UploadFileBatch(System.String,System.String,System.String@)">
+            <summary>
+            批量上传（目录下所有文件）
+            </summary>
+            <param name="DirectoryPath"></param>
+            <param name="SavePath"></param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PublicHelperClass.FTPClass.DownFileBatch(System.String,System.String,System.String@)">
+            <summary>
+            批量下载（目录下所有文件）
+            </summary>
+            <param name="DirectoryPath"></param>
+            <param name="SavePath"></param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PublicHelperClass.FTPClass.DeleteFileBatch(System.String,System.String@)">
+            <summary>
+            批量删除（目录下所有文件）
+            </summary>
+            <param name="DirectoryPath"></param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PublicHelperClass.FTPClass.GetAllList(System.String,System.String@)">
+            <summary>
+            获取当前目录下文件和文件夹
+            </summary>
+            <param name="DirectoryPath"></param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PublicHelperClass.FTPClass.GetAllDetailList(System.String,System.String@)">
+            <summary>
+            获取当前目录下明细(包含文件和文件夹)
+            </summary>
+            <param name="DirectoryPath"></param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PublicHelperClass.FTPClass.GetFileList(System.String,System.String@)">
+            <summary>
+             获取当前目录下文件列表(仅文件)
+            </summary>
+            <param name="DirectoryPath"></param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PublicHelperClass.FTPClass.GetDirectoryList(System.String,System.String@)">
+            <summary>
+            获取当前目录下目录列表(仅目录)
+            </summary>
+            <param name="DirectoryPath"></param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PublicHelperClass.FTPClass.DirectoryExist(System.String,System.String,System.String@)">
+            <summary>
+            判断当前目录下指定的子目录是否存在
+            </summary>
+            <param name="DirectoryPath"></param>
+            <param name="DirectoryName"></param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PublicHelperClass.FTPClass.FileExist(System.String,System.String,System.String@)">
+            <summary>
+            判断当前目录下指定的文件是否存在
+            </summary>
+            <param name="DirectoryPath"></param>
+            <param name="FileName"></param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PublicHelperClass.FTPClass.GetFileSize(System.String,System.String@)">
+            <summary>
+            获取指定文件大小
+            </summary>
+            <param name="filename"></param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PublicHelperClass.FTPClass.ReName(System.String,System.String,System.String@)">
+            <summary>
+            修改名称或移动
+            </summary>
+            <param name="FileName"></param>
+            <param name="newFileName"></param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="T:PublicHelperClass.ImageClass">
+            <summary>
+            图片处理类
+            </summary>
+        </member>
+        <member name="M:PublicHelperClass.ImageClass.MakeThumbnail(System.String,System.String,System.Int32,System.Int32,PublicHelperClass.MakeThumbnailMode,System.String@)">
+            <summary>
+            生成缩略图
+            </summary>
+            <param name="originalImagePath">源图路径（物理路径）</param>
+            <param name="thumbnailPath">缩略图路径（物理路径）</param>
+            <param name="width">缩略图宽度</param>
+            <param name="height">缩略图高度</param>
+            <param name="mode">生成缩略图的方式</param>
+            <param name="errmsg">错误信息</param>
+            <returns>返回是否成功</returns>
+        </member>
+        <member name="M:PublicHelperClass.ImageClass.GetImageSize(System.String,System.Int32@,System.Int32@,System.String@)">
+            <summary>
+            获取图片尺寸
+            </summary>
+            <param name="imgPath">图片路径</param>
+            <param name="w">返回图片宽度</param>
+            <param name="h">返回图片高度</param>
+            <param name="errmsg">错误信息</param>
+            <returns>返回是否成功</returns>
+        </member>
+        <member name="T:PublicHelperClass.MakeThumbnailMode">
+            <summary>
+            生成缩略图方式
+            [ForceZoom 强制宽高，会变形;ForceW指定宽度，高度自适应;ForceH 指定高度，宽度自适应;Cut 裁剪]
+            </summary>
+        </member>
+        <member name="F:PublicHelperClass.MakeThumbnailMode.ForceZoom">
+            <summary>
+            强制宽高，会变形
+            </summary>
+        </member>
+        <member name="F:PublicHelperClass.MakeThumbnailMode.ForceW">
+            <summary>
+            指定宽度，高度自适应
+            </summary>
+        </member>
+        <member name="F:PublicHelperClass.MakeThumbnailMode.ForceH">
+            <summary>
+            指定高度，宽度自适应
+            </summary>
+        </member>
+        <member name="F:PublicHelperClass.MakeThumbnailMode.Cut">
+            <summary>
+            裁剪
+            </summary>
+        </member>
+        <member name="T:PublicHelperClass.IPv4IsRangeClass">
+            <summary>
+            IP地址范围判断(IPV4)
+            </summary>
+        </member>
+        <member name="M:PublicHelperClass.IPv4IsRangeClass.TheIpIsRange(System.String,System.String[])">
+            <summary>
+            判断指定的IP是否在指定的IP范围内   这里只能指定一个范围
+            </summary>
+            <param name="ip"></param>
+            <param name="ranges">ip范围数组</param>
+            <returns></returns>
+        </member>
+        <member name="M:PublicHelperClass.IPv4IsRangeClass.TheIpIsRange(System.String,System.String)">
+            <summary>
+            判断指定的IP是否在指定的IP范围内   这里只能指定一个范围
+            </summary>
+            <param name="ip"></param>
+            <param name="ranges"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PublicHelperClass.IPv4IsRangeClass.Get4Byte(System.String)">
+            <summary>
+            将IP四组值 转换成byte型
+            </summary>
+            <param name="ip"></param>
+            <returns></returns>
+        </member>
+        <member name="T:PublicHelperClass.JsonHelperClass">
+            <summary>
+            C# Json转化类
+            </summary>
+        </member>
+        <member name="M:PublicHelperClass.JsonHelperClass.ObjectToJson``1(``0,System.String@)">
+            <summary>
+            把类转化为Json格式
+            </summary>
+            <typeparam name="T">要转化的类对象</typeparam>
+            <param name="obj">类实例</param>
+            <param name="errmsg">错误消息</param>
+            <returns>返回Json字符串</returns>
+        </member>
+        <member name="M:PublicHelperClass.JsonHelperClass.ObjectListToJson``1(System.Collections.Generic.List{``0},System.String@)">
+            <summary>
+            把类列表转化为Json格式
+            </summary>
+            <typeparam name="T">要转化的类对象</typeparam>
+            <param name="list">类实例列表</param>
+            <param name="msg">错误消息</param>
+            <returns>返回Json字符串</returns>
+        </member>
+        <member name="M:PublicHelperClass.JsonHelperClass.JsonToObject``1(System.String,System.String@)">
+            <summary>
+            把Json字符串转化为类
+            </summary>
+            <typeparam name="T">要转化的类对象</typeparam>
+            <param name="json">Json字符串</param>
+            <param name="errmsg">错误消息</param>
+            <returns>返回类实例</returns>
+        </member>
+        <member name="M:PublicHelperClass.JsonHelperClass.DataTableToJson(System.Data.DataTable,System.String@)">
+            <summary>
+            DataTable转Json
+            </summary>
+            <param name="dt">DataTable</param>
+            <param name="errmsg">错误信息</param>
+            <returns></returns>
+        </member>
+        <member name="T:PublicHelperClass.NetClass">
+            <summary>
+            Net网络功能类
+            </summary>
+        </member>
+        <member name="P:PublicHelperClass.NetClass.SmtpServer">
+            <summary>
+            设定邮件服务器Smtp地址
+            </summary>
+        </member>
+        <member name="P:PublicHelperClass.NetClass.MailFrom">
+            <summary>
+            设定默认邮件发送者地址
+            </summary>
+        </member>
+        <member name="P:PublicHelperClass.NetClass.Account">
+            <summary>
+            设定邮件服务器账号
+            </summary>
+        </member>
+        <member name="P:PublicHelperClass.NetClass.Passwd">
+            <summary>
+            设定邮件服务器密码
+            </summary>
+        </member>
+        <member name="M:PublicHelperClass.NetClass.SendMail(System.String,System.String,System.String,System.String,System.String@)">
+            <summary>
+            发送电子邮件（不支持附件）
+            </summary>
+            <param name="mailto">邮件接收人邮件地址</param>
+            <param name="subject">邮件标题</param>
+            <param name="content">邮件内容</param>
+            <param name="mailfrom">邮件发送人地址</param>
+            <param name="errmsg">返回错误信息</param>
+            <returns>返回Bool显示发送成功失败</returns>
+        </member>
+        <member name="M:PublicHelperClass.NetClass.HttpWebData(System.String,PublicHelperClass.Method,System.String,System.Text.Encoding,System.Net.CookieContainer,System.String@)">
+            <summary>
+            Http远程发送及获取数据
+            </summary>
+            <param name="TheURL">远程地址</param>
+            <param name="method">HTTP类型</param>
+            <param name="DataStr">POST数据内容</param>
+            <param name="encoding">数据编码</param>
+            <param name="cookie">cookie</param>
+            <param name="errmsg">错误信息</param>
+            <returns>返回远程返回的内容</returns>
+        </member>
+        <member name="T:PublicHelperClass.Method">
+            <summary>
+            Http方式
+            [Post;Get]
+            </summary>
+        </member>
+        <member name="F:PublicHelperClass.Method.POST">
+            <summary>
+            post方式发送
+            </summary>
+        </member>
+        <member name="F:PublicHelperClass.Method.GET">
+            <summary>
+            get方式发送
+            </summary>
+        </member>
+        <member name="T:PublicHelperClass.ReadEncodingTxtClass">
+            <summary>
+            读取文本文件 自动识别编码
+            </summary>
+        </member>
+        <member name="M:PublicHelperClass.ReadEncodingTxtClass.GetEncoding(System.String)">
+            <summary>
+            获取文件编码
+            </summary>
+            <param name="fileName">文件路径</param>
+            <returns></returns>
+        </member>
+        <member name="M:PublicHelperClass.ReadEncodingTxtClass.GetEncoding(System.IO.FileStream)">
+            <summary>
+            获取文件编码
+            </summary>
+            <param name="stream">文件流</param>
+            <returns></returns>
+        </member>
+        <member name="M:PublicHelperClass.ReadEncodingTxtClass.GetEncoding(System.String,System.Text.Encoding)">
+            <summary>
+            获取文件编码
+            </summary>
+            <param name="fileName">文件名</param>
+            <param name="defaultEncoding">指定默认编码</param>
+            <returns></returns>
+        </member>
+        <member name="M:PublicHelperClass.ReadEncodingTxtClass.GetEncoding(System.IO.FileStream,System.Text.Encoding)">
+            <summary>
+            获取文件编码
+            </summary>
+            <param name="stream">文件流</param>
+            <param name="defaultEncoding">指定默认编码</param>
+            <returns></returns>
+        </member>
+        <member name="M:PublicHelperClass.ReadEncodingTxtClass.ReadFile(System.String,System.String@)">
+            <summary>
+            自动识别读取文本内容
+            </summary>
+            <param name="fileName"></param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="T:PublicHelperClass.SerializeUtilitiesClass">
+            <summary>
+            字符串与对象的序列化及反序列化
+            </summary>
+        </member>
+        <member name="M:PublicHelperClass.SerializeUtilitiesClass.Serialize``1(``0,System.String@)">
+            <summary>
+            序列化 对象到字符串
+            </summary>
+            <param name="obj">泛型对象</param>
+            <returns>序列化后的字符串</returns>
+        </member>
+        <member name="M:PublicHelperClass.SerializeUtilitiesClass.Desrialize``1(System.String,System.String@)">
+            <summary>
+            反序列化 字符串到对象
+            </summary>
+            <param name="obj">泛型对象</param>
+            <param name="str">要转换为对象的字符串</param>
+            <returns>反序列化出来的对象</returns>
+        </member>
+        <member name="T:PublicHelperClass.StrFormatClass">
+            <summary>
+            字符串编码处理加密类
+            </summary>
+        </member>
+        <member name="M:PublicHelperClass.StrFormatClass.MD5(System.String)">
+            <summary>
+            MD5加密
+            </summary>
+            <param name="destr">待加密字符串</param>
+            <returns>返回已加密密文</returns>
+        </member>
+        <member name="M:PublicHelperClass.StrFormatClass.MD5ToDepth(System.String)">
+            <summary>
+            升级版MD5加密（set sKey）
+            </summary>
+            <param name="destr">明文</param>
+            <returns></returns>
+        </member>
+        <member name="M:PublicHelperClass.StrFormatClass.MD5ToDepthVerify(System.String,System.String)">
+            <summary>
+            升级版MD5验证（set sKey）
+            </summary>
+            <param name="destr">明文</param>
+            <param name="enstr">密文</param>
+            <returns></returns>
+        </member>
+        <member name="M:PublicHelperClass.StrFormatClass.NumberEnCode(System.UInt32,System.String@)">
+            <summary>
+            数字加密签名
+            </summary>
+            <param name="num">要加密的正整数</param>
+            <param name="errmsg">错误信息</param>
+            <returns></returns>
+        </member>
+        <member name="M:PublicHelperClass.StrFormatClass.NumberDecode(System.String,System.Int32,System.String@)">
+            <summary>
+            数字解密校验
+            </summary>
+            <param name="str">要解密的字符串</param>
+            <param name="signtime">校验时间差，单位分钟（不校验时间差，传入-1）</param>]
+            <param name="errmsg">错误信息</param>
+            <returns></returns>
+        </member>
+        <member name="M:PublicHelperClass.StrFormatClass.NumberDecode2(System.String,System.Int32,System.String@)">
+            <summary>
+            数字解密校验
+            </summary>
+            <param name="str">要解密的字符串</param>
+            <param name="signtime">校验时间差，单位分钟（不校验时间差，传入-1）</param>]
+            <param name="errmsg">错误信息</param>
+            <returns></returns>
+        </member>
+        <member name="M:PublicHelperClass.StrFormatClass.NumberEnCode(System.UInt32,System.String,System.String@)">
+            <summary>
+            数字加密签名
+            </summary>
+            <param name="num">要加密的正整数</param>
+            <param name="seeds">加密种子，字符串长度大于10，并且其中字符不能重复</param>
+            <param name="errmsg">错误信息</param>
+            <returns></returns>
+        </member>
+        <member name="M:PublicHelperClass.StrFormatClass.NumberDecode(System.String,System.Int32,System.String,System.String@)">
+            <summary>
+            数字解密校验
+            </summary>
+            <param name="str">要解密的字符串</param>
+            <param name="signtime">校验时间差，单位分钟（不校验时间差，传入-1）</param>]
+            <param name="seeds">解密种子，与加密时保持一致</param>
+            <param name="errmsg">错误信息</param>
+            <returns>-2解密错误；-1时间差校验不通过</returns>
+        </member>
+        <member name="M:PublicHelperClass.StrFormatClass.NumberEnCode(System.UInt32,System.String,System.Int32,System.String@)">
+            <summary>
+            数字加密签名
+            </summary>
+            <param name="num">要加密的正整数</param>
+            <param name="seeds">加密种子，字符串长度大于10，并且其中字符不能重复</param>
+            <param name="grade">加密级别，取值1-7，数字越大，级别越高，默认级别为3</param>
+            <param name="errmsg">错误信息</param>
+            <returns></returns>
+        </member>
+        <member name="M:PublicHelperClass.StrFormatClass.NumberDecode(System.String,System.Int32,System.String,System.Int32,System.String@)">
+            <summary>
+            数字解密校验
+            </summary>
+            <param name="str">要解密的字符串</param>
+            <param name="signtime">校验时间差，单位分钟（不校验时间差，传入-1）</param>]
+            <param name="seeds">解密种子，与加密时保持一致</param>
+            <param name="grade">解密级别，与加密时保持一致</param>
+            <param name="errmsg">错误信息</param>
+            <returns>-2解密错误；-1时间差校验不通过</returns>
+        </member>
+        <member name="M:PublicHelperClass.StrFormatClass.escape(System.String)">
+            <summary>
+            字符串编码 escape
+            </summary>
+            <param name="s"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PublicHelperClass.StrFormatClass.unescape(System.String)">
+            <summary>
+            字符串解码 unescape
+            </summary>
+            <param name="s"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PublicHelperClass.StrFormatClass.Base64Encode(System.Text.Encoding,System.String,System.String@)">
+            <summary> 
+            Base64编码 
+            </summary> 
+            <param name="encode">加密采用的编码方式</param> 
+            <param name="destr">待加密的明文</param> 
+            <param name="errmsg">错误信息</param>
+            <returns></returns> 
+        </member>
+        <member name="M:PublicHelperClass.StrFormatClass.Base64Decode(System.Text.Encoding,System.String,System.String@)">
+            <summary> 
+            Base64解码 
+            </summary> 
+            <param name="encode">解密采用的编码方式，注意和加密时采用的方式一致</param> 
+            <param name="enstr">待解密的密文</param> 
+            <param name="errmsg">错误信息</param>
+            <returns>解密后的字符串</returns> 
+        </member>
+        <member name="M:PublicHelperClass.StrFormatClass.GetDateTimeDown(System.String)">
+            <summary>
+            距离当前时间的时间差显示
+            </summary>
+            <param name="timestr">时间字符串</param>
+            <returns>{0}天{1}小时{2}分钟</returns>
+        </member>
+        <member name="M:PublicHelperClass.StrFormatClass.StrCut(System.String,System.Int32,System.String)">
+            <summary>
+            中文字符串长度截取
+            </summary>
+            <param name="str">待处理字符串</param>
+            <param name="len">要求的字符串长度（按中文长度算）</param>
+            <param name="scode">省略符号</param>
+            <returns>处理后返回字符串</returns>
+        </member>
+        <member name="M:PublicHelperClass.StrFormatClass.StrClearHTML(System.String)">
+            <summary>
+            清除字符串的HTML代码
+            </summary>
+            <param name="str">待处理字符串</param>
+            <returns>处理后返回字符串</returns>
+        </member>
+        <member name="M:PublicHelperClass.StrFormatClass.TextBoxRestoreHTML(System.String)">
+            <summary>
+            还原简单文本输入框内容的格式（换行、空格）
+            </summary>
+            <param name="str">字符串内容</param>
+            <returns></returns>
+        </member>
+        <member name="P:PublicHelperClass.StrFormatClass.sKey">
+            <summary>
+            加解密密钥
+            </summary>
+        </member>
+        <member name="M:PublicHelperClass.StrFormatClass.Encrypt(System.String,System.String@)">
+            <summary>
+            加密字符串
+            </summary>
+            <param name="destr">待加密字符串</param>
+            <param name="errmsg">错误信息</param>
+            <returns>返回已加密密文</returns>
+        </member>
+        <member name="M:PublicHelperClass.StrFormatClass.Decrypt(System.String,System.String@)">
+            <summary>
+            解密字符串
+            </summary>
+            <param name="enstr">待解密字符串</param>
+            <param name="errmsg">错误信息</param>
+            <returns>返回已解密原文</returns>
+        </member>
+        <member name="M:PublicHelperClass.StrFormatClass.RSAEncrypt(System.String,System.String)">
+            <summary>
+            RAS加密
+            </summary>
+            <param name="xmlPublicKey">公钥</param>
+            <param name="EncryptString">明文</param>
+            <returns>密文</returns>
+        </member>
+        <member name="M:PublicHelperClass.StrFormatClass.RSADecrypt(System.String,System.String)">
+            <summary>
+            RAS解密
+            </summary>
+            <param name="xmlPrivateKey">私钥</param>
+            <param name="DecryptString">密文</param>
+            <returns>明文</returns>
+        </member>
+        <member name="M:PublicHelperClass.StrFormatClass.RSAKey">
+            <summary>
+            产生公钥和私钥对
+            </summary>
+            <returns>string[] 0:私钥;1:公钥</returns>
+        </member>
+        <member name="M:PublicHelperClass.StrFormatClass.EncodingTo(System.String,System.String,System.String,System.String@)">
+            <summary>
+            字符串转码
+            </summary>
+            <param name="str">待转码字符串</param>
+            <param name="encode_from">字符串原编码</param>
+            <param name="encode_to">要转换的编码</param>
+            <param name="errmsg"></param>
+            <returns></returns>
+        </member>
+        <member name="T:PublicHelperClass.ValidatorClass">
+            <summary>
+            数据校验类
+            </summary>
+        </member>
+        <member name="M:PublicHelperClass.ValidatorClass.Validator(System.String,PublicHelperClass.CheckType,System.String,System.Boolean)">
+            <summary>
+            校验数据格式正确性
+            </summary>
+            <param name="str">带校验字符串</param>
+            <param name="CheckType">校验类型</param>
+            <param name="Regular">自定义正则表达式</param>
+            <param name="IsNull">是否可为空 true可为空;false不可为空</param>
+            <returns>返回Bool值 True为通过；False为不通过</returns>
+        </member>
+        <member name="M:PublicHelperClass.ValidatorClass.GetRegular(PublicHelperClass.CheckType)">
+            <summary>
+            获取校验表达式
+            </summary>
+            <param name="type">校验类型</param>
+            <returns>返回表达式字符串</returns>
+        </member>
+        <member name="M:PublicHelperClass.ValidatorClass.CheckNumber(System.String,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            检查是否为数字，并且位长是否正确
+            </summary>
+            <param name="num">待检测数字字符串</param>
+            <param name="LenMin">最小长度</param>
+            <param name="LenMax">最大长度</param>
+            <param name="IsNull">是否为空</param>
+            <returns>返回Bool值 True为通过；False为不通过</returns>
+        </member>
+        <member name="M:PublicHelperClass.ValidatorClass.CheckDateTime(System.String,System.Boolean)">
+            <summary>
+            检查是否日期类型
+            </summary>
+            <param name="datestr">日期字符串</param>
+            <param name="IsNull">是否可以为空</param>
+            <returns></returns>
+        </member>
+        <member name="T:PublicHelperClass.CheckType">
+            <summary>
+            数据校验类型
+            [ Email; Mobile; Tel; Chinese 中文; WebUrl; Loginid 用户名6-20位首字母; Other 自定义]
+            </summary>
+        </member>
+        <member name="F:PublicHelperClass.CheckType.Email">
+            <summary>
+            邮件地址
+            </summary>
+        </member>
+        <member name="F:PublicHelperClass.CheckType.Mobile">
+            <summary>
+            手机号码
+            </summary>
+        </member>
+        <member name="F:PublicHelperClass.CheckType.Tel">
+            <summary>
+            电话号码
+            </summary>
+        </member>
+        <member name="F:PublicHelperClass.CheckType.Chinese">
+            <summary>
+            中文
+            </summary>
+        </member>
+        <member name="F:PublicHelperClass.CheckType.WebUrl">
+            <summary>
+            网址
+            </summary>
+        </member>
+        <member name="F:PublicHelperClass.CheckType.Loginid">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="F:PublicHelperClass.CheckType.Other">
+            <summary>
+            其他表达式指定
+            </summary>
+        </member>
+        <member name="T:PublicHelperClass.WebServiceHelperClass">
+            <summary>
+            动态调用web服务
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:PublicHelperClass.WebServiceHelperClass.InvokeWebService(System.String,System.String,System.Object[])" -->
+        <!-- Badly formed XML comment ignored for member "M:PublicHelperClass.WebServiceHelperClass.InvokeWebService(System.String,System.String,System.String,System.Object[])" -->
+        <member name="T:PublicHelperClass.XmlHelperClass">
+            <summary>
+            xml和实体类转换
+            </summary>
+        </member>
+        <member name="M:PublicHelperClass.XmlHelperClass.XmlToObject``1(System.String,System.String@)">
+            <summary>
+             Xml序列化为实体类 
+            </summary>
+            <typeparam name="T">实体类</typeparam>
+            <param name="xml">xml内容</param>
+            <param name="errmsg">错误信息</param>
+            <returns></returns>
+        </member>
+        <member name="M:PublicHelperClass.XmlHelperClass.ObjectToXml``1(``0,System.String@)">
+            <summary>
+            实体类反序列化为xml
+            </summary>
+            <typeparam name="T">实体类</typeparam>
+            <param name="obj">实体类</param>
+            <param name="errmsg">错误信息</param>
+            <returns></returns>
+        </member>
+        <member name="T:PublicHelperClass.RARClass">
+            <summary>
+               C#解压RAR压缩文件
+            </summary>
+        </member>
+        <member name="M:PublicHelperClass.RARClass.Exists">
+            <summary>
+            是否安装了Winrar
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PublicHelperClass.RARClass.CompressRAR(System.String,System.String,System.String)">
+            <summary>
+            打包成Rar
+            </summary>
+            <param name="patch">待压缩文件</param>
+            <param name="rarPatch">压缩包路径</param>
+            <param name="rarName">压缩包名称</param>
+        </member>
+        <member name="M:PublicHelperClass.RARClass.unCompressRAR(System.String,System.String,System.String)">
+            <summary>
+            解压
+            </summary>
+            <param name="unRarPatch">解压保存的目录</param>
+            <param name="rarPatch">压缩包路径</param>
+            <param name="rarName">压缩包名称</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

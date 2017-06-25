@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	   <meta charset="utf-8">
+	   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	   <title>商品订单管理</title>
+	   <!--#include file="/headfiles.html"-->
+	   <script src="/js/ChosenManager/ordershop.js"></script>
+</head>
+<body>
+	   <div id="container" class="effect aside-float aside-bright mainnav-lg">
+		     <!--#include file="/header.html"-->
+		     <div class="boxed">
+			      <div id="content-container">
+				        <div id="page-title">
+					          <h1 class="page-header text-overflow">商品订单管理</h1>
+				        </div>
+				        <div id="page-content">
+					          <div id="searchpanel" class="panel">
+						            <div class="panel-body">
+                                        <div class="col-md-7">
+                                           
+                                        </div>
+                                        <div class="col-md-2">
+                                            <input type="text" class="form-control" name="shopname" placeholder="商品名称"/>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <input type="text" class="form-control" name="shopno" placeholder="订单号" />
+                                        </div>
+                                        <button class="btn btn-primary" id="search">
+                                            搜 索
+                                        </button>
+						            </div>
+					          </div>
+					          <div class="panel">
+						            <div class="panel-body">
+							              <div id="toolbar" class="btn-group">
+								                <button class="btn btn-info" data-mark="Delete">
+									                  <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> 删除
+								                </button>
+							              </div>
+							              <table id="TableData"></table>
+						            </div>
+					          </div>
+				        </div>
+			      </div>
+			      <!--#include file="/navmenu.html"-->
+		     </div>
+		     <!--#include file="/footer.html"-->
+	   </div>
+</body>
+</html>

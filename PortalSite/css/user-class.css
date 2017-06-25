@@ -1,0 +1,60 @@
+.user-msg .title{
+	margin-bottom: 20px;
+}
+.user-msg ol{
+	position: relative;
+	background: url(../img/user/pic-8.png) repeat-y 70px top;
+}
+.user-msg ol li{
+	margin-left: 96px;
+	width: 627px;
+	padding: 20px;
+	border-bottom: 1px solid #d9dde0;
+}
+.user-msg ol li.date{
+	position: absolute;
+	width: 74px;
+	left: 0;
+	top: 0;
+	margin-left: 0;
+	background: url(../img/user/pic-7.png) no-repeat right top;
+	color: #938cab;
+	font-size: 14px;
+	padding: 0;
+	border: 0;
+}
+.user-msg ol li.date b{
+	font-size: 20px;
+	font-weight: normal;
+}
+.user-msg li img{
+	margin-right: 20px;
+}
+.user-msg dl{
+	display: inline-block;
+}
+.user-msg dl dt{
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 30px;
+	margin-top: 10px;
+}
+.user-msg dl dd{
+	line-height: 20px;
+	font-size: 12px;
+	color: #333333;
+}
+.user-msg dl dd.yx{
+	color: #c9c9c9;
+}
+.user-msg li a{
+	float: right;
+	width: 120px;
+	height: 46px;
+	line-height: 46px;
+	text-align: center;
+	color: white;
+	font-size: 16px;
+	background: #7EA54C;
+	margin-top: 30px;
+}

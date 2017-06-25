@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>用户中心</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/pay.css" />
+        <script src="scripts/jquery-1.11.0.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/html5shiv.js"></script>
+        <script src="scripts/jquery.tmpl.min.js"></script>
+        <script src="scripts/jquery.tmplplus.min.js"></script>
+        <script src="appjs/orderlogic.js"></script>
+	</head>
+	<body>
+		<div id="headerHtml"></div>
+		<div class="clear"></div>
+		<div class="user-center" id="user-centerHtml">
+			<!--<div class="user-center-top">
+				<div class="main">
+					<dl>
+						<dt class="fl">
+							<span>
+								<img src="img/user/pic-4.png" />
+							</span>
+						</dt>
+						<dd class="username">
+							聪聪龙内部测试账号
+						</dd>
+						<dd class="ljlearn">
+							累计学习<a>2</a>小时
+						</dd>
+						<dd>
+							这家伙很懒什么都没留下
+						</dd>
+					</dl>
+				</div>
+			</div>-->
+		</div>
+		<div class="user-subnav main">
+			<dl class="fl nav">
+				<dt>
+					账号管理
+				</dt>
+				<dd>
+					<a href="user.html">个人信息</a>
+				</dd>
+				<dt>
+					课程
+				</dt>
+				<dd>
+					<a href="user-class.html">我的课程</a>
+				</dd>
+				<dd>
+					<a href="user-favor.html">我的收藏</a>
+				</dd>
+				<!--<dd>
+					<a>最近学习</a>
+				</dd>-->
+				<dt>
+					支付中心
+				</dt>
+				<dd>
+					<a href="user-shopcar.html">购物车</a>
+				</dd>
+				<dd>
+					<a class="active" href="user-payfirst.html">我的订单</a>
+				</dd>
+			</dl>
+			<div class="user-msg" otype="orderlist">
+				<p class="title">
+					购物车
+				</p>
+				<ol>
+					<li class="cartitle">
+						<span class="kc">课程</span>
+						<span class="ddbh">课程编号</span>
+						<span class="rq">日期</span>
+						<span class="je">金额</span>
+						<span class="zt" style="cursor: pointer;">状态<img src="img/user/pic-15.png" />
+						<ul style="display: none;">
+							<li>已支付</li>
+							<li>未支付</li>
+						</ul></span>
+						<script>
+							$(function(){
+								$(".cartitle .zt").click(function(){
+									if($(this).children("ul").is(":hidden")){
+										$(this).children("ul").show()
+									}else{
+										$(this).children("ul").hide()
+									}
+									
+								})
+								$("span.cz a").click(function(){
+									$(this).parents("span").parents("li.list").remove()
+								})
+							}) 
+						</script>
+						<span class="cz">操作</span>
+					</li>
+					<li class="list" id="order_list"></li>
+                        <script type="text/x-jquery-tmpl" id="order_detail_list">
+                            {{each(i,order) data}}
+                            <span class="kc">
+                                <img src="img/user/pic-12.png" class="fl" />
+                                <b>{{= order.ordername}}<br />{{= order.nickname}}</b>
+                            </span>
+                            <span class="ddbh">{{= order.userid}}</span>
+                            <span class="rq">{{= order.createdtime}}</span>
+                            <span class="je">¥：{{= order.m_price}}</span>
+                            <span class="zt">{{= order.statusname}}</span>
+                            <span class="cz"><a oid={{= order.orderno}} class="oid_delete">删除</a></span>
+                            {{/each}}
+                        </script>
+				</ol>
+			</div>
+		</div>
+		
+		<div class="clear"></div>
+		<div id="footerHtml"></div>
+		
+	</body>
+</html>

@@ -1,0 +1,175 @@
+section{
+	height: 678px;
+	width: 100%;
+	background: url(../img/login/pic-1.png) no-repeat center center;
+	background-size: cover;
+	padding-top: 40px;
+}
+.register{
+	width: 1075px;
+	height: 570px;
+	background: url(../img/login/pic-7.png) no-repeat top center;
+	margin: auto;
+}
+.register p{
+	width: 954px;
+	margin: auto;
+	border-bottom: 1px solid #c0ccb4;
+	text-align: center; 
+	padding-top: 84px;
+	margin-bottom: 40px;
+}
+.register p a{
+	height: 50px;
+	line-height: 50px;
+	width: 280px;
+	border-bottom: 1px solid ##C0CCB4;
+	font-size: 16px;
+	margin-left: -10px;
+}
+.register p a span{
+	display: inline-block;
+	background: url(../img/login/pic-8.png) no-repeat center center;
+	width: 25px;
+	height: 25px;
+	text-align: center;
+	line-height: 25px;
+	color: white;
+	margin-right: 5px;
+}
+.register p a.active{
+	border-bottom: 1px solid #75B038;
+}
+.register p a.active span{
+	background: url(../img/login/pic-9.png) no-repeat center center;
+}
+.register dl.registerwrap{
+	width: 430px;
+	margin: auto;
+}
+.register dl dd{
+	margin-bottom: 10px;
+}
+.register dl dd label{
+	display: inline-block;
+	width: 120px;
+	margin-right: 10px;
+	text-align: right;
+}
+.register dl input{
+	width: 290px;
+	height: 38px;
+	border: 1px solid #C0CCB4;
+	text-indent: 1em;
+	line-height: 38px;
+	font-size: 14px;
+	border-radius: 5px;
+	background: white;
+}
+.register dl dd.msgcode a{
+	width: 116px;
+	height: 38px;
+	border: 1px solid #C0CCB4;
+	line-height: 38px;
+	font-size: 14px;
+	border-radius: 5px;
+	text-align: center;
+	background: #80B55B;
+	color: white
+}
+#send_code{
+	width: 116px;
+	height: 38px;
+	border: 1px solid #C0CCB4;
+	line-height: 38px;
+	font-size: 13px;
+	border-radius: 5px;
+	text-align: left;
+	background: #80B55B;
+	color: white
+}
+.register dl dd.zcxy i{
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	background: url(../img/login/pic-10.png) no-repeat center center;
+	margin-right: 6px;
+	vertical-align: middle;
+	margin-top: -2px;
+}
+.register dl dd.zcxy i.active{
+	background: url(../img/login/pic-11.png) no-repeat center center;
+}
+.register dl dd.submit a{
+	background: url(../img/login/pic-181.png) no-repeat center center;
+	width: 292px;
+	height: 42px;
+	text-align: center;
+	line-height: 42px;
+	font-size: 20px;
+	color: white;
+}
+.register dl dd.tips{
+	font-size: 12px;
+	color: #999999;
+}
+.register dl dd.tips a{
+	color: #6aaa29;
+}
+.register dl dd.sex i{
+	background: url(../img/login/pic-13.png) no-repeat center center;
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+.register dl dd.sex i.active{
+	background: url(../img/login/pic-14.png) no-repeat center center;
+}
+
+.register dl dd div{
+	margin-left: 135px;
+}
+.register dl dd div a{
+	background: url(../img/login/pic-15.png) no-repeat center center;
+	width: 76px;
+	height: 34px;
+	text-align: center;
+	line-height: 34px;
+	margin-right: 5px;
+}
+.register dl dd div a.active{
+	background: url(../img/login/pic-16.png) no-repeat center center;
+	color: white;
+}
+.register dl dd div ol li a{
+	background: none;
+}
+.register dl dd div ol li a.active{
+	background: none;
+	color: #7bbd38;
+}
+.register dl dd div ol{
+	background: white;
+	padding: 10px;
+	border: 1px solid #7BBD38;
+}
+.register dl dt{
+	margin-top: 86px;
+	text-align: center;
+}
+.register dl dt img.fr{
+	vertical-align: middle;
+	margin-top: 20px;
+	margin-left: 66px;
+}
+.register dl dt a{
+	background: url(../img/login/pic-18.png) no-repeat center center;
+	width: 165px;
+	height: 41px;
+	text-align: center;
+	line-height: 41px;
+	color: white;
+	font-size: 20px;
+}

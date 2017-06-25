@@ -1,0 +1,1753 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.RIPSP.BaseModel</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.RIPSP.Model.base_classes">
+            <summary>
+            扩展Model 分类管理 base_classes 
+            </summary>
+            <summary>
+            实体Model 分类管理 base_classes 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.base_classes.#ctor">
+            <summary>
+            构造函数 base_classes 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.base_classes.#ctor(System.Nullable{System.Int32},System.String,System.Nullable{System.Int32},System.String,System.String,System.Nullable{System.Int32},System.String)">
+            <summary>
+            构造函数 base_classes 
+            </summary>
+            <param name="_classid">分类编号</param> 
+            <param name="_classname">分类名称</param> 
+            <param name="_parentclassid">父分类编号</param> 
+            <param name="_remarks">备注</param> 
+            <param name="_icon">图标</param> 
+            <param name="_sorts">排序</param> 
+            <param name="_tag">标签</param> 
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_classes.classid" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_classes.classname" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_classes.parentclassid" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_classes.remarks" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_classes.icon" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_classes.sorts" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_classes.tag" -->
+        <member name="T:Microsoft.RIPSP.Model.base_customers">
+            <summary>
+            扩展Model 客户管理 base_customers 
+            </summary>
+            <summary>
+            实体Model 客户管理 base_customers 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.base_customers.#ctor">
+            <summary>
+            构造函数 base_customers 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.base_customers.#ctor(System.Nullable{System.Int32},System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Int32},System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.DateTime})">
+            <summary>
+            构造函数 base_customers 
+            </summary>
+            <param name="_customerid">编号</param> 
+            <param name="_customername">客户名称</param> 
+            <param name="_contacts">联系人</param> 
+            <param name="_email">邮箱</param> 
+            <param name="_phone">电话</param> 
+            <param name="_fax">传真</param> 
+            <param name="_country">国别</param> 
+            <param name="_areacode">所在地区</param> 
+            <param name="_postcode">邮编</param> 
+            <param name="_industry">行业</param> 
+            <param name="_website">网站</param> 
+            <param name="_logourl">logo路径</param> 
+            <param name="_introduction">简介</param> 
+            <param name="_creator">创建人</param> 
+            <param name="_createdtime">创建时间</param> 
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_customers.customerid" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_customers.customername" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_customers.contacts" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_customers.email" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_customers.phone" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_customers.fax" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_customers.country" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_customers.areacode" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_customers.postcode" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_customers.industry" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_customers.website" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_customers.logourl" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_customers.introduction" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_customers.creator" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_customers.createdtime" -->
+        <member name="T:Microsoft.RIPSP.Model.base_dics">
+            <summary>
+            扩展Model 字典管理 base_dics 
+            </summary>
+            <summary>
+            实体Model 字典管理 base_dics 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.base_dics.#ctor">
+            <summary>
+            构造函数 base_dics 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.base_dics.#ctor(System.Nullable{System.Int32},System.String,System.String,System.String,System.String,System.Nullable{System.Int32},System.String,System.String,System.String,System.Nullable{System.Int32})">
+            <summary>
+            构造函数 base_dics 
+            </summary>
+            <param name="_dicid">字典编号</param> 
+            <param name="_dicname">字典名</param> 
+            <param name="_dicvalue">字典值</param> 
+            <param name="_dictype">字典类型</param> 
+            <param name="_dictypename">字典类型名</param> 
+            <param name="_isdictype">是否字典类型0非；1是</param> 
+            <param name="_icon">图标</param> 
+            <param name="_tag">标签</param> 
+            <param name="_remarks">备注</param> 
+            <param name="_sorts">排序</param> 
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_dics.dicid" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_dics.dicname" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_dics.dicvalue" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_dics.dictype" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_dics.dictypename" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_dics.isdictype" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_dics.icon" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_dics.tag" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_dics.remarks" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_dics.sorts" -->
+        <member name="T:Microsoft.RIPSP.Model.base_itemcontents">
+            <summary>
+            扩展Model 栏目内容管理 base_itemcontents 
+            </summary>
+            <summary>
+            实体Model 栏目内容管理 base_itemcontents 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.base_itemcontents.#ctor">
+            <summary>
+            构造函数 base_itemcontents 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.base_itemcontents.#ctor(System.Nullable{System.Int32},System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.DateTime},System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String)">
+            <summary>
+            构造函数 base_itemcontents 
+            </summary>
+            <param name="_seqid">编号</param> 
+            <param name="_itemmark">栏目标识</param> 
+            <param name="_title">标题</param> 
+            <param name="_keywords">关键词</param> 
+            <param name="_abstracts">摘要</param> 
+            <param name="_thumbnail">图片</param> 
+            <param name="_classname">分类</param> 
+            <param name="_author">作者</param> 
+            <param name="_aboutdate">相关日期</param> 
+            <param name="_linkurl">链接</param> 
+            <param name="_sorts">排序</param> 
+            <param name="_createdtime">创建时间</param> 
+            <param name="_creator">创建人</param> 
+            <param name="_status">状态1 人工录入2 自动录入-1标记删除 （人工录入的内容物理删除，自动录入的内容标记删除）</param> 
+            <param name="_restype">资源类型</param> 
+            <param name="_rescode">资源编号</param> 
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_itemcontents.seqid" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_itemcontents.itemmark" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_itemcontents.title" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_itemcontents.keywords" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_itemcontents.abstracts" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_itemcontents.thumbnail" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_itemcontents.classname" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_itemcontents.author" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_itemcontents.aboutdate" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_itemcontents.linkurl" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_itemcontents.sorts" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_itemcontents.createdtime" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_itemcontents.creator" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_itemcontents.status" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_itemcontents.restype" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_itemcontents.rescode" -->
+        <member name="T:Microsoft.RIPSP.Model.base_items">
+            <summary>
+            扩展Model 栏目管理 base_items 
+            </summary>
+            <summary>
+            实体Model 栏目管理 base_items 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.base_items.#ctor">
+            <summary>
+            构造函数 base_items 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.base_items.#ctor(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String,System.Nullable{System.Int32},System.String,System.Nullable{System.Int32},System.String,System.Nullable{System.Int32},System.Nullable{System.Int32})">
+            <summary>
+            构造函数 base_items 
+            </summary>
+            <param name="_itemid">编号</param> 
+            <param name="_parentid">父级编号</param> 
+            <param name="_itemname">标题</param> 
+            <param name="_itemmark">栏目标识</param> 
+            <param name="_navigation">导航0不是1是</param> 
+            <param name="_sourcevalue">资源表达式</param> 
+            <param name="_sourcetype">资源来源0 录入1 sql语句2 检索表达式</param> 
+             <param name="_sourcename">资源表名</param> 
+            <param name="_sorts">排序</param> 
+            <param name="_status">状态0停用1启用</param> 
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_items.itemid" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_items.parentid" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_items.itemname" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_items.itemmark" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_items.navigation" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_items.sourcevalue" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_items.sourcename" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_items.sourcetype" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_items.sorts" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_items.status" -->
+        <member name="T:Microsoft.RIPSP.Model.base_itemtemplate">
+            <summary>
+            扩展Model 栏目模板管理 base_itemtemplate 
+            </summary>
+            <summary>
+            实体Model 栏目模板管理 base_itemtemplate 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.base_itemtemplate.#ctor">
+            <summary>
+            构造函数 base_itemtemplate 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.base_itemtemplate.#ctor(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String,System.Nullable{System.Int32},System.String,System.Nullable{System.Int32})">
+            <summary>
+            构造函数 base_itemtemplate 
+            </summary>
+            <param name="_templateid">编号</param> 
+            <param name="_themesid">主题</param> 
+            <param name="_templatename">模板标题</param> 
+            <param name="_itemmark">栏目标识</param> 
+            <param name="_templatetype">模板类型1 首页2 列表页3 详情页4 调用页</param> 
+            <param name="_fileurl">模板地址</param> 
+            <param name="_status">状态0停用1启用</param> 
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_itemtemplate.templateid" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_itemtemplate.themesid" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_itemtemplate.templatename" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_itemtemplate.itemmark" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_itemtemplate.templatetype" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_itemtemplate.fileurl" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_itemtemplate.status" -->
+        <member name="T:Microsoft.RIPSP.Model.base_managers">
+            <summary>
+            扩展Model 管理员管理 base_managers 
+            </summary>
+            <summary>
+            实体Model 管理员管理 base_managers 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.base_managers.#ctor">
+            <summary>
+            构造函数 base_managers 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.base_managers.#ctor(System.Nullable{System.Int32},System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.DateTime},System.Nullable{System.Int32},System.Nullable{System.Int32})">
+            <summary>
+            构造函数 base_managers 
+            </summary>
+            <param name="_userid">用户编号</param> 
+            <param name="_username">用户名</param> 
+            <param name="_passwd">密码</param> 
+            <param name="_realname">用户姓名</param> 
+            <param name="_phone">电话</param> 
+            <param name="_email">邮箱</param> 
+            <param name="_creator">创建人</param> 
+            <param name="_createdtime">创建时间</param> 
+            <param name="_orgid">机构编号</param> 
+            <param name="_status">状态-1删除-2锁定0未激活1正常</param> 
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_managers.userid" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_managers.username" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_managers.passwd" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_managers.realname" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_managers.phone" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_managers.email" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_managers.creator" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_managers.createdtime" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_managers.orgid" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_managers.status" -->
+        <member name="T:Microsoft.RIPSP.Model.base_menus">
+            <summary>
+            扩展Model 菜单管理 base_menus 
+            </summary>
+            <summary>
+            实体Model 菜单管理 base_menus 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.base_menus.#ctor">
+            <summary>
+            构造函数 base_menus 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.base_menus.#ctor(System.Nullable{System.Int32},System.String,System.Nullable{System.Int32},System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32})">
+            <summary>
+            构造函数 base_menus 
+            </summary>
+            <param name="_menuid">菜单编号</param> 
+            <param name="_menuname">菜单名称</param> 
+            <param name="_parentmenuid">菜单父编号</param> 
+            <param name="_pagemark">页面标识</param> 
+            <param name="_path">菜单路径</param> 
+            <param name="_description">菜单描述</param> 
+            <param name="_sorts">菜单排序</param> 
+            <param name="_isoutlink">是否外链0非；1是</param> 
+            <param name="_status">状态0停用1启用</param> 
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_menus.menuid" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_menus.menuname" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_menus.parentmenuid" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_menus.pagemark" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_menus.path" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_menus.description" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_menus.sorts" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_menus.isoutlink" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_menus.status" -->
+        <member name="T:Microsoft.RIPSP.Model.base_mgdb">
+            <summary>
+            扩展Model 管理员配置库 base_mgdb 
+            </summary>
+            <summary>
+            实体Model 管理员配置库 base_mgdb 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.base_mgdb.#ctor">
+            <summary>
+            构造函数 base_mgdb 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.base_mgdb.#ctor(System.Nullable{System.Int32},System.Nullable{System.Int32})">
+            <summary>
+            构造函数 base_mgdb 
+            </summary>
+            <param name="_userid">用户编号</param> 
+            <param name="_databaseid">数据库编号</param> 
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_mgdb.userid" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_mgdb.databaseid" -->
+        <member name="T:Microsoft.RIPSP.Model.base_mgrole">
+            <summary>
+            扩展Model 管理员配置角色 base_mgrole 
+            </summary>
+            <summary>
+            实体Model 管理员配置角色 base_mgrole 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.base_mgrole.#ctor">
+            <summary>
+            构造函数 base_mgrole 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.base_mgrole.#ctor(System.Nullable{System.Int32},System.Nullable{System.Int32})">
+            <summary>
+            构造函数 base_mgrole 
+            </summary>
+            <param name="_roleid">角色编号</param> 
+            <param name="_userid">管理员编号</param> 
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_mgrole.roleid" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_mgrole.userid" -->
+        <member name="T:Microsoft.RIPSP.Model.base_organization">
+            <summary>
+            扩展Model 机构管理 base_organization 
+            </summary>
+            <summary>
+            实体Model 机构管理 base_organization 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.base_organization.#ctor">
+            <summary>
+            构造函数 base_organization 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.base_organization.#ctor(System.Nullable{System.Int32},System.String,System.Nullable{System.Int32},System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Nullable{System.DateTime},System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.DateTime},System.Nullable{System.Int32},System.Nullable{System.Int32})">
+            <summary>
+            构造函数 base_organization 
+            </summary>
+            <param name="_orgid">编号</param> 
+            <param name="_orgname">机构名称</param> 
+            <param name="_industry">行业</param> 
+            <param name="_logo">logo</param> 
+            <param name="_propaganda">宣传图</param> 
+            <param name="_country">国别</param> 
+            <param name="_areacode">地区</param> 
+            <param name="_address">地址</param> 
+            <param name="_contacts">联系人</param> 
+            <param name="_telphone">电话</param> 
+            <param name="_fax">传真</param> 
+            <param name="_website">网址</param> 
+            <param name="_email">邮箱</param> 
+            <param name="_postcode">邮政编码</param> 
+            <param name="_createddate">成立时间</param> 
+            <param name="_corporate">机构法人</param> 
+            <param name="_subjectclass">主题分类</param> 
+            <param name="_introduce">详细介绍</param> 
+            <param name="_hits">点击量</param> 
+            <param name="_createdtime">创建时间</param> 
+            <param name="_creator">创建人</param> 
+            <param name="_status">状态</param> 
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_organization.orgid" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_organization.orgname" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_organization.industry" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_organization.logo" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_organization.propaganda" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_organization.country" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_organization.areacode" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_organization.address" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_organization.contacts" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_organization.telphone" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_organization.fax" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_organization.website" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_organization.email" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_organization.postcode" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_organization.createddate" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_organization.corporate" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_organization.subjectclass" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_organization.introduce" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_organization.hits" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_organization.createdtime" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_organization.creator" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_organization.status" -->
+        <member name="T:Microsoft.RIPSP.Model.base_rolemenu">
+            <summary>
+            扩展Model 角色配置菜单 base_rolemenu 
+            </summary>
+            <summary>
+            实体Model 角色配置菜单 base_rolemenu 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.base_rolemenu.#ctor">
+            <summary>
+            构造函数 base_rolemenu 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.base_rolemenu.#ctor(System.Nullable{System.Int32},System.Nullable{System.Int32})">
+            <summary>
+            构造函数 base_rolemenu 
+            </summary>
+            <param name="_roleid">角色编号</param> 
+            <param name="_menuid">菜单编号</param> 
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_rolemenu.roleid" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_rolemenu.menuid" -->
+        <member name="T:Microsoft.RIPSP.Model.base_roles">
+            <summary>
+            扩展Model 角色管理 base_roles 
+            </summary>
+            <summary>
+            实体Model 角色管理 base_roles 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.base_roles.#ctor">
+            <summary>
+            构造函数 base_roles 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.base_roles.#ctor(System.Nullable{System.Int32},System.String,System.Nullable{System.Int32},System.String)">
+            <summary>
+            构造函数 base_roles 
+            </summary>
+            <param name="_roleid">角色编号</param> 
+            <param name="_rolename">角色名称</param> 
+            <param name="_roletype">角色类型1系统角色2管理员角色3编辑角色4标引角色5加工角色6审核角色</param> 
+            <param name="_description">角色描述</param> 
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_roles.roleid" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_roles.rolename" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_roles.roletype" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_roles.description" -->
+        <member name="T:Microsoft.RIPSP.Model.base_syslogs">
+            <summary>
+            扩展Model 系统日志管理 base_syslogs 
+            </summary>
+            <summary>
+            实体Model 系统日志管理 base_syslogs 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.base_syslogs.#ctor">
+            <summary>
+            构造函数 base_syslogs 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.base_syslogs.#ctor(System.Nullable{System.Int32},System.String,System.String,System.Nullable{System.Int32},System.String,System.Nullable{System.Int32},System.Nullable{System.DateTime})">
+            <summary>
+            构造函数 base_syslogs 
+            </summary>
+            <param name="_logid">日志编号</param> 
+            <param name="_logmenu">操作页面</param> 
+            <param name="_logfunname">操作功能</param> 
+            <param name="_logtype">操作类型 -1删除0 添加1 修改</param> 
+            <param name="_logcontent">日志内容</param> 
+            <param name="_creator">创建人</param> 
+            <param name="_createdtime">创建时间</param> 
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_syslogs.logid" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_syslogs.logmenu" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_syslogs.logfunname" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_syslogs.logtype" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_syslogs.logcontent" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_syslogs.creator" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_syslogs.createdtime" -->
+        <member name="T:Microsoft.RIPSP.Model.base_userlogs">
+            <summary>
+            扩展Model 用户行为日志管理 base_userlogs 
+            </summary>
+            <summary>
+            实体Model 用户行为日志管理 base_userlogs 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.base_userlogs.#ctor">
+            <summary>
+            构造函数 base_userlogs 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.base_userlogs.#ctor(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.DateTime})">
+            <summary>
+            构造函数 base_userlogs 
+            </summary>
+            <param name="_logid">日志编号</param> 
+            <param name="_logtype">日志类型1登录2浏览3阅读4下载5 分享</param> 
+            <param name="_restype">资源类型</param> 
+            <param name="_rescode">资源编号</param> 
+            <param name="_logcontent">日志内容</param> 
+            <param name="_creator">创建人</param> 
+            <param name="_createdtime">创建时间</param> 
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_userlogs.logid" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_userlogs.logtype" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_userlogs.restype" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_userlogs.rescode" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_userlogs.logcontent" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_userlogs.creator" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_userlogs.createdtime" -->
+        <member name="T:Microsoft.RIPSP.Model.base_users">
+            <summary>
+            扩展Model 用户管理 base_users 
+            </summary>
+            <summary>
+            实体Model 用户管理 base_users 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.base_users.#ctor">
+            <summary>
+            构造函数 base_users 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.base_users.#ctor(System.Nullable{System.Int32},System.String,System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.Int32},System.String,System.Nullable{System.Int32},System.Nullable{System.Int32})">
+            <summary>
+            构造函数 base_users 
+            </summary>
+            <param name="_userid">用户编号</param> 
+            <param name="_username">用户名</param> 
+            <param name="_passwd">密码</param> 
+            <param name="_nickname">昵称</param> 
+            <param name="_realname">用户姓名</param> 
+            <param name="_usertype">用户类型1 普通用户</param> 
+            <param name="_userlevel">用户级别</param> 
+            <param name="_balance">账户(单位 分)</param> 
+            <param name="_score">积分</param> 
+            <param name="_photo">用户头像路径</param> 
+            <param name="_phone">电话</param> 
+            <param name="_email">邮箱</param> 
+            <param name="_country">国别</param> 
+            <param name="_areacode">所在地区</param> 
+            <param name="_sex">性别0 保密1 男2 女</param> 
+            <param name="_birthday">出生年月日</param> 
+            <param name="_createdtime">创建时间</param> 
+            <param name="_sourcetype">来源类型1 后台添加2 网站注册3 移动端注册4 第三方</param> 
+            <param name="_sourceremarks">来源描述</param> 
+            <param name="_customerid">客户编号</param> 
+            <param name="_status">状态-1删除0 未激活1正常-2 锁定</param> 
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_users.userid" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_users.username" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_users.passwd" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_users.nickname" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_users.realname" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_users.usertype" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_users.userlevel" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_users.balance" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_users.score" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_users.photo" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_users.phone" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_users.email" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_users.country" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_users.areacode" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_users.sex" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_users.birthday" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_users.createdtime" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_users.sourcetype" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_users.sourceremarks" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_users.customerid" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_users.status" -->
+        <member name="T:Microsoft.RIPSP.Model.base_user_bind">
+            <summary>
+            扩展Model 用户第三方绑定表 base_user_bind 
+            </summary>
+            <summary>
+            实体Model 用户第三方绑定表 base_user_bind 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.base_user_bind.#ctor">
+            <summary>
+            构造函数 base_user_bind 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.base_user_bind.#ctor(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String,System.String,System.Nullable{System.DateTime},System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime})">
+            <summary>
+            构造函数 base_user_bind 
+            </summary>
+            <param name="_seqid">序号</param> 
+            <param name="_userid">用户编号</param> 
+            <param name="_bindtype">绑定类型qqwbwx</param> 
+            <param name="_code">唯一编号</param> 
+            <param name="_token">授权码</param> 
+            <param name="_validitytime">有效期</param> 
+            <param name="_refreshtoken">刷新授权码</param> 
+            <param name="_createdtime">创建时间</param> 
+            <param name="_refreshtime">刷新时间</param> 
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_user_bind.seqid" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_user_bind.userid" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_user_bind.bindtype" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_user_bind.code" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_user_bind.token" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_user_bind.validitytime" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_user_bind.refreshtoken" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_user_bind.createdtime" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_user_bind.refreshtime" -->
+        <member name="T:Microsoft.RIPSP.Model.base_user_ip">
+            <summary>
+            扩展Model 用户认证ip管理 base_user_ip 
+            </summary>
+            <summary>
+            实体Model 用户认证ip管理 base_user_ip 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.base_user_ip.#ctor">
+            <summary>
+            构造函数 base_user_ip 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.base_user_ip.#ctor(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String)">
+            <summary>
+            构造函数 base_user_ip 
+            </summary>
+            <param name="_seqid">序号</param> 
+            <param name="_userid">用户编号</param> 
+            <param name="_ip_start">ip段起始</param> 
+            <param name="_ip_end">ip段结束</param> 
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_user_ip.seqid" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_user_ip.userid" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_user_ip.ip_start" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_user_ip.ip_end" -->
+        <member name="T:Microsoft.RIPSP.Model.chosen_favorites">
+            <summary>
+            扩展Model 收藏管理 chosen_favorites 
+            </summary>
+            <summary>
+            实体Model 收藏管理 chosen_favorites 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.chosen_favorites.#ctor">
+            <summary>
+            构造函数 chosen_favorites 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.chosen_favorites.#ctor(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String,System.String,System.Nullable{System.DateTime})">
+            <summary>
+            构造函数 chosen_favorites 
+            </summary>
+            <param name="_seqid">收藏编号</param> 
+            <param name="_userid">用户编号</param> 
+            <param name="_restype">资源类型</param> 
+            <param name="_rescode">资源编号</param> 
+            <param name="_resremark">资源描述</param> 
+            <param name="_createdtime">创建时间</param> 
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_favorites.seqid" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_favorites.userid" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_favorites.restype" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_favorites.rescode" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_favorites.resremark" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_favorites.createdtime" -->
+        <member name="T:Microsoft.RIPSP.Model.chosen_orderinfo">
+            <summary>
+            扩展Model 订单管理 chosen_orderinfo 
+            </summary>
+            <summary>
+            实体Model 订单管理 chosen_orderinfo 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.chosen_orderinfo.#ctor">
+            <summary>
+            构造函数 chosen_orderinfo 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.chosen_orderinfo.#ctor(System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32})">
+            <summary>
+            构造函数 chosen_orderinfo 
+            </summary>
+            <param name="_orderno">订单编号14位时间+6位随机</param> 
+            <param name="_ordername">订单名称</param> 
+            <param name="_userid">用户账户</param> 
+            <param name="_customerid">客户编号</param> 
+            <param name="_serviceno">服务编号</param> 
+            <param name="_feetype">货币类型CNY</param> 
+            <param name="_m_price">市场价 单位(分)</param> 
+            <param name="_s_price">销售价 单位(分)</param> 
+            <param name="_addressid">收货地址编号</param> 
+            <param name="_ctype">下单方式0系统生成1人工下单</param> 
+            <param name="_paytype">支付方式0测试 1本平台 2第三方</param> 
+            <param name="_paybank">支付渠道0线下支付1 微信2 支付宝</param> 
+            <param name="_payno">支付流水</param> 
+            <param name="_createdtime">下单时间</param> 
+            <param name="_paytime">支付时间</param> 
+            <param name="_payresulttime">支付通知时间</param> 
+            <param name="_deliverytime">发货时间</param> 
+            <param name="_deliveryoktime">收货时间</param> 
+            <param name="_logisticaltype">物流类型</param> 
+            <param name="_logisticalcode">物流编号</param> 
+            <param name="_status">订单状态1待支付2支付失败3已支付4 退单5 发货6 收货9 完成0取消-1删除</param> 
+            <param name="_creator">操作人</param> 
+            <param name="_terminaltype">操作终端1 PC2 APP</param> 
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_orderinfo.orderno" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_orderinfo.ordername" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_orderinfo.userid" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_orderinfo.customerid" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_orderinfo.serviceno" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_orderinfo.feetype" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_orderinfo.m_price" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_orderinfo.s_price" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_orderinfo.addressid" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_orderinfo.ctype" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_orderinfo.paytype" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_orderinfo.paybank" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_orderinfo.payno" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_orderinfo.createdtime" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_orderinfo.paytime" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_orderinfo.payresulttime" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_orderinfo.deliverytime" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_orderinfo.deliveryoktime" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_orderinfo.logisticaltype" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_orderinfo.logisticalcode" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_orderinfo.status" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_orderinfo.creator" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_orderinfo.terminaltype" -->
+        <member name="T:Microsoft.RIPSP.Model.chosen_shopinfo">
+            <summary>
+            扩展Model 商品详情 chosen_shopinfo 
+            </summary>
+        </member>
+        <member name="P:Microsoft.RIPSP.Model.chosen_shopinfo.seqid">
+            <summary>
+            商品编号
+            </summary>
+        </member>
+        <member name="P:Microsoft.RIPSP.Model.chosen_shopinfo.title">
+            <summary>
+            商品名称
+            </summary>
+        </member>
+        <member name="P:Microsoft.RIPSP.Model.chosen_shopinfo.createdtime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Microsoft.RIPSP.Model.chosen_shopinfo.status">
+            <summary>
+            状态
+            </summary>
+        </member>
+        <member name="P:Microsoft.RIPSP.Model.chosen_shopinfo.hits">
+            <summary>
+            点击数
+            </summary>
+        </member>
+        <member name="P:Microsoft.RIPSP.Model.chosen_shopinfo.m_stock">
+            <summary>
+            库存数
+            </summary>
+        </member>
+        <member name="P:Microsoft.RIPSP.Model.chosen_shopinfo.m_deal">
+            <summary>
+            交易数
+            </summary>
+        </member>
+        <member name="P:Microsoft.RIPSP.Model.chosen_shopinfo.m_price">
+            <summary>
+            价格
+            </summary>
+        </member>
+        <member name="P:Microsoft.RIPSP.Model.chosen_shopinfo.m_discount">
+            <summary>
+            折扣
+            </summary>
+        </member>
+        <member name="T:Microsoft.RIPSP.Model.chosen_ordershop">
+            <summary>
+            扩展Model 订单商品管理 chosen_ordershop 
+            </summary>
+            <summary>
+            实体Model 订单商品管理 chosen_ordershop 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.chosen_ordershop.#ctor">
+            <summary>
+            构造函数 chosen_ordershop 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.chosen_ordershop.#ctor(System.Nullable{System.Int32},System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32})">
+            <summary>
+            构造函数 chosen_ordershop 
+            </summary>
+            <param name="_orderid">编号</param> 
+            <param name="_shopname">商品名称</param> 
+            <param name="_orderno">订单编号</param> 
+            <param name="_restype">资源类型</param> 
+            <param name="_rescode">资源编号</param> 
+            <param name="_thumbnail">缩略图</param> 
+            <param name="_prices">价格</param> 
+            <param name="_shopnum">商品数量</param> 
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_ordershop.orderid" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_ordershop.shopname" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_ordershop.orderno" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_ordershop.restype" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_ordershop.rescode" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_ordershop.thumbnail" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_ordershop.prices" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_ordershop.shopnum" -->
+        <member name="T:Microsoft.RIPSP.Model.chosen_reviews">
+            <summary>
+            扩展Model 评论管理 chosen_reviews 
+            </summary>
+            <summary>
+            实体Model 评论管理 chosen_reviews 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.chosen_reviews.#ctor">
+            <summary>
+            构造函数 chosen_reviews 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.chosen_reviews.#ctor(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String,System.String,System.Nullable{System.Int32},System.String,System.String,System.Nullable{System.DateTime})">
+            <summary>
+            构造函数 chosen_reviews 
+            </summary>
+            <param name="_seqid">评论编号</param> 
+            <param name="_userid">用户编号</param> 
+            <param name="_restype">资源类型</param> 
+            <param name="_rescode">资源编号</param> 
+            <param name="_resremark">资源描述</param> 
+            <param name="_reviewgrade">评论星级</param> 
+            <param name="_reviewcontent">评论内容</param> 
+            <param name="_mappics">评论贴图，多个逗号分隔</param> 
+            <param name="_createdtime">创建时间</param> 
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_reviews.seqid" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_reviews.userid" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_reviews.restype" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_reviews.rescode" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_reviews.resremark" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_reviews.reviewgrade" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_reviews.reviewcontent" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_reviews.mappics" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_reviews.createdtime" -->
+        <member name="T:Microsoft.RIPSP.Model.chosen_servicecont">
+            <summary>
+            扩展Model 服务内容表 chosen_servicecont 
+            </summary>
+            <summary>
+            实体Model 服务内容表 chosen_servicecont 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.chosen_servicecont.#ctor">
+            <summary>
+            构造函数 chosen_servicecont 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.chosen_servicecont.#ctor(System.Nullable{System.Int32},System.String,System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.DateTime})">
+            <summary>
+            构造函数 chosen_servicecont 
+            </summary>
+            <param name="_seqid">编号</param> 
+            <param name="_serviceno">服务编号</param> 
+            <param name="_restype">资源类型</param> 
+            <param name="_rulename">范围名称</param> 
+            <param name="_rulevalue">范围值</param> 
+            <param name="_creator">创建人</param> 
+            <param name="_createdtime">创建时间</param> 
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_servicecont.seqid" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_servicecont.serviceno" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_servicecont.restype" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_servicecont.rulename" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_servicecont.rulevalue" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_servicecont.creator" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_servicecont.createdtime" -->
+        <member name="T:Microsoft.RIPSP.Model.chosen_serviceinfo">
+            <summary>
+            扩展Model 服务管理 chosen_serviceinfo 
+            </summary>
+            <summary>
+            实体Model 服务管理 chosen_serviceinfo 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.chosen_serviceinfo.#ctor">
+            <summary>
+            构造函数 chosen_serviceinfo 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.chosen_serviceinfo.#ctor(System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.DateTime},System.Nullable{System.Int32})">
+            <summary>
+            构造函数 chosen_serviceinfo 
+            </summary>
+            <param name="_serviceno">服务编号14位时间+6位随机</param> 
+            <param name="_servicename">服务名称</param> 
+            <param name="_customerid">客户编号</param> 
+            <param name="_stype">服务类型1时段2流量</param> 
+            <param name="_starttime">服务开通时间</param> 
+            <param name="_endtime">服务截至时间</param> 
+            <param name="_maxnum">数量上限0无限</param> 
+            <param name="_leftnum">剩余数量</param> 
+            <param name="_creator">创建人</param> 
+            <param name="_createdtime">创建时间</param> 
+            <param name="_status">服务状态0无效1有效</param> 
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_serviceinfo.serviceno" -->
+        <member name="P:Microsoft.RIPSP.Model.chosen_serviceinfo.servicename">
+            <summary>
+            服务名称
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_serviceinfo.customerid" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_serviceinfo.stype" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_serviceinfo.starttime" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_serviceinfo.endtime" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_serviceinfo.maxnum" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_serviceinfo.leftnum" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_serviceinfo.creator" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_serviceinfo.createdtime" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_serviceinfo.status" -->
+        <member name="T:Microsoft.RIPSP.Model.chosen_servicepermit">
+            <summary>
+            扩展Model 服务权限表 chosen_servicepermit 
+            </summary>
+            <summary>
+            实体Model 服务权限表 chosen_servicepermit 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.chosen_servicepermit.#ctor">
+            <summary>
+            构造函数 chosen_servicepermit 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.chosen_servicepermit.#ctor(System.Nullable{System.Int32},System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.DateTime})">
+            <summary>
+            构造函数 chosen_servicepermit 
+            </summary>
+            <param name="_seqid">编号</param> 
+            <param name="_serviceno">服务编号</param> 
+            <param name="_customerid">客户编号</param> 
+            <param name="_userid">用户编号</param> 
+            <param name="_creator">创建人</param> 
+            <param name="_createdtime">创建时间</param> 
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_servicepermit.seqid" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_servicepermit.serviceno" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_servicepermit.customerid" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_servicepermit.userid" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_servicepermit.creator" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_servicepermit.createdtime" -->
+        <member name="T:Microsoft.RIPSP.Model.chosen_signingup">
+            <summary>
+            扩展Model 报名管理 chosen_signingup 
+            </summary>
+            <summary>
+            实体Model 报名管理 chosen_signingup 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.chosen_signingup.#ctor">
+            <summary>
+            构造函数 chosen_signingup 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.chosen_signingup.#ctor(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String,System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.Int32})">
+            <summary>
+            构造函数 chosen_signingup 
+            </summary>
+            <param name="_seqid">报名编号</param> 
+            <param name="_userid">用户编号</param> 
+            <param name="_restype">资源类型</param> 
+            <param name="_rescode">资源编号</param> 
+            <param name="_resremark">资源描述</param> 
+            <param name="_userabout">相关信息</param> 
+            <param name="_createdtime">创建时间</param> 
+            <param name="_status">报名状态0待审核1审核通过-1取消报名-2审核不通过</param> 
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_signingup.seqid" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_signingup.userid" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_signingup.restype" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_signingup.rescode" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_signingup.resremark" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_signingup.userabout" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_signingup.createdtime" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.chosen_signingup.status" -->
+        <member name="T:Microsoft.RIPSP.Model.db_datalibrarys">
+            <summary>
+            扩展Model 资源库表 db_datalibrarys 
+            </summary>
+            <summary>
+            实体Model 资源库表 db_datalibrarys 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.db_datalibrarys.#ctor">
+            <summary>
+            构造函数 db_datalibrarys 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.db_datalibrarys.#ctor(System.Nullable{System.Int32},System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.DateTime})">
+            <summary>
+            构造函数 db_datalibrarys 
+            </summary>
+            <param name="_databaseid">编号</param> 
+            <param name="_databasename">库名称self_</param> 
+            <param name="_databasecname">库中文名称</param> 
+            <param name="_mouldid">模型编号</param> 
+            <param name="_datasteptype">资源发布类型1标引后发布2加工后发布3 标引并加工后发布4 只需发布5 无需发布</param> 
+            <param name="_datastatus">数据初始状态-1,0,2,4,6,8,9</param> 
+            <param name="_isware">是否商品0否1是</param> 
+            <param name="_status">状态0停用1启用</param> 
+            <param name="_creator">创建人</param> 
+            <param name="_createdtime">创建时间</param> 
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.db_datalibrarys.databaseid" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.db_datalibrarys.databasename" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.db_datalibrarys.databasecname" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.db_datalibrarys.mouldid" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.db_datalibrarys.datasteptype" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.db_datalibrarys.datastatus" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.db_datalibrarys.isware" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.db_datalibrarys.status" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.db_datalibrarys.creator" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.db_datalibrarys.createdtime" -->
+        <member name="T:Microsoft.RIPSP.Model.db_librarynexus">
+            <summary>
+            扩展Model 资源库字段关系表 db_librarynexus 
+            </summary>
+            <summary>
+            实体Model 资源库字段关系表 db_librarynexus 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.db_librarynexus.#ctor">
+            <summary>
+            构造函数 db_librarynexus 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.db_librarynexus.#ctor(System.Nullable{System.Int32},System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            构造函数 db_librarynexus 
+            </summary>
+            <param name="_nexusid">序号</param> 
+            <param name="_mdbname">资源库</param> 
+            <param name="_mdbfield">资源库字段</param> 
+            <param name="_sdbname">关系资源库</param> 
+            <param name="_sdbnamefield">关系库名字段</param> 
+            <param name="_sdbvaluefield">关系库值字段</param> 
+            <param name="_sdbsql">数据查询语句</param> 
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.db_librarynexus.nexusid" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.db_librarynexus.mdbname" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.db_librarynexus.mdbfield" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.db_librarynexus.sdbname" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.db_librarynexus.sdbnamefield" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.db_librarynexus.sdbvaluefield" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.db_librarynexus.sdbsql" -->
+        <member name="T:Microsoft.RIPSP.Model.db_metadatas">
+            <summary>
+            扩展Model 模板字段表 db_metadatas 
+            </summary>
+            <summary>
+            实体Model 模板字段表 db_metadatas 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.db_metadatas.#ctor">
+            <summary>
+            构造函数 db_metadatas 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.db_metadatas.#ctor(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.Int32},System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.Int32},System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32})">
+            <summary>
+            构造函数 db_metadatas 
+            </summary>
+            <param name="_metadataid">编号</param> 
+            <param name="_mouldid">模板编号</param> 
+            <param name="_basemeta">元字段</param> 
+            <param name="_issysmeta">是否系统字段 0否 1是</param>
+            <param name="_columnname">字段名</param> 
+            <param name="_columncname">字段描述</param> 
+            <param name="_columntype">字段类型1单行文本2多行文本3 富文本4下拉单选5下拉多选6文件上传7 日期时间8日期9整数10小数</param> 
+            <param name="_columnlength">字段长度</param> 
+            <param name="_isnull">是否可为空0可为空1不可为空</param> 
+            <param name="_datatype">数据类型</param> 
+            <param name="_columnsource">值来源1字典2 分类3 资源库</param> 
+            <param name="_columntyperule">值表达式</param> 
+            <param name="_validexp">值校验表达式</param> 
+            <param name="_defaultvalue">默认值</param> 
+            <param name="_formshow">表单显示0不显示1显示</param> 
+            <param name="_gridshow">列表显示0不显示1显示</param> 
+            <param name="_searchshow">查询显示0不显示1显示</param> 
+            <param name="_sorts">排序</param> 
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.db_metadatas.metadataid" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.db_metadatas.mouldid" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.db_metadatas.basemeta" -->
+        <member name="P:Microsoft.RIPSP.Model.db_metadatas.issysmeta">
+            <summary>
+            是否系统字段
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.db_metadatas.columnname" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.db_metadatas.columncname" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.db_metadatas.columntype" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.db_metadatas.columnlength" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.db_metadatas.isnull" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.db_metadatas.datatype" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.db_metadatas.columnsource" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.db_metadatas.columntyperule" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.db_metadatas.validexp" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.db_metadatas.defaultvalue" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.db_metadatas.formshow" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.db_metadatas.gridshow" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.db_metadatas.searchshow" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.db_metadatas.sorts" -->
+        <member name="T:Microsoft.RIPSP.Model.db_moulds">
+            <summary>
+            扩展Model 资源模板表 db_moulds 
+            </summary>
+            <summary>
+            实体Model 资源模板表 db_moulds 
+            </summary>
+        </member>
+        <member name="P:Microsoft.RIPSP.Model.db_moulds.dbcount">
+            <summary>
+            实例化库的数量
+            </summary>
+        </member>
+        <member name="P:Microsoft.RIPSP.Model.db_moulds.mouldbasemeta">
+            <summary>
+            基础元数据名称数组
+            </summary>
+        </member>
+        <member name="P:Microsoft.RIPSP.Model.db_moulds.metadatalist">
+            <summary>
+            字段列表
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.db_moulds.#ctor">
+            <summary>
+            构造函数 db_moulds 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.db_moulds.#ctor(System.Nullable{System.Int32},System.String,System.Nullable{System.Int32},System.Nullable{System.Int32})">
+            <summary>
+            构造函数 db_moulds 
+            </summary>
+            <param name="_mouldid">模板编号</param> 
+            <param name="_mouldname">模板名称</param> 
+            <param name="_mouldtype">模板类型1 基础库2 关联库3 专题库</param> 
+            <param name="_status">状态0停用1启用</param> 
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.db_moulds.mouldid" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.db_moulds.mouldname" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.db_moulds.mouldtype" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.db_moulds.status" -->
+        <member name="T:Microsoft.RIPSP.Model.isee_servers">
+            <summary>
+            扩展Model 索引服务器表 isee_servers 
+            </summary>
+            <summary>
+            实体Model 索引服务器表 isee_servers 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.isee_servers.#ctor">
+            <summary>
+            构造函数 isee_servers 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.isee_servers.#ctor(System.String,System.Nullable{System.Int32},System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.DateTime})">
+            <summary>
+            构造函数 isee_servers 
+            </summary>
+            <param name="_ip">服务器ip</param> 
+            <param name="_port">端口</param> 
+            <param name="_user">账号</param> 
+            <param name="_passwd">密码</param> 
+            <param name="_setuppath">基础路径</param> 
+            <param name="_creator">创建人</param> 
+            <param name="_createdtime">创建时间</param> 
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.isee_servers.ip" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.isee_servers.port" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.isee_servers.user" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.isee_servers.passwd" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.isee_servers.setuppath" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.isee_servers.creator" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.isee_servers.createdtime" -->
+        <member name="T:Microsoft.RIPSP.Model.isee_serviceconfig">
+            <summary>
+            扩展Model 索引服务配置表 isee_serviceconfig 
+            </summary>
+            <summary>
+            实体Model 索引服务配置表 isee_serviceconfig 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.isee_serviceconfig.#ctor">
+            <summary>
+            构造函数 isee_serviceconfig 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.isee_serviceconfig.#ctor(System.Nullable{System.Int32},System.String)">
+            <summary>
+            构造函数 isee_serviceconfig 
+            </summary>
+            <param name="_serviceid">编号</param> 
+            <param name="_configdata">配置内容</param> 
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.isee_serviceconfig.serviceid" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.isee_serviceconfig.configdata" -->
+        <member name="T:Microsoft.RIPSP.Model.isee_services">
+            <summary>
+            扩展Model 索引服务表 isee_services 
+            </summary>
+            <summary>
+            实体Model 索引服务表 isee_services 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.isee_services.#ctor">
+            <summary>
+            构造函数 isee_services 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.isee_services.#ctor(System.Nullable{System.Int32},System.String,System.String,System.String,System.Nullable{System.Int32},System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.DateTime})">
+            <summary>
+            构造函数 isee_services 
+            </summary>
+            <param name="_serviceid">编号</param> 
+            <param name="_servicecode">服务标识</param> 
+            <param name="_servicename">服务名称</param> 
+            <param name="_ip">服务器ip</param> 
+            <param name="_port">端口</param> 
+            <param name="_servicetype">服务类型</param> 
+            <param name="_servicestatus">服务状态1正常</param> 
+            <param name="_creator">创建人</param> 
+            <param name="_createdtime">创建时间</param> 
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.isee_services.serviceid" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.isee_services.servicecode" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.isee_services.servicename" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.isee_services.ip" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.isee_services.port" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.isee_services.servicetype" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.isee_services.servicestatus" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.isee_services.creator" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.isee_services.createdtime" -->
+        <member name="T:Microsoft.RIPSP.Model.proc_task">
+            <summary>
+            扩展Model 任务管理 proc_task 
+            </summary>
+            <summary>
+            实体Model 任务管理 proc_task 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.proc_task.#ctor">
+            <summary>
+            构造函数 proc_task 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.proc_task.#ctor(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.DateTime})">
+            <summary>
+            构造函数 proc_task 
+            </summary>
+            <param name="_taskid">任务编号</param> 
+            <param name="_tasktype">任务类型1标引2加工</param> 
+            <param name="_taskname">任务名称</param> 
+            <param name="_processdb">源库</param> 
+            <param name="_processfilecol">源字段</param> 
+            <param name="_rulename">数据范围字段</param> 
+            <param name="_rulevalue">数据范围值</param> 
+            <param name="_resultdb">目标库</param> 
+            <param name="_processper">加工人</param> 
+            <param name="_auditper">审核人</param> 
+            <param name="_status">任务状态0待执行1执行中2待审核3审核不通过4审核通过-1删除</param> 
+            <param name="_creator">创建人</param> 
+            <param name="_createdtime">创建时间</param> 
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.proc_task.taskid" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.proc_task.tasktype" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.proc_task.taskname" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.proc_task.processdb" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.proc_task.processfilecol" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.proc_task.rulename" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.proc_task.rulevalue" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.proc_task.resultdb" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.proc_task.processper" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.proc_task.auditper" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.proc_task.planstarttime" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.proc_task.planendtime" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.proc_task.taskstarttime" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.proc_task.taskendtime" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.proc_task.status" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.proc_task.creator" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.proc_task.createdtime" -->
+        <member name="T:Microsoft.RIPSP.Model.proc_tasklog">
+            <summary>
+            扩展Model 任务执行日志 proc_tasklog 
+            </summary>
+            <summary>
+            实体Model 任务执行日志 proc_tasklog 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.proc_tasklog.#ctor">
+            <summary>
+            构造函数 proc_tasklog 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.proc_tasklog.#ctor(System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.DateTime})">
+            <summary>
+            构造函数 proc_tasklog 
+            </summary>
+            <param name="_logid">编号</param> 
+            <param name="_taskid">任务编号</param> 
+            <param name="_logtype">执行类型1标引2加工3审核</param> 
+            <param name="_processdb">源库</param> 
+            <param name="_processseqid">源数据编号</param> 
+            <param name="_resultdb">目标库</param> 
+            <param name="_resultseqid">目标数据</param> 
+            <param name="_auditdesc">审核意见</param> 
+            <param name="_status">数据状态0待执行1执行中2待审核3审核不通过4审核通过</param> 
+            <param name="_creator">创建人</param> 
+            <param name="_createdtime">创建时间</param> 
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.proc_tasklog.logid" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.proc_tasklog.taskid" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.proc_tasklog.logtype" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.proc_tasklog.processdb" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.proc_tasklog.processseqid" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.proc_tasklog.resultdb" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.proc_tasklog.resultseqid" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.proc_tasklog.auditdesc" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.proc_tasklog.status" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.proc_tasklog.creator" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.proc_tasklog.createdtime" -->
+        <member name="T:Microsoft.RIPSP.Model.ManagerDataView">
+            <summary>
+            登录管理员存储信息
+            </summary>
+        </member>
+        <member name="P:Microsoft.RIPSP.Model.ManagerDataView.UserID">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:Microsoft.RIPSP.Model.ManagerDataView.UserName">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:Microsoft.RIPSP.Model.ManagerDataView.RealName">
+            <summary>
+            真实姓名
+            </summary>
+        </member>
+        <member name="P:Microsoft.RIPSP.Model.ManagerDataView.OrgID">
+            <summary>
+            机构编号
+            </summary>
+        </member>
+        <member name="P:Microsoft.RIPSP.Model.ManagerDataView.LoginTime">
+            <summary>
+            登录时间
+            </summary>
+        </member>
+        <member name="P:Microsoft.RIPSP.Model.ManagerDataView.LoginIP">
+            <summary>
+            登录IP
+            </summary>
+        </member>
+        <member name="P:Microsoft.RIPSP.Model.ManagerDataView.Status">
+            <summary>
+            管理员状态
+            </summary>
+        </member>
+        <member name="T:Microsoft.RIPSP.Model.LoginModel">
+            <summary>
+            表单登录
+            </summary>
+        </member>
+        <member name="T:Microsoft.RIPSP.Model.ChangePasswordModel">
+            <summary>
+            用于修改密码
+            </summary>
+        </member>
+        <member name="T:Microsoft.RIPSP.Model.QueryModel">
+            <summary>
+            用于列表查询
+            </summary>
+        </member>
+        <member name="T:Microsoft.RIPSP.Model.Options">
+            <summary>
+            用于选项
+            </summary>
+        </member>
+        <member name="T:Microsoft.RIPSP.Model.IdArrayModel">
+            <summary>
+            用于批量删除
+            </summary>
+        </member>
+        <member name="T:Microsoft.RIPSP.Model.SortModel">
+            <summary>
+            用于排序提交
+            </summary>
+        </member>
+        <member name="T:Microsoft.RIPSP.Model.ExistsNameModel">
+            <summary>
+            用于检测字段值重复
+            </summary>
+        </member>
+        <member name="T:Microsoft.RIPSP.Model.UploadParamModel">
+            <summary>
+            文件上传参数
+            </summary>
+        </member>
+        <member name="P:Microsoft.RIPSP.Model.UploadParamModel.dir">
+            <summary>
+            文件用途类型
+            </summary>
+        </member>
+        <member name="P:Microsoft.RIPSP.Model.UploadParamModel.ContentLength">
+            <summary>
+            文件长度
+            </summary>
+        </member>
+        <member name="P:Microsoft.RIPSP.Model.UploadParamModel.ContentType">
+            <summary>
+            文件类型
+            </summary>
+        </member>
+        <member name="P:Microsoft.RIPSP.Model.UploadParamModel.Extension">
+            <summary>
+            扩展名
+            </summary>
+        </member>
+        <member name="P:Microsoft.RIPSP.Model.UploadParamModel.DirName">
+            <summary>
+            目录名
+            </summary>
+        </member>
+        <member name="T:Microsoft.RIPSP.Model.RoleGroup">
+            <summary>
+            角色组
+            </summary>
+        </member>
+        <member name="T:Microsoft.RIPSP.Model.ColumnType">
+            <summary>
+            字段类型
+            </summary>
+        </member>
+        <member name="T:Microsoft.RIPSP.Model.ColumnSource">
+            <summary>
+            数据来源
+            </summary>
+        </member>
+        <member name="T:Microsoft.RIPSP.Model.ItemSourceType">
+            <summary>
+            栏目资源来源
+            </summary>
+        </member>
+        <member name="T:Microsoft.RIPSP.Model.MouldType">
+            <summary>
+            模型类型
+            </summary>
+        </member>
+        <member name="T:Microsoft.RIPSP.Model.LogType">
+            <summary>
+            日志类型
+            </summary>
+        </member>
+        <member name="T:Microsoft.RIPSP.Model.SysLogType">
+            <summary>
+            系统日志类型
+            </summary>
+        </member>
+        <member name="T:Microsoft.RIPSP.Model.TemplateType">
+            <summary>
+            模板类型
+            </summary>
+        </member>
+        <member name="T:Microsoft.RIPSP.Model.ServiceType">
+            <summary>
+            服务计费类型
+            </summary>
+        </member>
+        <member name="T:Microsoft.RIPSP.Model.YesOrNo">
+            <summary>
+            是否值
+            </summary>
+        </member>
+        <member name="T:Microsoft.RIPSP.Model.EnableStatus">
+            <summary>
+            启用停用值
+            </summary>
+        </member>
+        <member name="T:Microsoft.RIPSP.Model.ResServiceStatus">
+            <summary>
+            有效无效值
+            </summary>
+        </member>
+        <member name="T:Microsoft.RIPSP.Model.ItemContentStatus">
+            <summary>
+            栏目资源状态
+            </summary>
+        </member>
+        <member name="T:Microsoft.RIPSP.Model.SigningUpStatus">
+            <summary>
+            报名状态
+            </summary>
+        </member>
+        <member name="T:Microsoft.RIPSP.Model.UserStatus">
+            <summary>
+            通用状态
+            </summary>
+        </member>
+        <member name="T:Microsoft.RIPSP.Model.ResStatus">
+            <summary>
+            资源状态
+            </summary>
+        </member>
+        <member name="T:Microsoft.RIPSP.Model.OrderStatus">
+            <summary>
+            订单状态
+            </summary>
+        </member>
+        <member name="T:Microsoft.RIPSP.Model.PayBank">
+            <summary>
+            支付渠道
+            </summary>
+        </member>
+        <member name="T:Microsoft.RIPSP.Model.Ctype">
+            <summary>
+            订单下单方式
+            </summary>
+        </member>
+        <member name="T:Microsoft.RIPSP.Model.PayType">
+            <summary>
+            订单支付类型
+            </summary>
+        </member>
+        <member name="T:Microsoft.RIPSP.Model.TerminalType">
+            <summary>
+            终端类型
+            </summary>
+        </member>
+        <member name="T:Microsoft.RIPSP.Model.ResStepType">
+            <summary>
+            资源流程
+            </summary>
+        </member>
+        <member name="T:Microsoft.RIPSP.Model.TaskType">
+            <summary>
+            任务类型
+            </summary>
+        </member>
+        <member name="T:Microsoft.RIPSP.Model.TaskStatus">
+            <summary>
+            任务状态
+            </summary>
+        </member>
+        <member name="T:Microsoft.RIPSP.Model.DbSourceType">
+            <summary>
+            索引数据源类型
+            </summary>
+        </member>
+        <member name="T:Microsoft.RIPSP.Model.IndexType">
+            <summary>
+            索引类型
+            </summary>
+        </member>
+        <member name="T:Microsoft.RIPSP.Model.ServiceStatus">
+            <summary>
+            索引状态
+            </summary>
+        </member>
+        <member name="T:Microsoft.RIPSP.Model.GlobalDic">
+            <summary>
+            系统字典
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.GlobalDic.GetEnumList(System.String)">
+            <summary>
+            获得枚举选项列表
+            </summary>
+            <param name="enumtype"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.GlobalDic.EnumParse``1(System.String)">
+            <summary>
+            字符串转枚举值
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.GlobalDic.ResStatusByStepType(Microsoft.RIPSP.Model.ResStepType)">
+            <summary>
+            根据库发布类型获取数据状态值
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.GlobalDic.DataTypeByFieldType(Microsoft.RIPSP.Model.ColumnType)">
+            <summary>
+            根据字段类型获取数据类型
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Microsoft.RIPSP.Model.GlobalParameters">
+            <summary>
+            全局参数配置
+            </summary>
+        </member>
+        <member name="F:Microsoft.RIPSP.Model.GlobalParameters.DefaultUserPasswd">
+            <summary>
+            默认密码，加盐
+            </summary>
+        </member>
+        <member name="F:Microsoft.RIPSP.Model.GlobalParameters.ActionsAllowAnonymous">
+            <summary>
+            不需要登录就可以调用的Action
+            </summary>
+        </member>
+        <member name="F:Microsoft.RIPSP.Model.GlobalParameters.RootFilePath">
+            <summary>
+            上传文件路径
+            </summary>
+        </member>
+        <member name="F:Microsoft.RIPSP.Model.GlobalParameters.UploadParams">
+            <summary>
+            文件上传参数配置
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.base_identifycode.#ctor">
+            <summary>
+            构造函数 base_identifycode 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.base_identifycode.#ctor(System.Nullable{System.Int32},System.String,System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime})">
+            <summary>
+            构造函数 base_identifycode 
+            </summary>
+            <param name="_seqid">编号</param> 
+            <param name="_phone">手机</param> 
+            <param name="_email">邮箱</param> 
+            <param name="_code">验证码</param> 
+            <param name="_sendtime">发送时间</param> 
+            <param name="status">状态</param> 
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_identifycode.seqid" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_identifycode.phone" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_identifycode.email" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_identifycode.code" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_identifycode.sendtime" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.base_identifycode.endtime" -->
+        <member name="T:Microsoft.RIPSP.Model.db_subjectwords">
+            <summary>
+            实体Model 主题词表 db_subjectwords 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.db_subjectwords.#ctor">
+            <summary>
+            构造函数 db_subjectwords 
+            </summary>
+        </member>
+        <member name="M:Microsoft.RIPSP.Model.db_subjectwords.#ctor(System.Nullable{System.Int32},System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.DateTime})">
+            <summary>
+            构造函数 db_subjectwords 
+            </summary>
+            <param name="_wordid">自动编号</param> 
+            <param name="_keyword">主题词</param> 
+            <param name="_classid">主题分类</param> 
+            <param name="_weight">权重</param> 
+            <param name="_sourcetype">来源类型1系统2用户</param> 
+            <param name="_status">状态0待审1正常</param> 
+            <param name="_creator">创建人</param> 
+            <param name="_createdtime">创建时间</param> 
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.db_subjectwords.wordid" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.db_subjectwords.keyword" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.db_subjectwords.classid" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.db_subjectwords.weight" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.db_subjectwords.sourcetype" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.db_subjectwords.status" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.db_subjectwords.creator" -->
+        <!-- Badly formed XML comment ignored for member "P:Microsoft.RIPSP.Model.db_subjectwords.createdtime" -->
+        <member name="P:Microsoft.RIPSP.BaseModel.isee_command_log.CommCode">
+            <summary>
+            命令标识符
+            </summary>
+        </member>
+        <member name="P:Microsoft.RIPSP.BaseModel.isee_command_log.CommMark">
+            <summary>
+            命令
+            </summary>
+        </member>
+        <member name="P:Microsoft.RIPSP.BaseModel.isee_command_log.ServiceCode">
+            <summary>
+            服务唯一标识
+            </summary>
+        </member>
+        <member name="P:Microsoft.RIPSP.BaseModel.isee_command_log.Ip">
+            <summary>
+            服务器IP
+            </summary>
+        </member>
+        <member name="P:Microsoft.RIPSP.BaseModel.isee_command_log.CommOr">
+            <summary>
+            命令执行人
+            </summary>
+        </member>
+        <member name="P:Microsoft.RIPSP.BaseModel.isee_command_log.CommTime">
+            <summary>
+            执行时间
+            </summary>
+        </member>
+        <member name="P:Microsoft.RIPSP.BaseModel.isee_command_log.FeedbackTime">
+            <summary>
+            执行返回时间
+            </summary>
+        </member>
+        <member name="P:Microsoft.RIPSP.BaseModel.isee_command_log.FeedbackMsg">
+            <summary>
+            返回内容
+            </summary>
+        </member>
+    </members>
+</doc>

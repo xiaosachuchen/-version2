@@ -1,0 +1,54 @@
+﻿
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>管理平台</title>
+    <!--#include file="/headfiles.html"-->
+    <script src="/js/managereditinfo.js"></script>
+</head>
+<body>
+    <div id="container" class="effect aside-float aside-bright mainnav-lg">
+        <!--#include file="/header.html"-->
+        <div class="boxed">
+            <div id="content-container">
+                <div id="page-title">
+                    <h1 class="page-header text-overflow">修改信息</h1>
+                </div>
+                <div id="page-content">
+                    <div id="searchpanel" class="panel">
+                        <form id="edit_fm" class="panel-body form-horizontal form-padding">
+                            <div class="panel-body">
+                                <div class="form-group">
+                                    <label class="col-md-2 control-label">用户姓名</label>
+                                    <div class="col-md-10">
+                                        <input name="realname" type="text" class="form-control" placeholder="用户姓名" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-2 control-label">电话</label>
+                                    <div class="col-md-10">
+                                        <input name="phone" type="text" class="form-control" placeholder="电话" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-2 control-label">邮箱</label>
+                                    <div class="col-md-10">
+                                        <input name="email" type="text" class="form-control" placeholder="邮箱" />
+                                    </div>
+                                </div>                              
+                                <div class="form-group" style="text-align:center;">
+                                    <button id="formsubmit" type="button" class="btn btn-primary" data-loading-text="数据提交中，请等待..." autocomplete="off">保 存</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!--#include file="/navmenu.html"-->
+        </div>
+        <!--#include file="/footer.html"-->
+    </div>
+</body>
+</html>

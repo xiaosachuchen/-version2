@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	   <meta charset="utf-8">
+	   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	   <title>服务订单管理</title>
+	   <!--#include file="/headfiles.html"-->
+    <link href="../../plugins/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet" />
+    <script src="../../plugins/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+	   <script src="/js/ChosenManager/orderinfo.js"></script>
+    <style>
+        .overflow-model{
+                 overflow-x:auto;
+                 overflow-y:auto; 
+                 max-height:450px;
+             }
+    </style>
+
+</head>
+<body>
+	   <div id="container" class="effect aside-float aside-bright mainnav-lg">
+		     <!--#include file="/header.html"-->
+		     <div class="boxed">
+			      <div id="content-container">
+				        <div id="page-title">
+					          <h1 class="page-header text-overflow">服务订单管理</h1>
+				        </div>
+				        <div id="page-content">
+                            <div id="searchpanel" class="panel">
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="form-inline" style="width:1500px;">
+                                           <div class="form-group">
+                                                <label class="control-label">服务名称：</label>
+                                            </div>
+                                            <div class="form-group" style="width:200px;">
+                                               <select id="serviceno" class="form-control">
+                                               </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label">客户名称：</label>
+                                            </div>
+                                            <div class="form-group" style="width:200px;">
+                                                <select id="customerid" class="form-control"></select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label">状态：</label>
+                                            </div>
+                                            <div class="form-group" style="width:100px;">
+                                                <select id="status" class="form-control"></select>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="row" style="text-align:center;padding-top:8px">
+                                        <button id="search_btn" class="btn btn-primary"> 查 询 </button>
+                                    </div>
+                                </div>
+                            </div>
+					         <div class="panel">
+						            <div class="panel-body">
+							              <div id="toolbar">
+								                <button class="btn btn-info" id="bt" data-mark="Add">
+									                  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> 新增
+								                </button>
+								                <button class="btn btn-info" data-mark="Edit">
+									                  <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> 修改
+								                </button>
+								                <button class="btn btn-info" data-mark="Delete">
+									                  <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> 删除
+								                </button>
+								               
+							              </div>
+							              <table id="TableData"></table>
+						            </div>
+					          </div>
+				        </div>
+			      </div>
+			      <!--#include file="/navmenu.html"-->
+		     </div>
+		     <!--#include file="/footer.html"-->
+	   </div>
+
+	   <div id="edit_modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" data-backdrop="static">
+		     <div class="modal-dialog">
+			      <div class="modal-content">
+				        <form id="edit_fm" class="panel-body form-horizontal form-padding">
+					          <div class="modal-header">
+						            <button type="button" class="close" data-dismiss="modal"><i class="pci-cross pci-circle"></i></button>
+						            <h4 class="modal-title" id="myModalLabel">订单管理</h4>
+					          </div>
+					          <div class="modal-body overflow-model">
+						            <div class="panel-body">
+							           
+							              <div class="form-group">
+								                <label class="col-md-2 control-label">订单名称</label>
+								                <div class="col-md-10">
+									                  <input name="ordername" type="text" class="form-control" placeholder="订单名称"/>
+								                </div>
+							              </div>
+							            
+							              <div class="form-group">
+								                <label class="col-md-2 control-label">服务名称</label>
+								                <div class="col-md-10">
+                                                    <select name="serviceno" class="form-control"></select>
+									                 
+								                </div>
+							              </div>
+                                          <div class="form-group">
+                                            <label class="col-md-2 control-label">客户名称</label>
+                                            <div class="col-md-10">
+                                                <select name="customerid" class="form-control"></select>
+
+                                            </div>
+                                          </div>
+							              <div class="form-group">
+								                <label class="col-md-2 control-label">市场价 单位(分)</label>
+								                <div class="col-md-10">
+									                  <input name="m_price" type="number" class="form-control" placeholder="市场价 单位(分)"/>
+								                </div>
+							              </div>
+							              <div class="form-group">
+								                <label class="col-md-2 control-label">销售价 单位(分)</label>
+								                <div class="col-md-10">
+									                  <input name="s_price" type="number" class="form-control" placeholder="销售价 单位(分)"/>
+								                </div>
+							              </div>
+							        
+							              <div class="form-group">
+								                <label class="col-md-2 control-label">支付方式</label>
+								                <div class="col-md-10">
+									               <select name="paytype" class="form-control"></select>
+								                </div>
+							              </div>
+							              <div class="form-group">
+								                <label class="col-md-2 control-label">支付渠道</label>
+								                <div class="col-md-10">
+                                                    <select name="paybank" class="form-control"></select>
+									           </div>
+							              </div>
+							              <div class="form-group">
+								                <label class="col-md-2 control-label">支付流水</label>
+								                <div class="col-md-10">
+									                  <input name="payno" type="text" class="form-control" placeholder="支付流水"/>
+								                </div>
+							              </div>
+							              <div class="form-group">
+								                <label class="col-md-2 control-label">物流类型</label>
+								                <div class="col-md-10">
+									                  <input name="logisticaltype" type="text" class="form-control" placeholder="物流类型"/>
+								                </div>
+							              </div>
+							              <div class="form-group">
+								                <label class="col-md-2 control-label">物流编号</label>
+								                <div class="col-md-10">
+									                  <input name="logisticalcode" type="text" class="form-control" placeholder="物流编号"/>
+								                </div>
+							              </div>
+							            
+						            </div>
+					          </div>
+					          <div class="modal-footer">
+						            <button type="button" class="btn btn-default" data-dismiss="modal">关 闭</button>
+						            <button id="edit_form_sbtn" type="button" class="btn btn-primary" data-loading-text="数据提交中，请等待..." autocomplete="off">保 存</button>
+					          </div>
+				        </form> 
+			      </div>
+		     </div>
+	   </div>
+</body>
+</html>
+

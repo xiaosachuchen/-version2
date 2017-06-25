@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>用户中心</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/user.css" />
+		<script type="text/javascript" src="js/html5shiv.js" ></script>
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+		<script type="text/javascript" src="js/main.js" ></script>
+	</head>
+	<body>
+		<div id="headerHtml"></div>
+		<div class="clear"></div>
+		<div class="user-center" id="user-centerHtml">
+			
+		</div>
+		<div class="user-subnav main">
+			<dl class="fl nav">
+				<dt>
+					账号管理
+				</dt>
+				<dd>
+					<a class="active" href="user.html">个人信息</a>
+				</dd>
+				<dt>
+					课程
+				</dt>
+				<dd>
+					<a href="user-class.html">我的课程</a>
+				</dd>
+				<dd>
+					<a>我的收藏</a>
+				</dd>
+				<!--<dd>
+					<a>最近学习</a>
+				</dd>-->
+				<dt>
+					支付中心
+				</dt>
+				<dd>
+					<a href="user-shopcar.html">购物车</a>
+				</dd>
+				<dd>
+					<a href="user-payfirst.html">我的订单</a>
+				</dd>
+			</dl>
+			<div class="user-msg">
+				<p class="title">
+					个人信息
+				</p>
+				<ol>
+					<li>
+						<span>昵称</span>
+						<input type="text" value="" disabled="disabled" class="username-input" />
+						<a>更改</a>
+					</li>
+					<li>
+						<span>签名</span>
+						<input class="gxqm-input" type="text" value="30个字以内" style="color: #c6ced1;font-size:18px;"/>
+						<a>更改</a>
+					</li>
+					
+				</ol>
+			</div>
+		</div>
+		
+		<div class="clear"></div>
+		<div id="footerHtml"></div>
+		
+	</body>
+</html>
+<script>
+	    $(function(){
+	    	$(".user-msg ol li a").click(function(){
+	    		$(this).siblings("input").removeAttr("disabled")
+	    		$(this).siblings("input").focus()
+	    	})
+	    	$(".user-msg ol li input").blur(function(){
+	    		$(this).attr("disabled","disabled")
+	    		$(".username").text($(".username-input").val())
+	    		$(".gxqm").text($(".gxqm-input").val())
+	    	})
+	    })
+</script>

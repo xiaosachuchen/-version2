@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>用户中心</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/mypay.css" />
+        <script src="scripts/jquery-1.11.0.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/html5shiv.js"></script>
+        <script src="scripts/jquery.tmpl.min.js"></script>
+        <script src="scripts/jquery.tmplplus.min.js"></script>
+        <script src="appjs/orderlogic.js"></script>
+	</head>
+	<body>
+		<div id="headerHtml"></div>
+		<div class="clear"></div>
+		<div class="user-center" id="user-centerHtml">
+			<!--<div class="user-center-top">
+				<div class="main">
+					<dl>
+						<dt class="fl">
+							<span>
+								<img src="img/user/pic-4.png" />
+							</span>
+						</dt>
+						<dd class="username">
+							聪聪龙内部测试账号
+						</dd>
+						<dd class="ljlearn">
+							累计学习<a>2</a>小时
+						</dd>
+						<dd>
+							这家伙很懒什么都没留下
+						</dd>
+					</dl>
+				</div>
+			</div>-->
+		</div>
+		<div class="user-subnav main">
+			<dl class="fl nav">
+				<dt>
+					账号管理
+				</dt>
+				<dd>
+					<a href="user.html">个人信息</a>
+				</dd>
+				<dt>
+					课程
+				</dt>
+				<dd>
+					<a href="user-class.html">我的课程</a>
+				</dd>
+				<dd>
+					<a href="user-favor.html">我的收藏</a>
+				</dd>
+				<!--<dd>
+					<a>最近学习</a>
+				</dd>-->
+				<dt>
+					支付中心
+				</dt>
+				<dd>
+					<a href="user-shopcar.html">购物车</a>
+				</dd>
+				<dd>
+					<a class="active" href="user-payfirst.html">我的订单</a>
+				</dd>
+			</dl>
+			<div class="user-msg">
+				<p class="title">
+					我的订单
+				</p>
+				<dl>
+					<dt>
+						订单支付<span></span>
+					</dt>
+					<dd>
+						<img src="img/user/pic-17.png" class="fl" />
+						<p>视频支付<br /></p>
+						<span class="fr" id="realpay">实付金额¥：28.00</span>
+					</dd>
+					<dt>
+						支付方式
+					</dt>
+					<dd>
+						<a class="active zfb">
+						</a>
+						<a class="wx">
+						</a>
+					</dd>
+					<script>
+						$(function(){
+							$(".user-msg dl dd a").click(function(){
+								$(this).addClass("active")
+								$(this).siblings("a").removeClass("active")
+							})
+						})
+					</script>
+					<dd class="tips">
+						温馨提示：请于23小时59分59秒内支付完成，如未完成订单，则订单关闭需要重新购买
+					</dd>
+				</dl>
+				<a class="ljzf fr">立即支付</a>
+			</div>
+		</div>
+		
+		<div class="clear"></div>
+		<div id="footerHtml"></div>
+		
+	</body>
+</html>

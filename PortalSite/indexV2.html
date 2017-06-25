@@ -1,0 +1,679 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/indexV2.css" />
+        <script src="scripts/jquery-1.11.0.js"></script>
+		<script type="text/javascript" src="js/main.js" ></script>
+		<script type="text/javascript" src="js/html5shiv.js" ></script>
+        <script src="scripts/jquery.tmpl.min.js"></script>
+        <script src="scripts/jquery.tmplplus.min.js"></script>
+        <script src="appjs/indexlogic.js"></script>
+        <!--#include file="/include/headfile.html"-->
+	</head>
+	<body>
+		<div id="headerHtml"></div>
+		<div class="clear"></div>
+		<nav class="main2" id="app-1">
+			<ul>
+                <li class="subject_dic"> </li> 
+                      <script type="text/x-jquery-tmpl" id="subject_list">
+                        {{each(i,info) data}}
+                        <a href="classlist.html?type=subject&keyword={{= info}}">{{= info}}</a>
+                        {{/each}}
+                        </script>
+                <li class="grade_dic"> </li>
+                <script type="text/x-jquery-tmpl" id="grade_list">
+                    {{each(i,info) data}}
+                    <a href="classlist.html?type=grade&keyword={{= info}}">{{= info}}</a>
+                    {{/each}}
+                </script>
+				<!--<li>
+					<a href="classlist.html">一年级</a>    
+					<a href="classlist.html">二年级</a>  
+					<a href="classlist.html">三年级</a>      
+					<a href="classlist.html">四年级</a>       
+					<a href="classlist.html">五年级</a>     
+					<a href="classlist.html">六年级</a>   
+					<a href="classlist.html">初一</a>    
+					<a href="classlist.html">初二</a>      
+					<a href="classlist.html">初三</a>    
+					<a href="classlist.html">高一</a>    
+					<a href="classlist.html">高二</a>   
+					<a href="classlist.html">高三</a>
+				</li>-->
+			</ul>
+		</nav>
+		
+		<section class="banner main2">
+			<div class="banner-wrap">
+                <span id="lunbo_span"></span>
+                <script type="text/x-jquery-tmpl" id="lunbo_list">
+                    {{each(i,info) data}}
+                        <img src={{= info.thumbnail}} />
+    <!--<img src="img/index/banner-4.png" />
+    <img src="img/index/banner-4.png" />-->
+                    {{/each}}
+                </script>
+
+			</div>
+			<div class="main">
+				<a class="left-btn"><img src="img/left-btn.png" /></a>
+				<a class="right-btn"><img src="img/right-btn.png" /></a>
+			</div>
+		</section>
+		
+		
+		<section class="zxpj main2">
+			<h2>咨询与评价</h2>
+			<div class="left fl">
+				<ol>
+				 	<li class="fl">
+						<img src="img/index/pic-1.png" height="272px" width="375px" />
+					</li>
+                    <li class="left-right" id="zxpjid"></li>
+                    <script type="text/x-jquery-tmpl" id="video_comment_list">
+                        {{each(i,video) data}}
+                        <a class="hxplay hx1" href="play.html?vid={{= video.seqid}}">
+                            <img src={{= video.source}} />
+                            <span></span>
+                            <ul >
+                                <li class="title">{{= video.title}}</li>
+                                <li>
+                                    <strong class="classname" title="第二单元 课题1 第二课时 基础过关7">{{= video.title}}</strong>
+                                    <i class="fr"><img src="img/index/zan.png" /></i>
+                                </li>
+                            </ul>
+                        </a>
+                        {{/each}}
+                    </script>
+                            <!--<a class="swplay sw1">
+            <img src="img/2/240-240/sw0001.jpg"  />
+            <span></span>
+            <ul>
+                <li class="title">生物</li>
+                <li><strong class="classname" title="第二单元 第二章 第二节 能力提升 第2题">
+                    第二单元 第二章 第二节 能力提升 第2题
+                </strong> <i class="fr"><img src="img/index/zan.png" /></i></li>
+            </ul>
+        </a>
+        <a class="sxplay sx1">
+            <img src="img/3/240-240/sx0001.jpg"  />
+            <span></span>
+            <ul>
+                <li class="title">数学</li>
+                <li><strong class="classname" title="1. 20.1.1 轴对称(1) 基础过关 第6题">1. 20.1.1 轴对称(1) 基础过关 第6题</strong> <i class="fr"><img src="img/index/zan.png" /></i></li>
+            </ul>
+        </a>
+        <a class="wlplay wl1">
+            <img src="img/4/240-240/wl0001.jpg"  />
+            <span></span>
+            <ul>
+                <li class="title">物理</li>
+                <li><strong class="classname" title="第二章  测试卷二     第10题">第二章  测试卷二     第10题</strong> <i class="fr"><img src="img/index/zan.png" /></i></li>
+            </ul>
+        </a>-->
+				</ol>
+			</div>
+			
+			<div class="right fr">
+				<p>优秀教师排行榜</p>
+                <p id="teach_p"></p>
+                    <script type="text/x-jquery-tmpl" id="teacher_list">
+                        {{each(i,teacher) data}}
+                             <a><img src={{= teacher.thumbnail}} /></a>
+                              <!--<a><img src="img/pic-32.jpg" /></a>-->
+                        {{/each}}
+                        <!--<a><img src="img/index/pic-31.jpg" /></a>
+                        <a><img src="img/index/pic-32.jpg" /></a>
+                        <a><img src="img/index/pic-33.jpg" /></a>
+                        <a><img src="img/index/pic-34.jpg" /></a>
+                        <a><img src="img/index/pic-35.jpg" /></a>
+                        <a><img src="img/index/pic-36.jpg" /></a>
+                        <a><img src="img/index/pic-37.jpg" /></a>
+                        <a><img src="img/index/pic-38.jpg" /></a>-->
+                       </script>
+            
+			</div>
+		</section>
+		<div class="clear"></div>
+		<section class="djjx main2">
+			<h2>独家精选</h2>
+			<div id="independ_video"></div>
+                <script type="text/x-jquery-tmpl" id="independ_video_list">
+                    {{each(i,video) data}}
+                    <a class="yyplay yy1" href="play.html?vid={{= video.seqid}}">
+                        <span>
+                            <img src={{= video.source}} />
+                        </span>
+                        <ol class="title">
+                            <li class="childa">{{= video.subject}}</li>
+                            <li class="childb"><strong class="classname" title="Mdule10 Unit1 训练案 拓展训练 阅读理解">{{= video.title}}</strong></li>
+                        </ol>
+                    </a>
+                    {{/each}}
+                </script>
+			
+				<!--<a class="hxplay hx2">
+					<span>
+						<img src="img/1/240-240/hx0002.jpg"  />
+					</span>
+					<ol class="title">
+						<li class="childa">化学</li>
+						<li class="childb"><strong class="classname" title="第二单元 课题1 第一课时 基础过关4">第二单元 课题1 第一课时 基础过关4</strong></li>
+					</ol>
+				</a>
+				<a class="swplay sw2">
+					<span>
+						<img src="img/2/240-240/sw0002.jpg"  />
+					</span>
+					<ol class="title">
+						<li class="childa">生物</li>
+						<li class="childb"><strong class="classname" title="第二单元 第二章 第二节 同步演练 第4题">第二单元 第二章 第二节 同步演练 第4题</strong></li>
+					</ol>
+				</a>
+				<a class="sxplay sx2">
+					<span>
+						<img src="img/3/240-240/sx0002.jpg"  />
+					</span>
+					<ol class="title">
+						<li class="childa">数学</li>
+						<li class="childb"><strong class="classname" title="2. 20.1.2 线段的垂直平分线的性质(1) 课时作业 第2题">2. 20.1.2 线段的垂直平分线的性质(1) 课时作业 第2题</strong></li>
+					</ol>
+				</a>
+				<a class="wlplay wl2">
+					<span>
+						<img src="img/4/240-240/wl0002.jpg"  />
+					</span>
+					<ol class="title">
+						<li class="childa">物理</li>
+						<li class="childb"><strong class="classname" title="第二章  测试卷二     第19题">第二章  测试卷二     第19题</strong></li>
+					</ol>
+				</a>
+				<a class="yyplay yy2">
+					<span>
+						<img src="img/5/240-240/wy0002.jpg"  />
+					</span>
+					<ol class="title">
+						<li class="childa">英语</li>
+						<li class="childb"><strong class="classname" title="Module1 Unit1 探究案 当堂检测 第3题">Module1 Unit1 探究案 当堂检测 第3题</strong></li>
+					</ol>
+				</a>
+				<a class="hxplay hx3">
+					<span>
+						<img src="img/1/240-240/hx0003.jpg"  />
+					</span>
+					<ol class="title">
+						<li class="childa">化学</li>
+						<li class="childb"><strong class="classname" title="第二单元 课题1 第一课时 能力提升3">第二单元 课题1 第一课时 能力提升3</strong></li>
+					</ol>
+				</a>
+				<a class="swplay sw3">
+					<span>
+						<img src="img/2/240-240/sw0003.jpg"  />
+					</span>
+					<ol class="title">
+						<li class="childa">生物</li>
+						<li class="childb"><strong class="classname" title="第二单元 第二章 第三节 基础过关 第2题">第二单元 第二章 第三节 基础过关 第2题</strong></li>
+					</ol>
+				</a>
+				<a class="sxplay sx3">
+					<span>
+						<img src="img/3/240-240/sx0003.jpg"  />
+					</span>
+					<ol class="title">
+						<li class="childa">数学</li>
+						<li class="childb"><strong class="classname" title="3. 20.1.2 线段的垂直平分线的性质(1) 课时作业 第8题">3. 20.1.2 线段的垂直平分线的性质(1) 课时作业 第8题</strong></li>
+					</ol>
+				</a>
+				<a class="wlplay wl3">
+					<span>
+						<img src="img/4/240-240/wl0003.jpg"  />
+					</span>
+					<ol class="title">
+						<li class="childa">物理</li>
+						<li class="childb"><strong class="classname" title="第二章  测试卷一     第6题">第二章  测试卷一     第6题</strong></li>
+					</ol>
+				</a>-->
+			<!--</div>-->
+		</section>
+		
+		
+		<section class="zxpj tctk main2">
+			<h2>同城淘课</h2>
+			<div class="left fl">
+				<ol style="width: 100%;">
+				 	<li class="fl" style="width: 375px;">
+						<img src="img/index/pic-6.png" height="258px" width="375px" />
+					</li>
+					<li class="left-right" id="localcity"></li>
+                        <script type="text/x-jquery-tmpl" id="localcity_video_list">
+                            {{each(i,video) data}}
+                            <a class="yyplay yy3" href="play.html?vid={{= video.seqid}}">
+                                <img src={{= video.source}} />
+                                <span></span>
+                                <ul>
+                                    <li class="title">{{= video.subject}}</li>
+                                    <li><strong class="classname" title="Module1 Unit1 探究案 当堂检测 第4题">{{= video.title}}</strong></li>
+                                </ul>
+                            </a>
+                            {{/each}}
+                        </script>
+						<!--<a class="yyplay yy3">
+							<img src="img/5/240-240/wy0003.jpg"  />
+							<span></span>
+							<ul>
+								<li class="title">英语</li>
+								<li><strong class="classname" title="Module1 Unit1 探究案 当堂检测 第4题">Module1 Unit1 探究案 当堂检测 第4题</strong></li>
+							</ul>
+						</a>
+						<a class="yyplay yy4">
+							<img src="img/5/240-240/wy0004.jpg"  />
+							<span></span>
+							<ul>
+								<li class="title">英语</li>
+								<li><strong class="classname" title="Module1 Unit2 探究案 当堂检测 第2题">Module1 Unit2 探究案 当堂检测 第2题</strong></li>
+							</ul>
+						</a>
+						<a class="yyplay yy5">
+							<img src="img/5/240-240/wy0005.jpg"  />
+							<span></span>
+							<ul>
+								<li class="title">英语</li>
+								<li><strong class="classname" title="Module1 Unit2 训练案 基础训练 二 同义句转换">Module1 Unit2 训练案 基础训练 二 同义句转换</strong></li>
+							</ul>
+						</a>
+						<a class="yyplay yy6">
+							<img src="img/5/240-240/wy0006.jpg"  />
+							<span></span>
+							<ul>
+								<li class="title">英语</li>
+								<li><strong class="classname" title="Module1 Unit3 预习案 预习自测 第17题">Module1 Unit3 预习案 预习自测 第17题</strong></li>
+							</ul>
+						</a>
+						<a class="yyplay yy7">
+							<img src="img/5/240-240/wy0007.jpg"  />
+							<span></span>
+							<ul>
+								<li class="title">英语</li>
+								<li><strong class="classname" title="Module1 Unit3 预习案 预习自测 第18题">Module1 Unit3 预习案 预习自测 第18题</strong></li>
+							</ul>
+						</a>
+						<a class="yyplay yy8">
+							<img src="img/5/240-240/wy0008.jpg"  />
+							<span></span>
+							<ul>
+								<li class="title">英语</li>
+								<li><strong class="classname" title="Module2 Unit1 训练案 基础训练 第5题">Module2 Unit1 训练案 基础训练 第5题</strong></li>
+							</ul>
+						</a>
+						<a class="yyplay yy9">
+							<img src="img/5/240-240/wy0009.jpg"  />
+							<span></span>
+							<ul>
+								<li class="title">英语</li>
+								<li><strong class="classname" title="Module2 Unit1 训练案 基础训练 第6题">Module2 Unit1 训练案 基础训练 第6题</strong></li>
+							</ul>
+						</a>
+						<a class="yyplay yy10">
+							<img src="img/5/240-240/wy0010.jpg"  />
+							<span></span>
+							<ul>
+								<li class="title">英语</li>
+								<li><strong class="classname" title="Module2 Unit1 训练案 基础训练 第10题">Module2 Unit1 训练案 基础训练 第10题</strong></li>
+							</ul>
+						</a>-->
+					<!--</li>-->
+				</ol>
+			</div>
+			<div class="clear"></div>
+			
+			<div class="main2">
+				<img src="img/index/banner-1.png" />
+			</div>
+		</section>
+		<div class="clear"></div>
+		
+		<section class="djjx main2">
+			<h2>校园内外</h2>
+			<div id="school"></div>
+                <script type="text/x-jquery-tmpl" id="school_video_list">
+                    {{each(i,video) data}}
+                    <a class="hxplay hx4" href="play.html?vid={{= video.seqid}}">
+                        <span>
+                            <img src={{= video.source}} />
+                        </span>
+                        <ol class="title">
+                            <li>{{= video.subject}}</li>
+                            <li><strong class="classname" title="第二单元 第二章 第三节 基础过关 第2题">{{= video.title}}</strong></li>
+                        </ol>
+                    </a>
+                    {{/each}}
+                </script>
+				<!--<a class="hxplay hx4">
+					<span>
+						<img src="img/1/240-240/hx0004.jpg"  />
+					</span>
+					<ol class="title">
+						<li>化学</li>
+						<li><strong class="classname" title="第二单元 第二章 第三节 基础过关 第2题">第二单元 第二章 第三节 基础过关 第2题</strong></li>
+					</ol>
+				</a>
+				<a class="swplay sw4">
+					<span>
+						<img src="img/2/240-240/sw0004.jpg"  />
+					</span>
+					<ol class="title">
+						<li>生物</li>
+						<li><strong class="classname" title="第二单元 课题2 第二课时 基础过关3">第二单元 课题2 第二课时 基础过关3</strong></li>
+					</ol>
+				</a>
+				<a class="sxplay sx4">
+					<span>
+						<img src="img/3/240-240/sx0004.jpg"  />
+					</span>
+					<ol class="title">
+						<li>数学</li>
+						<li><strong class="classname" title="20.2 画轴对称图形(1) 第7题">20.2 画轴对称图形(1) 第7题</strong></li>
+					</ol>
+				</a>
+				<a class="wlplay wl4">
+					<span>
+						<img src="img/4/240-240/wl0004.jpg"  />
+					</span>
+					<ol class="title">
+						<li>物理</li>
+						<li><strong class="classname" title="第二章  测试卷一     第26题">第二章  测试卷一     第26题</strong></li>
+					</ol>
+				</a>
+				<a class="hxplay hx5">
+					<span>
+						<img src="img/1/240-240/hx0005.jpg"  />
+					</span>
+					<ol class="title">
+						<li>化学</li>
+						<li><strong class="classname" title="第二单元 课题2 第二课时 基础过关14">第二单元 课题2 第二课时 基础过关14</strong></li>
+					</ol>
+				</a>
+				<a class="swplay sw5">
+					<span>
+						<img src="img/2/240-240/sw0005.jpg"  />
+					</span>
+					<ol class="title">
+						<li>生物</li>
+						<li><strong class="classname" title="第二单元 第二章 第四节 基础过关 第5题">第二单元 第二章 第四节 基础过关 第5题</strong></li>
+					</ol>
+				</a>
+				<a class="sxplay sx5">
+					<span>
+						<img src="img/3/240-240/sx0005.jpg"  />
+					</span>
+					<ol class="title">
+						<li>数学</li>
+						<li><strong class="classname" title="20.3.1 等腰三角形(1) 课时作业 第2题">20.3.1 等腰三角形(1) 课时作业 第2题</strong></li>
+					</ol>
+				</a>
+				<a class="wlplay wl5">
+					<span>
+						<img src="img/4/240-240/wl0005.jpg"  />
+					</span>
+					<ol class="title">
+						<li>物理</li>
+						<li><strong class="classname" title="第二章  第1节  课时作业  第9题">第二章  第1节  课时作业  第9题</strong></li>
+					</ol>
+				</a>
+				<a class="hxplay hx6">
+					<span>
+						<img src="img/1/240-240/hx0006.jpg"  />
+					</span>
+					<ol class="title">
+						<li>化学</li>
+						<li><strong class="classname" title="第二单元 课题2 第二课时 基础过关16">第二单元 课题2 第二课时 基础过关16</strong></li>
+					</ol>
+				</a>
+				<a class="swplay sw6">
+					<span>
+						<img src="img/2/240-240/sw0006.jpg"  />
+					</span>
+					<ol class="title">
+						<li>生物</li>
+						<li><strong class="classname" title="第二单元 第二章 第四节 能力提升 第2题">第二单元 第二章 第四节 能力提升 第2题</strong></li>
+					</ol>
+				</a>-->
+			<!--</div>-->
+			<div class="main2">
+				<img src="img/index/banner-2.png" />
+			</div>
+		</section>
+		
+		<section class="zxpj tctk rmhd main2">
+			<h2>热门活动</h2>
+			<div class="left fl">
+				<ol style="width: 100%;">
+				 	<li class="fl" style="width: 375px;">
+						<img src="img/index/pic-8.png" height="258px" width="375px" />
+					</li>
+					<li class="left-right" id="hotactivity"></li>
+                        <script type="text/x-jquery-tmpl" id="hotactivity_video_list">
+                            {{each(i,video) data}}
+                            <a class="sxplay sx6" href="play.html?vid={{= video.seqid}}">
+                                <img src={{= video.source}} />
+                                <span></span>
+                                {{if i==0}}
+                                <img class="biaqia" src="img/index/pic-10.png" />
+                                {{else}}
+
+                                {{/if}}
+                                <ul >
+                                    <li>{{= video.subject}}</li>
+                                    <!--<li>讲师:钟平</li>
+                                    <li>优惠价<i>¥：99.00</i></li>-->
+                                    <li><strong class="classname" title="20.3.1 等腰三角形(1) 课时作业 第13题">{{= video.title}}</strong></li>
+                                    <li><i class="fr">查看详情>></i></li>
+                                </ul>
+                            </a>
+                            {{/each}}
+                        </script>
+						
+				</ol>
+			</div>
+			<div class="clear"></div>
+			
+			<div class="main2">
+				<img src="img/index/banner-3.png" />
+			</div>
+		</section>
+		<div class="clear"></div>
+		
+		
+		<section class="djjx zxkt main2">
+			<h2>在线课堂</h2>
+			<div id="online"></div>
+                <script type="text/x-jquery-tmpl" id="online_video_list">
+                    {{each(i,video) data}}
+                    <a class="sxplay sx8" href="play.html?vid={{= video.seqid}}">
+                        <span>
+                            <img src={{= video.source}} />
+                        </span>
+                        <i><img src="img/index/play.png" /></i>
+                        <ol class="title">
+                            <li>{{= video.subject}}</li>
+                            <li><strong class="classname" title="20.3.1等腰三角形(2) 课时作业 第4题">{{= video.title}}</strong></li>
+                        </ol>
+                    </a>
+                    {{/each}}
+                </script>
+				<!--<a class="sxplay sx8">
+					<span>
+						<img src="img/3/240-240/sx0008.jpg"  />
+					</span>
+					<i><img src="img/index/play.png" /></i>
+					<ol class="title">
+						<li>数学</li>
+						<li><strong class="classname" title="20.3.1等腰三角形(2) 课时作业 第4题">20.3.1等腰三角形(2) 课时作业 第4题</strong></li>
+					</ol>
+				</a>
+				<a class="wlplay wl8">
+					<span>
+						<img src="img/4/240-240/wl0008.jpg"  />
+					</span>
+					<i><img src="img/index/play.png" /></i>
+					<ol class="title">
+						<li>物理</li>
+						<li><strong class="classname" title="第二章  第2节  课时作业  第8题">第二章  第2节  课时作业  第8题</strong></li>
+					</ol>
+				</a>
+				<a class="hxplay hx9">
+					<span>
+						<img src="img/1/240-240/hx0009.jpg"  />
+					</span>
+					<i><img src="img/index/play.png" /></i>
+					<ol class="title">
+						<li>化学</li>
+						<li><strong class="classname" title="第二单元 课题2 第一课时 能力提升4">第二单元 课题2 第一课时 能力提升4</strong></li>
+					</ol>
+				</a>
+				<a class="swplay sw9">
+					<span>
+						<img src="img/2/240-240/sw0009.jpg"  />
+					</span>
+					<i><img src="img/index/play.png" /></i>
+					<ol class="title">
+						<li>生物</li>
+						<li><strong class="classname" title="第二单元 第二章 综合测试 选择题 第18题">第二单元 第二章 综合测试 选择题 第18题</strong></li>
+					</ol>
+				</a>
+				<a class="sxplay sx9">
+					<span>
+						<img src="img/3/240-240/sx0009.jpg"  />
+					</span>
+					<i><img src="img/index/play.png" /></i>
+					<ol class="title">
+						<li>数学</li>
+						<li><strong class="classname" title="20.3.1等腰三角形(2) 课时作业 第18题">20.3.1等腰三角形(2) 课时作业 第18题</strong></li>
+					</ol>
+				</a>
+				<a class="wlplay wl9">
+					<span>
+						<img src="img/4/240-240/wl0009.jpg"  />
+					</span>
+					<i><img src="img/index/play.png" /></i>
+					<ol class="title">
+						<li>物理</li>
+						<li><strong class="classname" title="第二章  第2节  课时作业  第11题">第二章  第2节  课时作业  第11题</strong></li>
+					</ol>
+				</a>
+				<a class="hxplay hx10">
+					<span>
+						<img src="img/1/240-240/hx0010.jpg"  />
+					</span>
+					<i><img src="img/index/play.png" /></i>
+					<ol class="title">
+						<li>化学</li>
+						<li><strong class="classname" title="第二单元 课题3 第二课时 基础过关7">第二单元 课题3 第二课时 基础过关7</strong></li>
+					</ol>
+				</a>
+				<a class="swplay sw10">
+					<span>
+						<img src="img/2/240-240/sw0010.jpg"  />
+					</span>
+					<i><img src="img/index/play.png" /></i>
+					<ol class="title">
+						<li>生物</li>
+						<li><strong class="classname" title="第二单元 第二章 综合测试 选择题 第19题">第二单元 第二章 综合测试 选择题 第19题</strong></li>
+					</ol>
+				</a>
+				<a class="sxplay sx10">
+					<span>
+						<img src="img/3/240-240/sx0010.jpg"  />
+					</span>
+					<i><img src="img/index/play.png" /></i>
+					<ol class="title">
+						<li>数学</li>
+						<li><strong class="classname" title="20.3.1等腰三角形(2) 课时作业 第24题">20.3.1等腰三角形(2) 课时作业 第24题</strong></li>
+					</ol>
+				</a>
+				<a class="wlplay wl10">
+					<span>
+						<img src="img/4/240-240/wl0010.jpg"  />
+					</span>
+					<i><img src="img/index/play.png" /></i>
+					<ol class="title">
+						<li>物理</li>
+						<li><strong class="classname" title="第二章  第3节  课时作业  第5题">第二章  第3节  课时作业  第5题</strong></li>
+					</ol>
+				</a>-->
+			<!--</div>-->
+		</section>
+		
+		<section class="djjx zxkt tcsn main2">
+			<h2>天才少年</h2>
+			<div id="talent"></div>
+                <script type="text/x-jquery-tmpl" id="online_video_list">
+                    {{each(i,video) data}}
+                    <a href="play.html?vid={{= video.seqid}}">
+                        <span>
+                            <img src="{{= video.source}}" />
+                        </span>
+                        <ol class="title">
+                            <li>{{= video.title}}</li>
+                        </ol>
+                    </a>
+                    {{/each}}
+                </script>
+				<!--<a>
+					<span>
+						<img src="img/index/t1.png"  />
+					</span>
+					<ol class="title">
+						<li>数独神童：胡宇轩</li>
+					</ol>
+				</a>
+				<a>
+					<span>
+						<img src="img/index/t2.png"  />
+					</span>
+					<ol class="title">
+						<li>钟恩柔：心算小魔女</li>
+					</ol>
+				</a>
+				<a>
+					<span>
+						<img src="img/index/t3.png"  />
+					</span>
+					<ol class="title">
+						<li>柳娜：彝族“阿诗玛”</li>
+					</ol>
+				</a>
+				<a>
+					<span>
+						<img src="img/index/t4.png"  />
+					</span>
+					<ol class="title">
+						<li>苏泽河：脑力新星</li>
+					</ol>
+				</a>
+				<a>
+					<span>
+						<img src="img/index/t5.png"  />
+					</span>
+					<ol class="title">
+						<li>陈浩：退伍海军</li>
+					</ol>
+				</a>-->
+			<!--</div>-->
+		</section>
+		
+		
+		
+		<div id="footerHtml"></div>
+		
+		<div id="tcHtml">
+		</div>
+		
+		
+	</body>
+</html>

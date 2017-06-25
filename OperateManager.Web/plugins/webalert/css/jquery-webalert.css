@@ -1,0 +1,144 @@
+﻿body.stop-scrolling {
+  height: 100%;
+  overflow: hidden; 
+}
+.jquery-webalert {
+    position: relative;
+    display: block;
+}
+.jquery-webalert .webalert-overlay {
+  background-color: black;
+  /* IE8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+  /* IE8 */
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 999;
+}
+.jquery-webalert .webalert-body {
+    background-color: white;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    width: 480px;
+    height: 320px;
+    padding: 20px;
+    -moz-border-radius: 10px; 
+    -webkit-border-radius: 10px; 
+    behavior:url(ie-css3.htc);  
+    border-radius: 10px;
+    text-align: center;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -240px;
+    margin-top: -160px;
+    overflow: hidden;
+    z-index: 1200;
+    display: none;
+}
+
+.jquery-webalert .webalert-icon {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;   
+    -moz-border-radius: 50px; 
+    -webkit-border-radius: 50px; 
+     behavior:url(ie-css3.htc);  
+     border-radius: 50px;   
+    line-height: 100px;
+    text-align: center;
+    font-size: 70px;
+    font-family: 'Microsoft YaHei UI';
+    font-weight: bolder;
+    border: solid 4px;
+    display:none;
+}
+.jquery-webalert .success{
+    border-color:green;
+    color:green;
+}
+.jquery-webalert .error {
+    border-color:red;
+    color: red;  
+}
+.jquery-webalert .warning {
+    border-color:#F8BB86;
+    color: #F8BB86;  
+}
+.jquery-webalert .confirm {
+   border-color:#F8BB86;
+    color: #F8BB86;  
+}
+.jquery-webalert .info {
+   border-color:#31b0d5;
+    color: #31b0d5;  
+}
+
+.jquery-webalert .webalert-body .webalert-title {
+    color: #575757;
+    font-size: 24px;
+    font-family:'Microsoft YaHei';    
+    font-weight: bolder;
+    text-transform: none;
+    margin:15px auto;
+    height: 30px;
+    overflow:hidden;
+    text-align: center;
+    display: block;
+}
+.jquery-webalert .webalert-content {
+    width: 95%;
+    height:70px;
+    line-height:30px;
+    margin:10px;
+    overflow-x: auto;
+    overflow-y: auto;
+    font-family:'Microsoft YaHei';    
+    font-size:18px;
+}
+.jquery-webalert .webalert-content .input-content-p{
+    width:95%;
+}
+
+.jquery-webalert .webalert-content .input-content-p input{
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: 1px solid #d7d7d7;
+    width:100%;
+    height: 35px;
+    font-size: 18px;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.06);
+    padding: 0 12px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.jquery-webalert .webalert-content .input-content-p input:focus {
+    outline: none;
+    box-shadow: 0px 0px 3px #c4e6f5;
+    border: 1px solid #b4dbed;
+}
+
+.jquery-webalert .webalert-tools{
+    height:40px;
+}
+.jquery-webalert .webalert-tools button{
+    width: 150px;
+    height:40px;
+    line-height:40px;
+    background-color: #8CD4F5;
+    color: white;
+    border: none;
+    box-shadow: none;
+    font-size: 17px;
+    font-weight: 500;
+    -webkit-border-radius: 4px;
+    border-radius: 5px;
+    margin:0 5px;
+    cursor: pointer;
+}
+.jquery-webalert .webalert-tools button.webalert-cannelbtn{   
+    background-color: #bebaba; 
+}
